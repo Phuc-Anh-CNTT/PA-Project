@@ -5,9 +5,9 @@ import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
 import {Package} from "lucide-react";
 import {AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, Phone, AlertTriangle, User} from "lucide-react";
 import {StatusStepper} from "../components/KQBH/StatusStepper";
-import {PhieuBHsdtModel, PhieuBHByIdModel} from "../phieu_bh";
-import headerLogo from "../../public/assets/images/banner-bao-hanh.jpg";
-import footerLogo from "../../public/assets/images/footer.png";
+import Ndyduc from "../components/ndyduc";
+import headerLogo from "../assets/images/banner-bao-hanh.jpg"
+import footerLogo from "../assets/images/footer.png";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -118,21 +118,26 @@ export default function KQBH() {
     };
 
     const renderSearch = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-4">
+        <div className="h-[400px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-4">
             <Card className="w-full max-w-md shadow-xl border-0">
-                <CardHeader className="text-center bg-gradient-to-r from-primary to-secondary text-white rounded-t-lg">
-                    <CardTitle className="text-xl ">Tra Cứu Bảo Hành Phúc Anh</CardTitle>
+                <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg">
+                    <CardTitle
+                      className="text-2xl font-bold tracking-wide text-white"
+                      style={{ fontFamily: "Times New Roman, Times, serif" }}
+                    >
+                      Tra Cứu Bảo Hành Phúc Anh
+                    </CardTitle>
                 </CardHeader>
                 <CardContent className="p-8">
                     <form onSubmit={handleSearch} className="space-y-6">
                         <div className="space-y-2">
                             <label htmlFor="search-code" className="block font-medium text-gray-700">
-                                Mã tra cứu
+                                Tra cứu
                             </label>
                             <Input
                                 id="search-code"
                                 type="text"
-                                placeholder="Nhập mã tra cứu bảo hành..."
+                                placeholder="Nhập mã tra cứu bảo hành hoặc số điện thoại"
                                 value={searchCode}
                                 onChange={(e) => setSearchCode(e.target.value)}
                                 className="h-12 border-2 border-gray-200 focus:border-secondary"
@@ -152,10 +157,14 @@ export default function KQBH() {
     );
 
     const renderNoResults = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-red-50 flex items-center justify-center p-4">
+        <div className="h-[400px] bg-gradient-to-br from-blue-50 to-red-50 flex items-center justify-center ">
             <Card className="w-full max-w-md shadow-xl border-0">
-                <CardHeader className="text-center bg-gradient-to-r from-primary to-secondary text-white rounded-t-lg">
-                    <CardTitle>Kết Quả Tra Cứu</CardTitle>
+                <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-500 text-white rounded-t-lg">
+                    <CardTitle className="text-2xl font-bold tracking-wide text-white"
+                      style={{ fontFamily: "Times New Roman, Times, serif" }}
+                    >
+                        Kết Quả Tra Cứu
+                    </CardTitle>
                 </CardHeader>
                 <CardContent className="p-8 text-center">
                     <div className="flex flex-col items-center space-y-4">
@@ -169,7 +178,7 @@ export default function KQBH() {
                                 setCurrentPage("search");
                                 setSearchCode("");
                             }}
-                            className="w-full mt-6 bg-secondary hover:bg-secondary/90 text-white"
+                            className="w-full mt-6 bg-blue-800 hover:bg-red-300 text-white"
                         >
                             Đóng
                         </Button>
@@ -183,7 +192,7 @@ export default function KQBH() {
         <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-4">
             <div className="max-w-4xl mx-auto space-y-6 bg-black/50  rounded-2xl">
                 <Card className="shadow-md border-0  rounded-2xl">
-                    <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white  rounded-t-2xl">
+                    <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-t-2xl">
                         <div className="flex items-center space-x-4">
                             <Button
                                 variant="ghost"
@@ -198,7 +207,7 @@ export default function KQBH() {
                             </CardTitle>
                         </div>
                     </CardHeader>
-                    <CardContent className="p-6 space-y-4">
+                    <CardContent className="p-6 space-y-4 bg-gray-50">
                         {tickets.map((ticket) => (
                             <div
                                 key={ticket.id}
@@ -358,10 +367,37 @@ export default function KQBH() {
         </div>
     );
 
-    if (currentPage === "search") return renderSearch();
-    if (currentPage === "no-results") return renderNoResults();
-    if (currentPage === "findbyid") return findbyid();
-    if (currentPage === "findbyphonenb") return findbysdt();
+    const renderPage = () => {
+        if (currentPage === "search") return renderSearch();
+        if (currentPage === "no-results") return renderNoResults();
+        if (currentPage === "findbyid") return findbyid();
+        if (currentPage === "findbyphonenb") return findbysdt();
+        return null;
+    };
 
-    return null;
+    return (
+        <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
+            <header
+                className="w-full h-[150px] sm:h-[200px] lg:h-[300px] shadow flex items-center justify-center">
+                <img
+                    src={headerLogo}
+                    alt="Header Logo"
+                    className="w-full h-full max-w-[1440px] object-cover"
+                />
+            </header>
+
+            <main className="flex-1">{renderPage()}</main>
+            <footer className="w-full bg-gray-100 shadow-inner items-center justify-center">
+                <img
+                    src={footerLogo}
+                    alt="Footer Logo"
+                    className="h-auto max-w--full w-auto"
+                />
+                <div className="flex items-center justify-center">
+                    <Ndyduc />
+                </div>
+            </footer>
+
+        </div>
+    );
 }

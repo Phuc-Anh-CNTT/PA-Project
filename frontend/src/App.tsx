@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import KQBH from "./pages/KQBH";
-import ndyduc from "./ndyduc";
 
 function App() {
   return (

@@ -23,7 +23,7 @@ def get_kqbh_by_id(db: Session, so_phieu_nhan: str, limit: int = 50) -> List[Dic
             PhieuBH.ngay_hen_tra,
             PhieuBH.ngay_tra,
         )
-        .filter(PhieuBH.so_phieu_nhan.like(f"%{so_phieu_nhan}%"))
+        .filter(PhieuBH.so_phieu_nhan == so_phieu_nhan)
         .limit(limit)
         .all()
     )
@@ -52,7 +52,7 @@ def get_kqbh_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Dict[str, An
             func.count(PhieuBH.id).label("so_luong"),
             func.min(PhieuBH.id).label("min_id")  # lấy 1 id đại diện
         )
-        .filter(PhieuBH.sdt.like(f"%{sdt}%"))
+        .filter(PhieuBH.sdt == sdt)
         .group_by(PhieuBH.so_phieu_nhan)
         .subquery()
     )

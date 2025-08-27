@@ -1,23 +1,26 @@
-# Stage 0, "build-stage", based on Node.js, to build and compile the frontend
-FROM node:20 AS build-stage
+# Stage 1: Build app
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
-COPY package*.json /app/
+# copy package trước để cache npm install
+COPY frontend/package*.json ./
+RUN npm ci --legacy-peer-deps
 
-RUN npm install
+# copy source code
+COPY frontend .
 
-COPY ./ /app/
-
-ARG VITE_API_URL=${VITE_API_URL}
-
+# build production
 RUN npm run build
 
+# Stage 2: Serve bằng Nginx
+FROM nginx:alpine
 
-# Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
-FROM nginx:1
+# copy dist sang nginx
+COPY --from=build /app/dist /usr/share/nginx/html
 
-COPY --from=build-stage /app/dist/ /usr/share/nginx/html
+# copy config nginx custom nếu có
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-COPY ./nginx-backend-not-found.conf /etc/nginx/extra-conf.d/backend-not-found.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
