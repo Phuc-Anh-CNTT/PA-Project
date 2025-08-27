@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from typing import Optional
+from math import ceil
 from sqlalchemy.orm import Session
 from backend.app.core.SqlServerPA import *
 from backend.app.model.Phieubh import *
@@ -26,6 +27,14 @@ def get_kqbh_by_key(req: dict, db: Session = Depends(get_db)):
     else:
         data = get_kqbh_by_sdt(db, keyword, limit=limit)
         kind = "phone"
+
+    # Xử lý mask serial và sdt
+    for d in data:
+        if "serial" in d and d["serial"]:
+            d["serial"] = mask_half(d["serial"])
+        if "sdt" in d and d["sdt"]:
+            d["sdt"] = mask_half(d["sdt"])
+
     return {"kind": kind, "data": data}
 
 
@@ -63,3 +72,12 @@ def kqbh_search(request: SearchRequest):
         raise HTTPException(status_code=404, detail="Không tìm thấy thông tin")
 
     return {"results": results}
+
+
+def mask_half(value: str) -> str:
+    if not value:
+        return value
+    n = len(value)
+    half = ceil(n / 2)
+    return "*" * half + value[half:]
+

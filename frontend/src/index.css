@@ -4007,7 +4007,7 @@
 }
 
 :root {
-  --font-size: 14px;
+  --font-size: 12px;
   --background: #fff;
   --foreground: oklch(.145 0 0);
   --card: #fff;
@@ -4084,6 +4084,3 @@
   --sidebar-ring: oklch(.439 0 0);
 }
 
-html {
-  font-size: var(--font-size);
-}

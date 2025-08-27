@@ -3,9 +3,11 @@ import {Button} from "../components/ui/button";
 import {Input} from "../components/ui/input";
 import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
 import {Package} from "lucide-react";
-import { AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, Phone, AlertTriangle, User} from "lucide-react";
+import {AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, Phone, AlertTriangle, User} from "lucide-react";
 import {StatusStepper} from "../components/KQBH/StatusStepper";
 import {PhieuBHsdtModel, PhieuBHByIdModel} from "../phieu_bh";
+import headerLogo from "../../public/assets/images/banner-bao-hanh.jpg";
+import footerLogo from "../../public/assets/images/footer.png";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -21,7 +23,7 @@ interface Ticket {
     receiveDate?: string;
     expectedReturnDate?: string;
     actualReturnDate?: string | null;
-    status?: string;
+    status?: string | "Đã trả";
     description: string;
     kind: string;
     so_luong?: number; // dùng cho phone
@@ -31,22 +33,40 @@ export default function KQBH() {
     const [currentPage, setCurrentPage] = useState<PageState>("search");
     const [searchCode, setSearchCode] = useState("");
     const [tickets, setTickets] = useState<Ticket[]>([]);
-    const statusbh = "Chờ khách đến lấy";
+    const statusbh = "Đã trả khách";
+    const [phoneTickets, setPhoneTickets] = useState<Ticket[]>([]);
+    const [pageStack, setPageStack] = useState<PageState[]>([]);
+
+    const goToPage = (page: PageState) => {
+        setPageStack(prev => [...prev, currentPage]);
+        setCurrentPage(page);
+    }
+
+    const goBack = () => {
+        setPageStack(prev => {
+            if (prev.length === 0) return prev;
+            const last = prev[prev.length - 1];
+            setCurrentPage(last);
+            return prev.slice(0, -1);
+        });
+    }
+
     const formatDate = (dateString?: string | null) => {
         if (!dateString) return "—";
         const date = new Date(dateString);
         return `${date.getDate().toString().padStart(2, "0")}-${(date.getMonth() + 1).toString().padStart(2, "0")}-${date.getFullYear().toString().slice(-2)}`;
     };
 
-    const handleSearch = async (e: React.FormEvent) => {
-        e.preventDefault();
-        if (!searchCode.trim()) return;
+    const handleSearch = async (e: React.FormEvent | null, keyword?: string) => {
+        if (e) e.preventDefault();
+        const searchValue = keyword ?? searchCode;
+        if (!searchValue.trim()) return;
 
         try {
             const res = await fetch(`${API_URL}/api/v1/kqbh/get-kqbh-by-key`, {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({keyword: searchCode, limit: 50}),
+                body: JSON.stringify({keyword: searchValue, limit: 50}),
             });
             if (!res.ok) throw new Error("Lỗi khi gọi API");
             const json = await res.json();
@@ -69,24 +89,24 @@ export default function KQBH() {
                             kind: "id",
                         }))
                     );
-                    setCurrentPage("findbyid"); // <-- Chuyển trang sang findbyid
+                    goToPage("findbyid")
                 } else if (json.kind === "phone") {
-                    setTickets(
-                        json.data.map((d: any) => ({
-                            id: d.id,
-                            sophieunhan: d.so_phieu_nhan,
-                            Name: d.ten_khach,
-                            phoneNumber: d.sdt,
-                            receiveDate: d.ngay_nhan,
-                            expectedReturnDate: d.ngay_hen_tra,
-                            actualReturnDate: d.ngay_tra,
-                            so_luong: d.so_luong,
-                            kind: "phone",
-                            status: d.status || undefined,
-                            description: "",
-                        }))
-                    );
-                    setCurrentPage("findbyphonenb");
+                    let data = json.data.map((d: any) => ({
+                        id: d.id,
+                        sophieunhan: d.so_phieu_nhan,
+                        Name: d.ten_khach,
+                        phoneNumber: d.sdt,
+                        receiveDate: d.ngay_nhan,
+                        expectedReturnDate: d.ngay_hen_tra,
+                        actualReturnDate: d.ngay_tra,
+                        so_luong: d.so_luong,
+                        kind: "phone",
+                        status: d.status || "Đã trả",
+                        description: "",
+                    }))
+                    setTickets(data);
+                    setPhoneTickets(data);
+                    goToPage("findbyphonenb");
                 }
             } else {
                 setCurrentPage("no-results");
@@ -98,10 +118,10 @@ export default function KQBH() {
     };
 
     const renderSearch = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-red-50 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-4">
             <Card className="w-full max-w-md shadow-xl border-0">
                 <CardHeader className="text-center bg-gradient-to-r from-primary to-secondary text-white rounded-t-lg">
-                    <CardTitle>Tra Cứu Kết Quả Bảo Hành</CardTitle>
+                    <CardTitle className="text-xl ">Tra Cứu Bảo Hành Phúc Anh</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8">
                     <form onSubmit={handleSearch} className="space-y-6">
@@ -120,7 +140,7 @@ export default function KQBH() {
                         </div>
                         <Button
                             type="submit"
-                            className="w-full h-12 bg-secondary hover:bg-secondary/90 text-white"
+                            className="w-full h-12 bg-red-400 hover:bg-blue-500 text-white"
                             disabled={!searchCode.trim()}
                         >
                             <Search className="w-5 h-5 mr-2"/> Tìm Kiếm
@@ -160,20 +180,20 @@ export default function KQBH() {
     );
 
     const findbyid = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-red-50 p-4">
-            <div className="max-w-4xl mx-auto space-y-6">
-                <Card className="shadow-md border-0">
-                    <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-4">
+            <div className="max-w-4xl mx-auto space-y-6 bg-black/50  rounded-2xl">
+                <Card className="shadow-md border-0  rounded-2xl">
+                    <CardHeader className="bg-gradient-to-r from-primary to-secondary text-white  rounded-t-2xl">
                         <div className="flex items-center space-x-4">
                             <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => setCurrentPage("search")}
-                                className="text-white hover:bg-white/20"
+                                onClick={goBack}
+                                className="text-white bg-blue-500 hover:bg-blue-200"
                             >
                                 ← Quay lại
                             </Button>
-                            <CardTitle>
+                            <CardTitle className="c">
                                 Kết Quả Tra Cứu ({tickets.length} sản phẩm)
                             </CardTitle>
                         </div>
@@ -188,24 +208,27 @@ export default function KQBH() {
                                     <CardContent className="p-4 space-y-3">
                                         {/* Hàng 1: Tên sản phẩm + Mô tả lỗi */}
                                         <div className="items-center">
-                                            <div className="flex-1 flex items-center">
-                                                <Package className="w-4 h-4 text-blue-500 mr-2"/>
-                                                <h3 className="font-medium text-gray-900 text-xs">{ticket.product}</h3>
-                                            </div>
-                                            <div className="flex items-center">
-                                                <AlertCircle className="w-4 h-4 text-red-500 mr-2"/>
-                                                <p className="text-gray-600 mt-1">{ticket.description}</p>
+                                            <div className="flex flex-col space-y-2 items-start">
+                                                <div className="flex items-center space-x-1">
+                                                    <Package className="w-5 h-5 text-blue-500"/>
+                                                    <span
+                                                        className="font-medium text-gray-900 text-lg">{ticket.product}</span>
+                                                </div>
+                                                <div className="flex items-center space-x-1">
+                                                    <AlertCircle className="w-5 h-5 text-red-500"/>
+                                                    <span className="text-gray-600 text-sm">{ticket.description}</span>
+                                                </div>
                                             </div>
                                         </div>
 
                                         {/* Hàng 2: Serial + Số phiếu */}
                                         <div className="flex items-center justify-between text-gray-600 gap-16">
-                                            <div className="flex items-center">
+                                            <div className="flex-1 flex items-center">
                                                 <Hash className="w-4 h-4 text-gray-500 mr-2"/>
                                                 <span className="font-medium">Serial:</span>
                                                 <span className="ml-1">{ticket.serial}</span>
                                             </div>
-                                            <div className="flex items-center text-gray-600">
+                                            <div className="flex-1 flex items-center text-gray-600">
                                                 <FileText className="w-4 h-4 text-gray-500 mr-2"/>
                                                 <span className="font-medium">Số phiếu:</span>
                                                 <span className="ml-1">{ticket.sophieunhan}</span>
@@ -260,17 +283,14 @@ export default function KQBH() {
             </div>
         </div>
     );
-    const renderTickets = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-red-50 p-6">
+    const findbysdt = () => (
+        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="max-w-7xl mx-auto">
                 <Button
                     variant="ghost"
                     size="sm"
-                    onClick={() => {
-                        setCurrentPage("search");
-                        setSearchCode("");
-                    }}
-                    className="mb-4 text-white bg-secondary hover:bg-secondary/90"
+                    onClick={goBack}
+                    className="mb-4 text-white bg-blue-500 hover:bg-blue-300"
                 >
                     ← Quay lại
                 </Button>
@@ -281,7 +301,11 @@ export default function KQBH() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {tickets.map((ticket) => (
                         <Card key={ticket.id}
-                              className="shadow-md hover:shadow-lg transition-shadow cursor-pointer border-l-4 border-l-blue-500">
+                              className="shadow-md hover:shadow-2xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
+                              onClick={() => {
+                                  goToPage("findbyid");
+                                  handleSearch(null, ticket.sophieunhan);
+                              }}>
                             <CardContent className="p-4 space-y-4">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center text-gray-700">
@@ -292,16 +316,13 @@ export default function KQBH() {
                                     <span
                                         className={`px-2 py-1 rounded text-xs font-medium ${
                                             ticket.status === "Đã trả" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"
-                                        }`}
-                                    >
-                    {ticket.status || "Chưa trả"}
-                  </span>
+                                        }`}> {ticket.status} </span>
                                 </div>
 
-                                <div className="flex items-center justify-between text-gray-700">
+                                <div className="flex items-center justify-between text-gray-700 gap-3">
                                     <div className="flex items-center">
-                                        <User className="w-4 h-4 text-gray-500 mr-2"/>
-                                        <span>{ticket.Name}</span>
+                                        <User className="w-6 h-6 text-gray-500 mr-2"/>
+                                        <span className="!text-[2px] font-medium">{ticket.Name}</span>
                                     </div>
                                     <div className="flex items-center">
                                         <Phone className="w-4 h-4 text-gray-500 mr-2"/>
@@ -340,7 +361,7 @@ export default function KQBH() {
     if (currentPage === "search") return renderSearch();
     if (currentPage === "no-results") return renderNoResults();
     if (currentPage === "findbyid") return findbyid();
-    if (currentPage === "findbyphonenb") return renderTickets();
+    if (currentPage === "findbyphonenb") return findbysdt();
 
     return null;
 }

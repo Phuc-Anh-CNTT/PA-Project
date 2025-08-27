@@ -45,31 +45,31 @@ def get_kqbh_by_id(db: Session, so_phieu_nhan: str, limit: int = 50) -> List[Dic
 
 
 def get_kqbh_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Dict[str, Any]]:
+    # Subquery: group theo so_phieu_nhan, đếm số lượng
     subq = (
         db.query(
             PhieuBH.so_phieu_nhan.label("so_phieu_nhan"),
-            func.count(PhieuBH.id).label("so_luong")
+            func.count(PhieuBH.id).label("so_luong"),
+            func.min(PhieuBH.id).label("min_id")  # lấy 1 id đại diện
         )
         .filter(PhieuBH.sdt.like(f"%{sdt}%"))
         .group_by(PhieuBH.so_phieu_nhan)
         .subquery()
     )
 
-    # Join với bảng chính để lấy chi tiết
+    # Join với bảng chính chỉ lấy 1 bản ghi đại diện theo min_id
     rows = (
         db.query(
             PhieuBH.id,
             PhieuBH.so_phieu_nhan,
             PhieuBH.ten_khach,
             PhieuBH.sdt,
-            # PhieuBH.mo_ta_loi_luc_tiep_nhan,
             PhieuBH.ngay_nhan,
             PhieuBH.ngay_hen_tra,
             PhieuBH.ngay_tra,
             subq.c.so_luong
         )
-        .join(subq, PhieuBH.so_phieu_nhan == subq.c.so_phieu_nhan)
-        .filter(PhieuBH.sdt.like(f"%{sdt}%"))
+        .join(subq, PhieuBH.id == subq.c.min_id)
         .limit(limit)
         .all()
     )
@@ -80,7 +80,6 @@ def get_kqbh_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Dict[str, An
             "so_phieu_nhan": r.so_phieu_nhan,
             "ten_khach": r.ten_khach,
             "sdt": r.sdt,
-            # "mo_ta_loi_luc_tiep_nhan": r.mo_ta_loi_luc_tiep_nhan,
             "ngay_nhan": r.ngay_nhan,
             "ngay_hen_tra": r.ngay_hen_tra,
             "ngay_tra": r.ngay_tra,
