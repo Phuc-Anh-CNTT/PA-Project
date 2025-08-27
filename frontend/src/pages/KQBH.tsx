@@ -46,6 +46,7 @@ export default function KQBH() {
         setPageStack(prev => {
             if (prev.length === 0) return prev;
             const last = prev[prev.length - 1];
+            // setSearchCode("");
             setCurrentPage(last);
             return prev.slice(0, -1);
         });
@@ -245,12 +246,12 @@ export default function KQBH() {
                                         </div>
 
                                         {/* Hàng 3: Tên khách hàng + Số điện thoại */}
-                                        <div className="flex items-center gap-12 text-gray-600">
-                                            <div className="flex items-center">
+                                        <div className="flex items-center gap-16 text-gray-600">
+                                            <div className="flex-1 flex items-center">
                                                 <User className="w-4 h-4 text-gray-500 mr-2"/>
                                                 <span>{ticket.Name}</span>
                                             </div>
-                                            <div className="flex items-center">
+                                            <div className="flex-1 flex items-center">
                                                 <Phone className="w-4 h-4 mr-2"/>
                                                 <span>{ticket.phoneNumber}</span>
                                             </div>
