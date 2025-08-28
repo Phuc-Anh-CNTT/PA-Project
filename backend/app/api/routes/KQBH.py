@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from typing import Optional
 from math import ceil
+from fastapi import Body, HTTPException
 from sqlalchemy.orm import Session
 from backend.app.core.SqlServerPA import *
 from backend.app.model.Phieubh import *
@@ -17,25 +18,35 @@ def test_db(db: Session = Depends(get_db)):
 
 
 @router.post("/get-kqbh-by-key")
-def get_kqbh_by_key(req: dict, db: Session = Depends(get_db)):
-    keyword: str = req.get("keyword")
-    limit: int = req.get("limit", 20)
+def get_kqbh_by_key(req: dict = Body(...), db: Session = Depends(get_db)):
+    try:
+        keyword: str = req.get("keyword")
+        limit: int = req.get("limit", 20)
 
-    if '-' in keyword:
-        data = get_kqbh_by_id(db, keyword, limit=limit)
-        kind = "id"
-    else:
-        data = get_kqbh_by_sdt(db, keyword, limit=limit)
-        kind = "phone"
+        if not keyword or not isinstance(keyword, str):
+            raise HTTPException(status_code=400, detail="keyword không hợp lệ")
 
-    # Xử lý mask serial và sdt
-    for d in data:
-        if "serial" in d and d["serial"]:
-            d["serial"] = mask_half(d["serial"])
-        if "sdt" in d and d["sdt"]:
-            d["sdt"] = mask_half(d["sdt"])
+        if '-' in keyword:
+            data = get_kqbh_by_id(db, keyword, limit=limit)
+            kind = "id"
+        else:
+            data = get_kqbh_by_sdt(db, keyword, limit=limit)
+            kind = "phone"
 
-    return {"kind": kind, "data": data}
+        # Xử lý mask serial và sdt
+        for d in data:
+            if "serial" in d and d["serial"]:
+                d["serial"] = mask_half(d["serial"])
+            if "sdt" in d and d["sdt"]:
+                d["sdt"] = mask_half(d["sdt"])
+
+        return {"kind": kind, "data": data}
+
+    except HTTPException as he:
+        raise he  # Bắt HTTPException để trả đúng status code
+    except Exception as e:
+        print("Lỗi khi xử lý get-kqbh-by-key:", e)
+        raise HTTPException(status_code=500, detail="Lỗi server nội bộ")
 
 
 # Schema để nhận dữ liệu từ POST body
