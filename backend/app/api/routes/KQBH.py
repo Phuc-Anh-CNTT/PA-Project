@@ -3,8 +3,8 @@ from pydantic import BaseModel
 from typing import Optional
 from math import ceil
 from sqlalchemy.orm import Session
-from backend.app.core.SqlServerPA import *
-from backend.app.model.Phieubh import *
+from app.core.SqlServerPA import *
+from app.model.Phieubh import *
 from fastapi import Form
 
 router = APIRouter(prefix="/kqbh", tags=["kqbh"])

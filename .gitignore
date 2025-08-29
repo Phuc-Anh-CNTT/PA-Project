@@ -5,4 +5,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /backend/.env
-/frontend/.env
+/frontend/.env.env
+frontend/.env

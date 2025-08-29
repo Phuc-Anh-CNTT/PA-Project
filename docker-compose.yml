@@ -177,6 +177,7 @@ services:
   backend:
     build:
       context: ./backend
+      dockerfile: Dockerfile
     image: '${DOCKER_IMAGE_BACKEND}:${TAG-latest}'
     restart: always
     env_file:
@@ -198,7 +199,8 @@ services:
   frontend:
     build:
       context: ./frontend
-      args:
+      dockerfile: Dockerfile
+      args:      
         - VITE_API_URL=https://api.${DOMAIN}
         - NODE_ENV=production
     image: '${DOCKER_IMAGE_FRONTEND}:${TAG-latest}'
