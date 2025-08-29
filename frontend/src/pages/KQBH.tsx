@@ -224,7 +224,7 @@ export default function KQBH() {
     );
 
     const findbyid = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-4">
+        <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-4">
             <div className="max-w-6xl mx-auto space-y-6 bg-black/60  rounded-2xl">
                 <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
                     <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
@@ -290,10 +290,10 @@ export default function KQBH() {
                                             <div className="flex-1 flex items-center overflow-hidden">
                                                 <User className="w-4 h-4 flex-shrink-0 text-gray-500 mr-2"/>
                                                 <div className="relative flex-1 overflow-hidden">
-                                                    <div className="flex whitespace-nowrap animate-marquee">
+                                                    <div className="flex whitespace-nowrap ">
                                                         <span className="mr-8">{ticket.Name}</span>
-                                                        <span
-                                                            className="mr-8">{ticket.Name}</span> {/* copy để lặp liên tục */}
+                                                        {/*<span*/}
+                                                        {/*    className="mr-8">{ticket.Name}</span> /!* copy để lặp liên tục *!/*/}
                                                     </div>
                                                 </div>
                                             </div>
