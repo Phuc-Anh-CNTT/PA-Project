@@ -8,6 +8,8 @@ from app.core.SqlServerPA import *
 from app.model.Phieubh import *
 from fastapi import Form
 
+from backend.app.model.Phieubh import get_kqbh_by_id, get_kqbh_by_sdt
+
 router = APIRouter(prefix="/kqbh", tags=["kqbh"])
 
 

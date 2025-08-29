@@ -165,6 +165,17 @@
   }
 }
 
+@keyframes marquee {
+  0%   { transform: translateX(15%); }
+  100% { transform: translateX(-70%); } /* -50% vì có 2 bản copy */
+}
+
+.animate-marquee {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 5s linear infinite;
+}
+
 @layer utilities {
   .\@container\/card-header {
     container: card-header / inline-size;

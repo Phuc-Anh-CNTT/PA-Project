@@ -2,9 +2,28 @@
 import React, {useState} from "react";
 import {Button} from "../components/ui/button";
 import {Input} from "../components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
+import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
 import {Package} from "lucide-react";
-import { Facebook, Youtube, Zap, CheckSquare, CornerDownRight, AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, MapPin, Phone, Mail, Calendar, AlertTriangle, User} from "lucide-react";
+import {
+    Facebook,
+    Youtube,
+    Zap,
+    CheckSquare,
+    CornerDownRight,
+    AlertCircle,
+    FileText,
+    Hash,
+    Inbox,
+    Clock,
+    Search,
+    CheckCircle,
+    MapPin,
+    Phone,
+    Mail,
+    Calendar,
+    AlertTriangle,
+    User
+} from "lucide-react";
 import {StatusStepper} from "../components/KQBH/StatusStepper";
 
 import Ndyduc from "../ndyduc";
@@ -58,7 +77,7 @@ export default function KQBH() {
         setPageStack(prev => {
             if (prev.length === 0) return prev;
             const last = prev[prev.length - 1];
-            // setSearchCode("");
+            setSearchCode("");
             setCurrentPage(last);
             return prev.slice(0, -1);
         });
@@ -67,7 +86,10 @@ export default function KQBH() {
     const formatDate = (dateString?: string | null) => {
         if (!dateString) return "—";
         const date = new Date(dateString);
-        return `${date.getDate().toString().padStart(2, "0")}-${(date.getMonth() + 1).toString().padStart(2, "0")}-${date.getFullYear().toString().slice(-2)}`;
+        const day = date.getDate().toString().padStart(2, "0");
+        const month = (date.getMonth() + 1).toString().padStart(2, "0");
+        const year = date.getFullYear().toString();
+        return `${day}-${month}-${year}`;
     };
 
     const handleSearch = async (e: React.FormEvent | null, keyword?: string) => {
@@ -203,9 +225,9 @@ export default function KQBH() {
 
     const findbyid = () => (
         <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-4">
-            <div className="max-w-4xl mx-auto space-y-6 bg-black/50  rounded-2xl">
-                <Card className="shadow-md border-0  rounded-2xl">
-                    <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-t-2xl">
+            <div className="max-w-6xl mx-auto space-y-6 bg-black/60  rounded-2xl">
+                <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
+                    <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
                         <div className="flex items-center space-x-4">
                             <Button
                                 variant="ghost"
@@ -229,17 +251,23 @@ export default function KQBH() {
                                 <Card className="border-l-4 border-l-secondary">
                                     <CardContent className="p-4 space-y-3">
                                         {/* Hàng 1: Tên sản phẩm + Mô tả lỗi */}
-                                        <div className="items-center">
-                                            <div className="flex flex-col space-y-2 items-start">
-                                                <div className="flex items-center space-x-1">
-                                                    <Package className="w-5 h-5 text-blue-500"/>
+                                        <div className="flex flex-col space-y-2 min-w-0">
+                                            {/* Tên sản phẩm với icon */}
+                                            <div className="flex flex-col space-y-2 min-w-0">
+                                                {/* Tên sản phẩm với icon */}
+                                                <div className="flex items-center space-x-1 flex-1 min-w-0">
+                                                    <Package className="w-5 h-5 text-blue-500 flex-shrink-0"/>
                                                     <span
-                                                        className="font-medium text-gray-900 text-lg">{ticket.product}</span>
+                                                        className="font-bold text-2xl text-gray-900 truncate overflow-hidden whitespace-nowrap flex-1">
+                                                      {ticket.product}
+                                                    </span>
                                                 </div>
-                                                <div className="flex items-center space-x-1">
-                                                    <AlertCircle className="w-5 h-5 text-red-500"/>
-                                                    <span className="text-gray-600 text-sm">{ticket.description}</span>
-                                                </div>
+                                            </div>
+                                            {/* Mô tả lỗi */}
+                                            <div className="flex items-center space-x-1">
+                                                <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0"/>
+                                                <span
+                                                    className="text-gray-600 text-sm truncate">{ticket.description}</span>
                                             </div>
                                         </div>
 
@@ -251,20 +279,26 @@ export default function KQBH() {
                                                 <span className="ml-1">{ticket.serial}</span>
                                             </div>
                                             <div className="flex-1 flex items-center text-gray-600">
-                                                <FileText className="w-4 h-4 text-gray-500 mr-2"/>
+                                            <FileText className="w-4 h-4 text-gray-500 mr-2"/>
                                                 <span className="font-medium">Số phiếu:</span>
                                                 <span className="ml-1">{ticket.sophieunhan}</span>
                                             </div>
                                         </div>
 
                                         {/* Hàng 3: Tên khách hàng + Số điện thoại */}
-                                        <div className="flex items-center gap-16 text-gray-600">
-                                            <div className="flex-1 flex items-center">
-                                                <User className="w-4 h-4 text-gray-500 mr-2"/>
-                                                <span>{ticket.Name}</span>
+                                        <div className="flex flex-col sm:flex-row text-gray-600 gap-16">
+                                            <div className="flex-1 flex items-center overflow-hidden">
+                                                <User className="w-4 h-4 flex-shrink-0 text-gray-500 mr-2"/>
+                                                <div className="relative flex-1 overflow-hidden">
+                                                    <div className="flex whitespace-nowrap animate-marquee">
+                                                        <span className="mr-8">{ticket.Name}</span>
+                                                        <span
+                                                            className="mr-8">{ticket.Name}</span> {/* copy để lặp liên tục */}
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className="flex-1 flex items-center">
-                                                <Phone className="w-4 h-4 mr-2"/>
+                                            <div className=" flex-1 flex items-center gap-2 min-w-[120px]">
+                                                <Phone className="w-4 h-4 flex-shrink-0"/>
                                                 <span>{ticket.phoneNumber}</span>
                                             </div>
                                         </div>
@@ -306,7 +340,7 @@ export default function KQBH() {
         </div>
     );
     const findbysdt = () => (
-        <div className="min-h-screen bg-gradient-to-br from-blue-200 to-red-200 p-6">
+        <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="max-w-7xl mx-auto">
                 <Button
                     variant="ghost"
@@ -320,7 +354,7 @@ export default function KQBH() {
                     {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     {tickets.map((ticket) => (
                         <Card key={ticket.id}
                               className="shadow-md hover:shadow-2xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
@@ -342,9 +376,14 @@ export default function KQBH() {
                                 </div>
 
                                 <div className="flex items-center justify-between text-gray-700 gap-3">
-                                    <div className="flex items-center">
-                                        <User className="w-6 h-6 text-gray-500 mr-2"/>
-                                        <span className="!text-[2px] font-medium">{ticket.Name}</span>
+                                    <div className="flex items-center overflow-hidden">
+                                        <User className="w-6 h-6 text-gray-500 mr-2 flex-shrink-0"/>
+                                        <div className="relative flex-1 overflow-hidden">
+                                            <div className="flex whitespace-nowrap animate-marquee">
+                                                <span className="mr-8">{ticket.Name}</span>
+                                                <span className="mr-8">{ticket.Name}</span> {/* lặp để chạy liên tục */}
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="flex items-center">
                                         <Phone className="w-4 h-4 text-gray-500 mr-2"/>
@@ -352,18 +391,18 @@ export default function KQBH() {
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-3 gap-2 text-sm text-gray-600">
-                                    <div className="flex items-center gap-1">
-                                        <Inbox className="w-4 h-4 text-blue-500"/>
-                                        <span>{formatDate(ticket.receiveDate)}</span>
+                                <div className="grid grid-cols-3 gap-2 text-gray-600 text-xs">
+                                    <div className="flex items-center gap-1 overflow-hidden">
+                                        <Inbox className="w-4 h-4 text-blue-500 flex-shrink-0"/>
+                                        <span className="truncate">{formatDate(ticket.receiveDate)}</span>
                                     </div>
-                                    <div className="flex items-center gap-1">
-                                        <Clock className="w-4 h-4 text-orange-500"/>
-                                        <span>{formatDate(ticket.expectedReturnDate)}</span>
+                                    <div className="flex items-center gap-1 overflow-hidden">
+                                        <Clock className="w-4 h-4 text-orange-500 flex-shrink-0"/>
+                                        <span className="truncate">{formatDate(ticket.expectedReturnDate)}</span>
                                     </div>
-                                    <div className="flex items-center gap-1">
-                                        <CheckCircle className="w-4 h-4 text-green-500"/>
-                                        <span>{formatDate(ticket.actualReturnDate)}</span>
+                                    <div className="flex items-center gap-1 overflow-hidden">
+                                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0"/>
+                                        <span className="truncate">{formatDate(ticket.actualReturnDate)}</span>
                                     </div>
                                 </div>
 
@@ -401,8 +440,8 @@ export default function KQBH() {
             <main className="flex-1">{renderPage()}</main>
             <div className="bg2">
                 <div className="container ">
-                <div className="vc_row wpb_row vc_row-fluid">
-                    <div className="wpb_column vc_column_container vc_col-sm-12">
+                    <div className="vc_row wpb_row vc_row-fluid">
+                        <div className="wpb_column vc_column_container vc_col-sm-12">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
                                     <div className="vc_empty_space">
@@ -782,11 +821,11 @@ export default function KQBH() {
                                     <a href="">phucanh.xadan@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                    <Calendar className="w-4 h-4"/>
                                     <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/nNrnPqeNJ96kyTbh7"
                                         target="_blank"
@@ -802,23 +841,23 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">152-154 Trần Duy Hưng, Cầu Giấy, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">(024) 3968 9966 (ext 2)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">phucanh.tranduyhung@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                    <Calendar className="w-4 h-4"/>
                                     <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/jV44ifZSyWgBh8vR6"
                                         target="_blank"
@@ -834,19 +873,19 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">Tầng 5, 134 Thái Hà, Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">097 322 7711</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">kdpp@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/tm7CEhMUJiCnY5na7"
                                         target="_blank"
@@ -865,23 +904,23 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">Tầng 5,134 Thái Hà, Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">1900 2164 (ext 2)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">Hoặc 038 658 6699</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">kdda@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/5eGDBEAPxfmuth596"
                                         target="_blank"
@@ -897,23 +936,23 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">89 Lê Duẩn, Cửa Nam, Hoàn Kiếm, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">(024) 3968 9966 (ext 6)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">phucanh.leduan@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                    <Calendar className="w-4 h-4"/>
                                     <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/vssCMwPuSZvUey378"
                                         target="_blank"
@@ -929,23 +968,23 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">134 Thái Hà, Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">(024) 3968 9966 (ext 3)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">phucanh.thaiha@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                    <Calendar className="w-4 h-4"/>
                                     <a href="">Giờ mở cửa từ 08h đến 21h00</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/MXTQaRNwRjJp5Whb9"
                                         target="_blank"
@@ -961,23 +1000,23 @@ export default function KQBH() {
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a href="">141-143 Phạm Văn Đồng, Cầu Giấy, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4" />
+                                    <Phone className="w-4 h-4"/>
                                     <a href="">(024) 3968 9966 (ext 5)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4" />
+                                    <Mail className="w-4 h-4"/>
                                     <a href="">phucanh.phamvandong@phucanh.com.vn</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4" />
+                                    <Calendar className="w-4 h-4"/>
                                     <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4" />
+                                    <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/HGWR4uGCS8P8nndR7"
                                         target="_blank"
