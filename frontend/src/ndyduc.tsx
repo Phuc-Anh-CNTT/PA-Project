@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from "react";
 import { Github, Twitter, Instagram, Phone } from "lucide-react";
 

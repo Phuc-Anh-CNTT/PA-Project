@@ -1,5 +1,6 @@
 import secrets
 import warnings
+import os
 from urllib.parse import quote_plus
 from typing import Annotated, Any, Literal
 from pydantic import Field
@@ -33,7 +34,6 @@ class Settings(BaseSettings):
     API_V1_STR: str
     SECRET_KEY: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int
-    FRONTEND_HOST: str
     ENVIRONMENT: str
 
     @property
@@ -63,9 +63,11 @@ class Settings(BaseSettings):
     @computed_field
     @property
     def all_cors_origins(self) -> list[str]:
-        return [str(origin).rstrip("/") for origin in self.BACKEND_CORS_ORIGINS] + [
-            self.FRONTEND_HOST
-        ]
+        origins = [str(origin).rstrip("/") for origin in self.BACKEND_CORS_ORIGINS]
+        for key, value in os.environ.items():
+            if key.startswith("FRONTEND_HOST") and value:
+                origins.append(value.rstrip("/"))
+        return origins
 
     # --- Required by template (dummy nếu bạn không dùng Postgres) ---
     PROJECT_NAME: str
@@ -84,4 +86,3 @@ class Settings(BaseSettings):
 settings = Settings()  # type: ignore
 
 print("DATABASE_SqlServer_URL =", settings.DATABASE_SqlServer_URL)
-

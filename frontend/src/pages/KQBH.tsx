@@ -1,14 +1,26 @@
+// @ts-ignore
 import React, {useState} from "react";
 import {Button} from "../components/ui/button";
 import {Input} from "../components/ui/input";
-import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
 import {Package} from "lucide-react";
-import {AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, Phone, AlertTriangle, User} from "lucide-react";
+import { Facebook, Youtube, Zap, CheckSquare, CornerDownRight, AlertCircle, FileText, Hash, Inbox, Clock, Search, CheckCircle, MapPin, Phone, Mail, Calendar, AlertTriangle, User} from "lucide-react";
 import {StatusStepper} from "../components/KQBH/StatusStepper";
-import Ndyduc from "../components/ndyduc";
-import headerLogo from "../assets/images/banner-bao-hanh.jpg"
-import footerLogo from "../assets/images/footer.png";
 
+import Ndyduc from "../ndyduc";
+// @ts-ignore
+import headerLogo from "../assets/images/banner-bao-hanh.jpg"
+// @ts-ignore
+import abcImg from '../assets/images/abc.png';
+// @ts-ignore
+import baohanh1 from '../assets/images/bao-hanh-1.png';
+// @ts-ignore
+import logo1 from '../assets/images/dathongbao.png';
+// @ts-ignore
+import footerLogo from "../assets/images/footer.png";
+import '../styles/kqbh.css'
+
+// @ts-ignore
 const API_URL = import.meta.env.VITE_API_URL;
 
 type PageState = "search" | "no-results" | "findbyid" | "findbyphonenb";
@@ -119,14 +131,14 @@ export default function KQBH() {
     };
 
     const renderSearch = () => (
-        <div className="h-[400px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-4">
+        <div className="h-[400px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
             <Card className="w-full max-w-md shadow-xl border-0">
                 <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg">
                     <CardTitle
-                      className="text-2xl font-bold tracking-wide text-white"
-                      style={{ fontFamily: "Times New Roman, Times, serif" }}
+                        className="text-3xl font-bold tracking-wide text-white"
+                        style={{fontFamily: "Times New Roman, Times, serif"}}
                     >
-                      Tra Cứu Bảo Hành Phúc Anh
+                        Tra Cứu Bảo Hành Phúc Anh
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -138,7 +150,7 @@ export default function KQBH() {
                             <Input
                                 id="search-code"
                                 type="text"
-                                placeholder="Nhập mã tra cứu bảo hành hoặc số điện thoại"
+                                placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại"
                                 value={searchCode}
                                 onChange={(e) => setSearchCode(e.target.value)}
                                 className="h-12 border-2 border-gray-200 focus:border-secondary"
@@ -162,7 +174,7 @@ export default function KQBH() {
             <Card className="w-full max-w-md shadow-xl border-0">
                 <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-500 text-white rounded-t-lg">
                     <CardTitle className="text-2xl font-bold tracking-wide text-white"
-                      style={{ fontFamily: "Times New Roman, Times, serif" }}
+                               style={{fontFamily: "Times New Roman, Times, serif"}}
                     >
                         Kết Quả Tra Cứu
                     </CardTitle>
@@ -378,27 +390,646 @@ export default function KQBH() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
-            <header
-                className="w-full h-[150px] sm:h-[200px] lg:h-[300px] shadow flex items-center justify-center">
+            <header className="w-full max-w-[1440px] mx-auto">
                 <img
                     src={headerLogo}
                     alt="Header Logo"
-                    className="w-full h-full max-w-[1440px] object-cover"
+                    className="w-full h-auto object-cover"
                 />
             </header>
 
             <main className="flex-1">{renderPage()}</main>
-            <footer className="w-full bg-gray-100 shadow-inner items-center justify-center">
-                <img
-                    src={footerLogo}
-                    alt="Footer Logo"
-                    className="h-auto max-w--full w-auto"
-                />
-                <div className="flex items-center justify-center">
-                    <Ndyduc />
-                </div>
-            </footer>
+            <div className="bg2">
+                <div className="container ">
+                <div className="vc_row wpb_row vc_row-fluid">
+                    <div className="wpb_column vc_column_container vc_col-sm-12">
+                            <div className="vc_column-inner">
+                                <div className="wpb_wrapper">
+                                    <div className="vc_empty_space">
+                                        <span className="vc_empty_space_inner"></span>
+                                    </div>
+                                    <div className="sec-title m-top4 h-[45px] mr-[30px]">
+                                        <div className="col-lg-12 col-md-12 col-xs-12 text-center">
+                                            <h2 className="font-bold font30 font-black text-uppercase">Danh sách các
+                                                điểm tiếp nhận bảo hành</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="vc_row wpb_row vc_row-fluid address ">
+                        <div className="wpb_column vc_column_container vc_col-sm-4">
+                            <div className="vc_column-inner">
+                                <div className="wpb_wrapper">
+                                    <div className="m-bottom4 fea-col-box active odd">
+                                        <div className="icon-boxed wide80 box-round">
+                                            01
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 1)</h2>
+                                            <p>🗺️ Số 15 Xã Đàn - Phương Liên - Đống Đa - Hà Nội</p>
+                                        </div>
+                                    </div>
+                                    <div className="m-bottom4 fea-col-box">
+                                        <div className="icon-boxed wide80 box-round">
+                                            02
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 2)</h2>
+                                            <p>🗺️ Số 152 Trần Duy Hưng - Cầu Giấy - Hà Nội</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="wpb_column vc_column_container vc_col-sm-4">
+                            <div className="vc_column-inner">
+                                <div className="wpb_wrapper">
+                                    <div className="m-bottom4 fea-col-box odd ">
+                                        <div className="icon-boxed wide80 box-round">
+                                            03
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 3)</h2>
+                                            <p>🗺️ Số 134 Thái Hà - Đống Đa - Hà Nội</p>
+                                        </div>
+                                    </div>
+                                    <div className="m-bottom4 fea-col-box active ">
+                                        <div className="icon-boxed wide80 box-round">
+                                            04
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 5)</h2>
+                                            <p>🗺️ Số 141-143 Phạm Văn Đồng - Cầu Giấy - Hà Nội</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="wpb_column vc_column_container vc_col-sm-4">
+                            <div className="vc_column-inner">
+                                <div className="wpb_wrapper">
+                                    <div className="m-bottom4 fea-col-box active odd ">
+                                        <div className="icon-boxed wide80 box-round">
+                                            05
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 6)</h2>
+                                            <p>🗺️ Số 89 Lê Duẩn - Hoàn Kiếm - Hà Nội</p>
+                                        </div>
+                                    </div>
+                                    <div className="m-bottom4 fea-col-box">
+                                        <div className="icon-boxed wide80 box-round">
+                                            📞
+                                        </div>
+                                        <div className="left-padd10">
+                                            <h2 className="font-thin m-bottom1 red">HOTLINE: 1900 2173</h2>
+                                            <p>Hoặc liên hệ trung tâm bảo hành qua số hotline để được hỗ trợ nhanh
+                                                nhất</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div className="vc_row wpb_row vc_row-fluid pb-[10px] pt-[60px]">
+                <div className="wpb_column vc_column_container vc_col-sm-12">
+                    <div className="vc_column-inner">
+                        <div className="wpb_wrapper">
+                            <div className="section-lg ">
+                                <div className="container">
+                                    <div className="col-md-6 col-sm-6 m-bottom3">
+                                        <img
+                                            src={abcImg}
+                                            alt="abc"
+                                            className="w-[548px] h-[314px]"
+                                        />
+                                    </div>
+                                    <div className="col-md-6 col-sm-6 partner">
+                                        <h2 className="font-black font-bold font30 m-bottom3 uppercase">
+                                            Tra cứu địa điểm bảo hành theo hãng
+                                        </h2>
+                                        <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+                                            {[
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-acer.html",
+                                                    src: "https://phucanhcdn.com/media/brand/acer.png",
+                                                    alt: "Acer"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-aoc.html",
+                                                    src: "https://phucanhcdn.com/media/brand/aoc.png",
+                                                    alt: "AOC"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-apple.html",
+                                                    src: "https://phucanhcdn.com/media/brand/apple.png",
+                                                    alt: "Apple"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-asus.html",
+                                                    src: "https://phucanhcdn.com/media/brand/asus.png",
+                                                    alt: "Asus"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-brother.html",
+                                                    src: "https://phucanhcdn.com/media/brand/brother.png",
+                                                    alt: "Brother"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-canon.html",
+                                                    src: "https://phucanhcdn.com/media/brand/canon.png",
+                                                    alt: "Canon"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-dell.html",
+                                                    src: "https://phucanhcdn.com/media/brand/dell.png",
+                                                    alt: "Dell"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-epson.html",
+                                                    src: "https://phucanhcdn.com/media/brand/epson.png",
+                                                    alt: "Epson"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-fuji-xerox.html",
+                                                    src: "https://phucanhcdn.com/media/brand/fujixerox.png",
+                                                    alt: "Fuji Xerox"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-hp.html",
+                                                    src: "https://phucanhcdn.com/media/brand/hp.png",
+                                                    alt: "HP"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-lenovo.html",
+                                                    src: "https://phucanhcdn.com/media/brand/lenovo.png",
+                                                    alt: "Lenovo"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-lg.html",
+                                                    src: "https://phucanhcdn.com/media/brand/lg.png",
+                                                    alt: "LG"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-linksys.html",
+                                                    src: "https://phucanhcdn.com/media/brand/linksys.png",
+                                                    alt: "Linksys"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-samsung.html",
+                                                    src: "https://phucanhcdn.com/media/brand/samsung.png",
+                                                    alt: "Samsung"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-sony.html",
+                                                    src: "https://phucanhcdn.com/media/brand/sony.png",
+                                                    alt: "Sony"
+                                                },
+                                                {
+                                                    href: "https://www.phucanh.vn/chinh-sach-bao-hanh-tp-link.html",
+                                                    src: "https://phucanhcdn.com/media/brand/tplink.png",
+                                                    alt: "TP-Link"
+                                                }
+                                            ].map((item, idx) => (
+                                                <a
+                                                    key={idx}
+                                                    href={item.href}
+                                                    target="_blank"
+                                                    className="flex justify-center items-center p-2 bg-white rounded shadow hover:shadow-lg"
+                                                >
+                                                    <img
+                                                        src={item.src}
+                                                        alt={item.alt}
+                                                        className="max-w-[169px] max-h-[56px] object-contain bg-white p-1"
+                                                        style={{
+                                                            background: "transparent",
+                                                            filter: "drop-shadow(0 0 0.3rem rgba(0,0,0,0.1))",
+                                                        }}
+                                                    />
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="wpb_column vc_column_container vc_col-sm-12">
+                <div className="vc_column-inner1">
+                    <div className="wpb_wrapper">
+                        <div className="section-lg bg-parallax-11 m-top7 ">
+                            <div className="container ">
+                                <div className="col-md-6 nopadding m-bottom4">
+                                    <div className="col-fea-box">
+                                        <h4 className="font-white font-bold font15 text-center uppercase"></h4>
+                                        <h2 className="font-white font-bold font30 text-center m-bottom3 uppercase">Chính
+                                            sách bảo hành đặc biệt</h2>
+                                        <div className="col-md-6 col-sm-6 m-bottom2 m3">
+                                            <img width="225" height="225" src={baohanh1}
+                                                 className="img-responsive attachment-full" alt="" decoding="async"
+                                                 loading="lazy" title="site-img83"/>
+                                        </div>
+                                        <div className="col-md-6 col-sm-6 m-bottom2 m7">
+                                            <ul className="font-white space-y-2">
+                                                <li className="flex items-start gap-2">
+                                                    <CheckSquare className="w-4 h-4 mt-1"/>
+                                                    <span>Bảo trì, bảo dưỡng tại nơi sử dụng</span>
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckSquare className="w-4 h-4 mt-1"/>
+                                                    <span>Bảo hành đổi mới đến 30 ngày</span>
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckSquare className="w-4 h-4 mt-1"/>
+                                                    <span>Vận chuyển miễn phí tới 300 Km</span>
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckSquare className="w-4 h-4 mt-1"/>
+                                                    <span>Sản phẩm chính hãng, giá tốt nhất</span>
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckSquare className="w-4 h-4 mt-1"/>
+                                                    <span>Và nhiều chế độ tốt cho khách hàng</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 nopadding m-bottom4">
+                                    <div className="col-fea-box-white">
+                                        <h2 className="font-black font-bold font30 text-center m-bottom3 uppercase">
+                                            Quy định và chính sách
+                                        </h2>
+                                        <div className="col-md-12">
+                                            <ul className="new-domin-list nopadding space-y-2">
+                                                <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                        <CornerDownRight className="w-4 h-4"/>
+                        Chính sách bảo hành
+                    </span>
+                                                    <a href="https://www.phucanh.vn/page/chinh-sach-bao-hanh"
+                                                       target="_blank"
+                                                       className="text-blue-600 hover:underline">
+                                                        Xem chi tiết
+                                                    </a>
+                                                </li>
+                                                <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                        <CornerDownRight className="w-4 h-4"/>
+                        Chính sách đổi trả sản phẩm
+                    </span>
+                                                    <a href="https://www.phucanh.vn/page/chinh-sach-doi-tra-san-pham"
+                                                       target="_blank"
+                                                       className="text-blue-600 hover:underline">
+                                                        Xem chi tiết
+                                                    </a>
+                                                </li>
+                                                <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                        <CornerDownRight className="w-4 h-4"/>
+                        Chính sách kinh doanh
+                    </span>
+                                                    <a href="https://www.phucanh.vn/page/chinh-sach-kinh-doanh"
+                                                       target="_blank"
+                                                       className="text-blue-600 hover:underline">
+                                                        Xem chi tiết
+                                                    </a>
+                                                </li>
+                                                <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                        <CornerDownRight className="w-4 h-4"/>
+                        Chính sách kiểm hàng
+                    </span>
+                                                    <a href="https://www.phucanh.vn/chinh-sach-kiem-hang.html"
+                                                       target="_blank"
+                                                       className="text-blue-600 hover:underline">
+                                                        Xem chi tiết
+                                                    </a>
+                                                </li>
+                                                <li className="flex justify-between items-center">
+                    <span className="flex items-center gap-2">
+                        <CornerDownRight className="w-4 h-4"/>
+                        Chính sách vận chuyển và giao nhận
+                    </span>
+                                                    <a href="https://www.phucanh.vn/page/van-chuyen-giao-nhan-hang-hoa"
+                                                       target="_blank"
+                                                       className="text-blue-600 hover:underline">
+                                                        Xem chi tiết
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer className="footer-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>PHÒNG BÁN HÀNG TRỰC TUYẾN</b></h4>
+                            <div className="title-line color"></div>
+
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4"/>
+                                    <a href="">Tầng 4, 89 Lê Duẩn, Hoàn Kiếm, Hà Nội</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4"/>
+                                    <a href="">1900 2164 (ext 1)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4"/>
+                                    <a href="">Hoặc 0974 55 88 11</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4"/>
+                                    <a href="">banhangonline@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4"/>
+                                    <a href="https://goo.gl/maps/nf2yyHHL2rDTjxAt5" target="_blank" className="yellow">
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 15 XÃ ĐÀN</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4"/>
+                                    <a href="">15 Xã Đàn, Đống Đa, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4"/>
+                                    <a href="">(024) 3968 9966 (ext 1)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4"/>
+                                    <a href="">phucanh.xadan@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/nNrnPqeNJ96kyTbh7"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 152 TRẦN DUY HƯNG</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">152-154 Trần Duy Hưng, Cầu Giấy, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">(024) 3968 9966 (ext 2)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">phucanh.tranduyhung@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/jV44ifZSyWgBh8vR6"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>PHÒNG KINH DOANH PHÂN PHỐI</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">Tầng 5, 134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">097 322 7711</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">kdpp@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/tm7CEhMUJiCnY5na7"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>PHÒNG DỰ ÁN VÀ KHÁCH HÀNG DOANH NGHIỆP</b>
+                            </h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">Tầng 5,134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">1900 2164 (ext 2)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">Hoặc 038 658 6699</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">kdda@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/5eGDBEAPxfmuth596"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 89 LÊ DUẨN</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">89 Lê Duẩn, Cửa Nam, Hoàn Kiếm, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">(024) 3968 9966 (ext 6)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">phucanh.leduan@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/vssCMwPuSZvUey378"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 134 THÁI HÀ</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">(024) 3968 9966 (ext 3)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">phucanh.thaiha@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <a href="">Giờ mở cửa từ 08h đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/MXTQaRNwRjJp5Whb9"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 141 PHẠM VĂN ĐỒNG</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a href="">141-143 Phạm Văn Đồng, Cầu Giấy, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4" />
+                                    <a href="">(024) 3968 9966 (ext 5)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4" />
+                                    <a href="">phucanh.phamvandong@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4" />
+                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4" />
+                                    <a
+                                        href="https://goo.gl/maps/HGWR4uGCS8P8nndR7"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-6 nopadding m-top1 bct">
+                            <a rel="nofollow"
+                               href="http://online.gov.vn/Home/WebDetails/3453?AspxAutoDetectCookieSupport=1"
+                               target="_blank" title="Đã đăng ký bộ công thương"><img src={logo1}
+                                                                                      alt="Đã đăng ký bộ công thương"/></a>
+                            <a rel="nofollow" target="_blank"
+                               href="https://www.dmca.com/Protection/Status.aspx?id=d2e94503-0a12-4acf-ab19-8fb8c9e8ef07&amp;refurl=https%3a%2f%2fwww.phucanh.vn%2f&amp;rlo=true"
+                               title="DMCA.com Protection Status" className="dmca-badge">
+                                <img src="https://www.phucanh.vn/template/2017/images/dmca-phucanh.png" alt="dmca"/></a>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <div className="bg-gray-900 text-white py-4">
+                <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                    <div className="text-sm text-gray-300 text-center md:text-left mb-2 md:mb-0">
+                        © 2022 Công ty TNHH Kỹ Nghệ Phúc Anh. GPKD số: 0101417128 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp
+                        ngày 07/10/2003
+                    </div>
+                    <ul className="flex items-center gap-4">
+                        <li>
+                            <a href="https://www.facebook.com/phucanhsmartworld/" target="_blank" rel="nofollow"
+                               title="Facebook" className="text-blue-600 hover:text-blue-400">
+                                <Facebook className="w-5 h-5"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCs78-o0g93nYfHKVy0AJkWA" target="_blank"
+                               rel="nofollow" title="Youtube" className="text-red-600 hover:text-red-400">
+                                <Youtube className="w-5 h-5"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://zalo.me/2915476565064825313" target="_blank" rel="nofollow" title="Zalo"
+                               className="text-blue-500 hover:text-blue-300">
+                                <Zap className="w-5 h-5"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
