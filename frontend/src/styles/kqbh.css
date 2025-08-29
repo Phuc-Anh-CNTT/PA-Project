@@ -7,6 +7,13 @@
     padding: calc(.667em + 2px) calc(1.333em + 2px);
     font-size: 1.125em
 }
+img {
+  /*mask-image: url(path/to/logo.png);*/
+  mask-mode: alpha;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background: transparent;
+}
 
 #style-selector {
     position: fixed;
@@ -5036,7 +5043,7 @@ li.dropdown-submenu, .yamm-content li {
 .container { width: 1300px;}
 .header-top, .header-top a{ font-weight:400;}
 .download_excel{ width:50%; float:left; margin-left:26%; border:1px solid #ccc; border-radius:10px; background:#f1f1f1; padding:30px; margin-top:-60px;}
-.bg2{ width:100%; float:left; margin:0 auto; margin-top:30px; background:#dddddd; padding-bottom:30px;}
+.bg2{ width:100%; float:left; margin:0 auto; background:#dddddd;}
 /*.desktop{ display:revert-layer;}*/
 .mobile{ display:none;}
 @media (min-width: 2550px) {

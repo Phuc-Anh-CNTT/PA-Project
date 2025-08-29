@@ -173,7 +173,7 @@ export default function KQBH() {
         <div className="h-[400px] bg-gradient-to-br from-blue-50 to-red-50 flex items-center justify-center ">
             <Card className="w-full max-w-md shadow-xl border-0">
                 <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-500 text-white rounded-t-lg">
-                    <CardTitle className="text-2xl font-bold tracking-wide text-white"
+                    <CardTitle className="text-3xl font-bold tracking-wide text-white"
                                style={{fontFamily: "Times New Roman, Times, serif"}}
                     >
                         Kết Quả Tra Cứu
@@ -496,7 +496,7 @@ export default function KQBH() {
                     </div>
                 </div>
             </div>
-            <div className="vc_row wpb_row vc_row-fluid pb-[10px] pt-[60px]">
+            <div className="vc_row wpb_row vc_row-fluid">
                 <div className="wpb_column vc_column_container vc_col-sm-12">
                     <div className="vc_column-inner">
                         <div className="wpb_wrapper">
@@ -1002,7 +1002,7 @@ export default function KQBH() {
                 </div>
 
             </footer>
-            <div className="bg-gray-900 text-white py-4">
+            <div className="bg-gray-900 text-white pt-4 pb-4">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
                     <div className="text-sm text-gray-300 text-center md:text-left mb-2 md:mb-0">
                         © 2022 Công ty TNHH Kỹ Nghệ Phúc Anh. GPKD số: 0101417128 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp
