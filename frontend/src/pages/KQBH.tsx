@@ -370,7 +370,7 @@ export default function KQBH() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     {tickets.map((ticket) => (
                         <Card key={ticket.id}
-                              className="shadow-md hover:shadow-xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
+                              className="shadow-md hover:shadow-2xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
                               onClick={() => {
                                   goToPage("findbyid");
                                   handleSearch(null, ticket.sophieunhan);
@@ -378,7 +378,7 @@ export default function KQBH() {
                             <CardContent className="p-4 space-y-4">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center text-gray-700">
-                                        <FileText className="w-4 h-4 text-blue-500 mr-2"/>
+                                        <FileText className="w-5 h-5 text-blue-500 mr-2"/>
                                         <span className="font-medium">Số phiếu:</span>
                                         <span className="ml-1">{ticket.sophieunhan}</span>
                                     </div>
@@ -399,23 +399,23 @@ export default function KQBH() {
                                         </div>
                                     </div>
                                     <div className="flex items-center">
-                                        <Phone className="w-4 h-4 text-gray-500 mr-2"/>
+                                        <Phone className="w-5 h-5 text-gray-500 mr-2"/>
                                         <span>{ticket.phoneNumber}</span>
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-3 gap-2 text-gray-600 text-xm">
+                                <div className="grid grid-cols-3 gap-2 text-gray-600 text-[clamp(12px,2vw,14px)]">
                                     <div className="w-full flex items-center gap-1 overflow-hidden">
                                         <Inbox className="w-5 h-5 text-blue-500 flex-shrink-0"/>
-                                        <span className="truncate">{formatDate(ticket.receiveDate)}</span>
+                                        <span className="">{formatDate(ticket.receiveDate)}</span>
                                     </div>
                                     <div className="w-full flex items-center gap-1 overflow-hidden">
                                         <Clock className="w-5 h-5 text-orange-500 flex-shrink-0"/>
-                                        <span className="truncate">{formatDate(ticket.expectedReturnDate)}</span>
+                                        <span className="">{formatDate(ticket.expectedReturnDate)}</span>
                                     </div>
                                     <div className="w-full flex items-center gap-1 overflow-hidden">
                                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0"/>
-                                        <span className="truncate">{formatDate(ticket.actualReturnDate)}</span>
+                                        <span className="">{formatDate(ticket.actualReturnDate)}</span>
                                     </div>
                                 </div>
 
