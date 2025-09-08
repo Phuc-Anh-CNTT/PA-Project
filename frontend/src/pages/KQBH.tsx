@@ -76,12 +76,34 @@ export default function KQBH() {
     const goBack = () => {
         setPageStack(prev => {
             if (prev.length === 0) return prev;
-            const last = prev[prev.length - 1];
+            let nextStack = [...prev];
+            let last = nextStack.pop();
+            // Pop until we find a page different from the currentPage, or stack is empty
+            while (last === currentPage && nextStack.length > 0) {
+                last = nextStack.pop();
+            }
+            // If after popping, last is still the same as currentPage, or undefined, just return empty stack
+            if (!last || last === currentPage) {
+                setSearchCode("");
+                return [];
+            }
+
             setSearchCode("");
             setCurrentPage(last);
-            return prev.slice(0, -1);
+
+            // Ensure findbyphonenb does not appear twice, and restore phoneTickets if needed
+            if (last === "findbyphonenb") {
+                setTickets(phoneTickets);
+            }
+
+            // Remove any trailing duplicates of last page (e.g. findbyphonenb x2)
+            while (nextStack.length > 0 && nextStack[nextStack.length - 1] === last) {
+                nextStack.pop();
+            }
+
+            return nextStack;
         });
-    }
+    };
 
     const formatDate = (dateString?: string | null) => {
         if (!dateString) return "—";
@@ -153,17 +175,19 @@ export default function KQBH() {
     };
 
     const renderSearch = () => (
-        <div className="h-[400px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
-            <Card className="w-full max-w-md shadow-xl border-0">
-                <CardHeader className="text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg">
+        <div
+            className="h-[500px] !min-w-[350px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
+            <Card className="h-auto min-w-[350px] w-auto max-w-md shadow-xl border-0 flex flex-col items-center ">
+                <CardHeader
+                    className="h-full w-full text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg pl-10 pr-10">
                     <CardTitle
-                        className="text-3xl font-bold tracking-wide text-white"
+                        className="h-full text-3xl font-bold tracking-wide text-white"
                         style={{fontFamily: "Times New Roman, Times, serif"}}
                     >
                         Tra Cứu Bảo Hành Phúc Anh
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="p-8">
+                <CardContent className="p-8 w-full">
                     <form onSubmit={handleSearch} className="space-y-6">
                         <div className="space-y-2">
                             <label htmlFor="search-code" className="block font-medium text-gray-700">
@@ -175,16 +199,14 @@ export default function KQBH() {
                                 placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại"
                                 value={searchCode}
                                 onChange={(e) => setSearchCode(e.target.value)}
-                                className="h-12 border-2 border-gray-200 focus:border-secondary"
+                                className="h-12 border-2 border-gray-200 focus:border-secondary !text-xl"
                             />
                         </div>
-                        <Button
-                            type="submit"
-                            className="w-full h-12 bg-red-400 hover:bg-blue-500 text-white"
-                            disabled={!searchCode.trim()}
+                        <button type="submit"
+                                className="w-full h-12 bg-red-300 hover:bg-blue-900 text-white rounded-xl hover:rounded-2xl hover:shadow-md text-xl hover:text-2xl transition-[font-size] duration-300 flex gap-3 items-center justify-center"
                         >
                             <Search className="w-5 h-5 mr-2"/> Tìm Kiếm
-                        </Button>
+                        </button>
                     </form>
                 </CardContent>
             </Card>
@@ -204,7 +226,7 @@ export default function KQBH() {
                 <CardContent className="p-8 text-center">
                     <div className="flex flex-col items-center space-y-4">
                         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-                            <AlertTriangle className="w-8 h-8 text-primary"/>
+                            <AlertTriangle className="w-6 h-6 text-primary"/>
                         </div>
                         <h3 className="font-medium text-gray-900">Không tìm thấy kết quả</h3>
                         <p className="text-gray-600">Không có kết quả trùng khớp với mã tra cứu bạn nhập.</p>
@@ -213,7 +235,7 @@ export default function KQBH() {
                                 setCurrentPage("search");
                                 setSearchCode("");
                             }}
-                            className="w-full mt-6 bg-blue-800 hover:bg-red-300 text-white"
+                            className="w-full mt-6 bg-blue-800 hover:bg-red-300 text-white !text-xl"
                         >
                             Đóng
                         </Button>
@@ -225,25 +247,40 @@ export default function KQBH() {
 
     const findbyid = () => (
         <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-4">
-            <div className="max-w-6xl mx-auto space-y-6 bg-black/60  rounded-2xl">
+            <div className="max-w-[65vw] mx-auto space-y-6 bg-black/60  rounded-2xl">
                 <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
                     <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
                         <div className="flex items-center space-x-4">
-                            <Button
-                                variant="ghost"
-                                size="sm"
-                                onClick={goBack}
-                                className="text-white bg-blue-500 hover:bg-blue-200"
+                            <Button variant="ghost" size="sm" onClick={goBack}
+                                    className="text-white bg-blue-500 hover:bg-blue-200 text-xl"
                             >
                                 ← Quay lại
                             </Button>
-                            <CardTitle className="c">
-                                Kết Quả Tra Cứu ({tickets.length} sản phẩm)
+                            <CardTitle className="flex items-center">
+                                Kết Quả Tra Cứu cho số phiếu
+                                <FileText className="w-6 h-6 text-white mr-2 ml-2"/>
+                                {tickets[0].sophieunhan} có {tickets.length} sản phẩm
                             </CardTitle>
                         </div>
                     </CardHeader>
                     <CardContent className="p-6 space-y-4 bg-gray-50">
-                        {tickets.map((ticket) => (
+                        <CardTitle
+                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
+                            <div className="flex flex-1 items-center overflow-hidden">
+                                <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
+                                <div className="relative flex-1 overflow-hidden">
+                                    <div className="flex items-center whitespace-nowrap">
+                                        <span className="mr-8 truncate">{tickets[0].Name}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-2 min-w-[120px]">
+                                <Phone className="w-6 h-6 flex-shrink-0"/>
+                                <span className="truncate">{tickets[0].phoneNumber}</span>
+                            </div>
+                        </CardTitle>
+                        {tickets.map((ticket, i) => (
                             <div
                                 key={ticket.id}
                                 className="overflow-visible rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
@@ -256,77 +293,55 @@ export default function KQBH() {
                                             <div className="flex flex-col space-y-2 min-w-0">
                                                 {/* Tên sản phẩm với icon */}
                                                 <div className="flex items-center space-x-1 flex-1 min-w-0">
-                                                    <Package className="w-5 h-5 text-blue-500 flex-shrink-0"/>
+                                                    <Package className="w-6 h-6 text-blue-500 flex-shrink-0"/>
                                                     <span
                                                         className="font-bold text-2xl text-gray-900 truncate overflow-hidden whitespace-nowrap flex-1">
-                                                      {ticket.product}
+                                                      {i + 1}. {ticket.product}
                                                     </span>
                                                 </div>
-                                            </div>
-                                            {/* Mô tả lỗi */}
-                                            <div className="flex items-center space-x-1">
-                                                <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0"/>
-                                                <span
-                                                    className="text-gray-600 text-sm truncate">{ticket.description}</span>
                                             </div>
                                         </div>
 
                                         {/* Hàng 2: Serial + Số phiếu */}
-                                        <div className="flex items-center justify-between text-gray-600 gap-16">
+                                        <div className="w-full grid grid-cols-1 sm:grid-cols-2 text-gray-600">
                                             <div className="flex-1 flex items-center">
-                                                <Hash className="w-4 h-4 text-gray-500 mr-2"/>
+                                                <Hash className="w-6 h-6 text-gray-500 mr-2"/>
                                                 <span className="font-medium">Serial:</span>
                                                 <span className="ml-1">{ticket.serial}</span>
                                             </div>
-                                            <div className="flex-1 flex items-center text-gray-600">
-                                            <FileText className="w-4 h-4 text-gray-500 mr-2"/>
-                                                <span className="font-medium">Số phiếu:</span>
-                                                <span className="ml-1">{ticket.sophieunhan}</span>
+                                            {/* Mô tả lỗi */}
+                                            <div className="flex flex-1 items-center space-x-1">
+                                                <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0"/>
+                                                <span
+                                                    className="text-gray-600 text-xm truncate">{ticket.description}</span>
                                             </div>
                                         </div>
 
-                                        {/* Hàng 3: Tên khách hàng + Số điện thoại */}
-                                        <div className="flex flex-col sm:flex-row text-gray-600 gap-16">
-                                            <div className="flex-1 flex items-center overflow-hidden">
-                                                <User className="w-4 h-4 flex-shrink-0 text-gray-500 mr-2"/>
-                                                <div className="relative flex-1 overflow-hidden">
-                                                    <div className="flex whitespace-nowrap ">
-                                                        <span className="mr-8">{ticket.Name}</span>
-                                                        {/*<span*/}
-                                                        {/*    className="mr-8">{ticket.Name}</span> /!* copy để lặp liên tục *!/*/}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className=" flex-1 flex items-center gap-2 min-w-[120px]">
-                                                <Phone className="w-4 h-4 flex-shrink-0"/>
-                                                <span>{ticket.phoneNumber}</span>
-                                            </div>
-                                        </div>
-
-                                        {/* Hàng 4: Ngày nhận + Hẹn trả + Ngày trả */}
-                                        <div className="grid grid-cols-3 gap-4 text-sm text-gray-600">
+                                        {/* Hàng 3: Ngày nhận + Hẹn trả + Ngày trả */}
+                                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xm text-gray-600">
                                             <div className="flex items-center gap-2">
                                                 <Inbox className="w-4 h-4 text-blue-500"/>
                                                 <span className="font-medium">Ngày nhận:</span>
                                                 <span>{formatDate(ticket.receiveDate)}</span>
                                             </div>
+
                                             <div className="flex items-center gap-2">
                                                 <Clock className="w-4 h-4 text-orange-500"/>
                                                 <span className="font-medium">Ngày hẹn trả:</span>
                                                 <span>{formatDate(ticket.expectedReturnDate)}</span>
                                             </div>
+
                                             <div className="flex items-center gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500"/>
                                                 <span className="font-medium">Ngày trả:</span>
                                                 <span>
-                        {ticket.actualReturnDate
-                            ? formatDate(ticket.actualReturnDate)
-                            : "Chưa trả"}
-                      </span>
+                                                  {ticket.actualReturnDate
+                                                      ? formatDate(ticket.actualReturnDate)
+                                                      : "Chưa trả"}
+                                                </span>
                                             </div>
                                         </div>
-
-                                        {/* Hàng 5: Status Stepper */}
+                                        {/* Hàng 4: Status Stepper */}
                                         <div className="mt-4">
                                             <StatusStepper currentStatus={statusbh}/>
                                         </div>
@@ -340,24 +355,22 @@ export default function KQBH() {
         </div>
     );
     const findbysdt = () => (
-        <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
-            <div className="max-w-7xl mx-auto">
-                <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={goBack}
-                    className="mb-4 text-white bg-blue-500 hover:bg-blue-300"
-                >
-                    ← Quay lại
-                </Button>
-                <h2 className="text-xl font-bold mb-6">
-                    {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
-                </h2>
+        <div className="min-h-[500px] w-full h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
+            <div className="w-full p-8 mx-auto">
+                <div className="w-auto flex items-center gap-10">
+                    <Button variant="ghost" onClick={goBack}
+                            className="w-[100px] h-[30px] text-xl mb-4 text-white bg-blue-500 !hover:bg-blue-300">
+                        ← Quay lại
+                    </Button>
+                    <h2 className="h-full flex items-center text-2xl font-bold mb-6">
+                        {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
+                    </h2>
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
                     {tickets.map((ticket) => (
                         <Card key={ticket.id}
-                              className="shadow-md hover:shadow-2xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
+                              className="shadow-md hover:shadow-xl transition-shadow cursor-pointer border-l-4 border-l-blue-500"
                               onClick={() => {
                                   goToPage("findbyid");
                                   handleSearch(null, ticket.sophieunhan);
@@ -370,7 +383,7 @@ export default function KQBH() {
                                         <span className="ml-1">{ticket.sophieunhan}</span>
                                     </div>
                                     <span
-                                        className={`px-2 py-1 rounded text-xs font-medium ${
+                                        className={`px-4 py-1 rounded-xl text-xm font-medium ${
                                             ticket.status === "Đã trả" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"
                                         }`}> {ticket.status} </span>
                                 </div>
@@ -391,17 +404,17 @@ export default function KQBH() {
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-3 gap-2 text-gray-600 text-xs">
-                                    <div className="flex items-center gap-1 overflow-hidden">
-                                        <Inbox className="w-4 h-4 text-blue-500 flex-shrink-0"/>
+                                <div className="grid grid-cols-3 gap-2 text-gray-600 text-xm">
+                                    <div className="w-full flex items-center gap-1 overflow-hidden">
+                                        <Inbox className="w-5 h-5 text-blue-500 flex-shrink-0"/>
                                         <span className="truncate">{formatDate(ticket.receiveDate)}</span>
                                     </div>
-                                    <div className="flex items-center gap-1 overflow-hidden">
-                                        <Clock className="w-4 h-4 text-orange-500 flex-shrink-0"/>
+                                    <div className="w-full flex items-center gap-1 overflow-hidden">
+                                        <Clock className="w-5 h-5 text-orange-500 flex-shrink-0"/>
                                         <span className="truncate">{formatDate(ticket.expectedReturnDate)}</span>
                                     </div>
-                                    <div className="flex items-center gap-1 overflow-hidden">
-                                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0"/>
+                                    <div className="w-full flex items-center gap-1 overflow-hidden">
+                                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0"/>
                                         <span className="truncate">{formatDate(ticket.actualReturnDate)}</span>
                                     </div>
                                 </div>
@@ -429,7 +442,7 @@ export default function KQBH() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
-            <header className="w-full max-w-[1440px] mx-auto">
+            <header className="w-full max-w-screen-2xl mx-auto">
                 <img
                     src={headerLogo}
                     alt="Header Logo"
@@ -1043,7 +1056,7 @@ export default function KQBH() {
             </footer>
             <div className="bg-gray-900 text-white pt-4 pb-4">
                 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-                    <div className="text-sm text-gray-300 text-center md:text-left mb-2 md:mb-0">
+                    <div className="text-xm text-gray-300 text-center md:text-left mb-2 md:mb-0">
                         © 2022 Công ty TNHH Kỹ Nghệ Phúc Anh. GPKD số: 0101417128 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp
                         ngày 07/10/2003
                     </div>

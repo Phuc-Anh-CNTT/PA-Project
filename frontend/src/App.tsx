@@ -5,7 +5,7 @@ import Ndyduc from './ndyduc';
 function App() {
     return (
         <Router>
-            <div className="flex flex-col min-h-screen">
+            <div className="w-full flex flex-col min-h-screen">
                 <Routes>
                     {/*<Route path="/" element={<ndyduc />} />*/}
                     <Route path="/searchingKQBH" element={<KQBH/>}/>
@@ -13,7 +13,7 @@ function App() {
                 <Ndyduc/>
             </div>
         </Router>
-);
+    );
 }
 
 export default App;

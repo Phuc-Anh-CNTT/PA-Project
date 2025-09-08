@@ -60,19 +60,19 @@ export function StatusStepper({ currentStatus }: StatusStepperProps) {
 
             {/* Circle */}
             <div
-              className={`w-12 h-12 rounded-full border-2 flex items-center justify-center z-10 transition-all duration-300 ${
+              className={`w-16 h-16 rounded-full border-2 flex items-center justify-center z-10 transition-all duration-300 ${
                 isCompleted
                   ? "bg-green-500 border-green-500 text-white"
                   : "bg-white border-gray-300 text-gray-400"
               }`}
             >
-              <IconComponent className="w-5 h-5" />
+              <IconComponent className="w-7 h-7" />
             </div>
 
             {/* Label */}
-            <div className="mt-2 text-center max-w-24">
+            <div className="mt-2 text-center max-w-32">
               <p
-                className={`text-xs leading-tight ${
+                className={`text-xl leading-tight ${
                   isCompleted ? "text-green-700 font-medium" : "text-gray-500"
                 }`}
               >

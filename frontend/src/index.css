@@ -1635,11 +1635,6 @@
     font-family: var(--font-mono);
   }
 
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
-  }
-
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -4095,3 +4090,8 @@
   --sidebar-ring: oklch(.439 0 0);
 }
 
+
+.html, .body{
+  margin:0;
+  padding: 0;
+}
