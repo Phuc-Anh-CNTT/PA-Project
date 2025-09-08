@@ -4,8 +4,8 @@ from typing import Optional
 from math import ceil
 from fastapi import Body, HTTPException
 from sqlalchemy.orm import Session
-from app.core.SqlServerPA import *
-from app.model.Phieubh import *
+from ...core.SqlServerPA import *
+from ...model.Phieubh import *
 from fastapi import Form
 
 router = APIRouter(prefix="/kqbh", tags=["kqbh"])
@@ -40,13 +40,16 @@ def get_kqbh_by_key(req: dict = Body(...), db: Session = Depends(get_db)):
             if "sdt" in d and d["sdt"]:
                 d["sdt"] = mask_half(d["sdt"])
 
-        return {"kind": kind, "data": data}
+        # Sắp xếp theo ngày nhận mới nhất
+        data = sorted(
+            data,
+            key=lambda x: x.get("ngay_nhan") or x.get("ngay_tra") or "",
+            reverse=True
+        )
 
-    except HTTPException as he:
-        raise he  # Bắt HTTPException để trả đúng status code
+        return {"kind": kind, "data": data}
     except Exception as e:
-        print("Lỗi khi xử lý get-kqbh-by-key:", e)
-        raise HTTPException(status_code=500, detail="Lỗi server nội bộ")
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 # Schema để nhận dữ liệu từ POST body

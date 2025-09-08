@@ -252,7 +252,7 @@ export default function KQBH() {
                     <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
                         <div className="flex items-center space-x-4">
                             <Button variant="ghost" size="sm" onClick={goBack}
-                                    className="text-white bg-blue-500 hover:bg-blue-200 text-xl"
+                                    className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
                             >
                                 ← Quay lại
                             </Button>
@@ -264,25 +264,22 @@ export default function KQBH() {
                         </div>
                     </CardHeader>
                     <CardContent className="p-6 space-y-4 bg-gray-50">
-                        <CardTitle
-                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
-                            <div className="flex flex-1 items-center overflow-hidden">
+                        <CardTitle className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
+                            <div className="h-full flex flex-1 items-center overflow-hidden">
                                 <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
-                                <div className="relative flex-1 overflow-hidden">
+                                <div className=" flex items-center relative flex-1 overflow-hidden">
                                     <div className="flex items-center whitespace-nowrap">
-                                        <span className="mr-8 truncate">{tickets[0].Name}</span>
+                                        <span className="h-[25px] flex items-center mr-8 truncate">{tickets[0].Name}</span>
                                     </div>
                                 </div>
                             </div>
-
                             <div className="flex items-center gap-2 min-w-[120px]">
                                 <Phone className="w-6 h-6 flex-shrink-0"/>
                                 <span className="truncate">{tickets[0].phoneNumber}</span>
                             </div>
                         </CardTitle>
                         {tickets.map((ticket, i) => (
-                            <div
-                                key={ticket.id}
+                            <div key={ticket.id}
                                 className="overflow-visible rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
                             >
                                 <Card className="border-l-4 border-l-secondary">
@@ -318,7 +315,7 @@ export default function KQBH() {
                                         </div>
 
                                         {/* Hàng 3: Ngày nhận + Hẹn trả + Ngày trả */}
-                                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xm text-gray-600">
+                                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xm text-gray-600 ">
                                             <div className="flex items-center gap-2">
                                                 <Inbox className="w-4 h-4 text-blue-500"/>
                                                 <span className="font-medium">Ngày nhận:</span>
@@ -342,7 +339,7 @@ export default function KQBH() {
                                             </div>
                                         </div>
                                         {/* Hàng 4: Status Stepper */}
-                                        <div className="mt-4">
+                                        <div className="!mt-10">
                                             <StatusStepper currentStatus={statusbh}/>
                                         </div>
                                     </CardContent>
@@ -354,6 +351,7 @@ export default function KQBH() {
             </div>
         </div>
     );
+
     const findbysdt = () => (
         <div className="min-h-[500px] w-full h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="w-full p-8 mx-auto">
