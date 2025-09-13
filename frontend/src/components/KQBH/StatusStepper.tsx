@@ -15,14 +15,11 @@ const statusSteps = [
 export function StatusStepper({ currentStatus }: StatusStepperProps) {
   const getCurrentStepIndex = (status: string): number => {
     const statusMap: { [key: string]: number } = {
-      "Đã tiếp nhận": 1,
-      "Đang xử lý": 2,
-      "Đã hoàn thành xử lý": 3,
-      "Chờ khách đến lấy": 4,
-      "Đã trả khách": 5,
-      "Đang sửa chữa": 2,
-      "Chờ linh kiện": 2,
-      "Hoàn thành": 5
+      "Received": 1,
+      "Processing": 2,
+      "Completed": 3,
+      "Taking": 4,
+      "Done": 5
     };
     return statusMap[status] || 1;
   };

@@ -4095,3 +4095,8 @@
   margin:0;
   padding: 0;
 }
+
+input, button {
+  -webkit-appearance: none; /* Safari */
+  appearance: none;
+}

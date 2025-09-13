@@ -1,5 +1,5 @@
 // @ts-ignore
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Button} from "../components/ui/button";
 import {Input} from "../components/ui/input";
 import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
@@ -64,7 +64,6 @@ export default function KQBH() {
     const [currentPage, setCurrentPage] = useState<PageState>("search");
     const [searchCode, setSearchCode] = useState("");
     const [tickets, setTickets] = useState<Ticket[]>([]);
-    const statusbh = "Đã trả khách";
     const [phoneTickets, setPhoneTickets] = useState<Ticket[]>([]);
     const [pageStack, setPageStack] = useState<PageState[]>([]);
 
@@ -133,29 +132,30 @@ export default function KQBH() {
                     setTickets(
                         json.data.map((d: any) => ({
                             id: d.id,
-                            sophieunhan: d.so_phieu_nhan,
-                            Name: d.ten_khach,
-                            serial: d.serial,
+                            sophieunhan: d.phieu_nhan,
+                            Name: d.khach,
+                            serial: d.serial || "",
                             product: d.product,
-                            phoneNumber: d.sdt,
-                            receiveDate: d.ngay_nhan,
-                            expectedReturnDate: d.ngay_hen_tra,
-                            actualReturnDate: d.ngay_tra,
-                            status: d.status || undefined,
-                            description: d.mo_ta_loi_luc_tiep_nhan || "",
+                            phoneNumber: d.phone,
+                            receiveDate: d.taken_date,
+                            expectedReturnDate: d.primised_date,
+                            actualReturnDate: d.done_date,
+                            status: d.status,
+                            description: d.description || "",
                             kind: "id",
                         }))
                     );
+                    console.log(json.data[0].description);
                     goToPage("findbyid")
                 } else if (json.kind === "phone") {
                     let data = json.data.map((d: any) => ({
                         id: d.id,
-                        sophieunhan: d.so_phieu_nhan,
-                        Name: d.ten_khach,
-                        phoneNumber: d.sdt,
-                        receiveDate: d.ngay_nhan,
-                        expectedReturnDate: d.ngay_hen_tra,
-                        actualReturnDate: d.ngay_tra,
+                        sophieunhan: d.phieu_nhan,
+                        Name: d.khach,
+                        phoneNumber: d.phone,
+                        receiveDate: d.taken_date,
+                        expectedReturnDate: d.primised_date,
+                        actualReturnDate: d.done_date,
                         so_luong: d.so_luong,
                         kind: "phone",
                         status: d.status || "Đã trả",
@@ -174,10 +174,51 @@ export default function KQBH() {
         }
     };
 
+    function TicketList({tickets}) {
+        const [chunkSize, setChunkSize] = useState(20); // mặc định desktop
+
+        useEffect(() => {
+            const updateChunkSize = () => {
+                if (window.innerWidth < 900) {
+                    // small screen
+                    setChunkSize(5);
+                } else {
+                    // larger screen
+                    setChunkSize(20);
+                }
+            };
+
+            updateChunkSize(); // chạy lần đầu
+            window.addEventListener("resize", updateChunkSize);
+            return () => window.removeEventListener("resize", updateChunkSize);
+        }, []);
+
+        return (
+            <div>
+                {tickets.map((ticket, index) => (
+                    (index + 1) === tickets.length && tickets.length >= chunkSize && (
+                        <div
+                            key={`footer-${index}`}
+                            className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-10 py-4 my-6 px-4"
+                        >
+                            <Button
+                                variant="ghost"
+                                onClick={goBack}
+                                className="w-[100px] h-[30px] text-xl !text-white bg-blue-500 !hover:bg-blue-300 !hover:text-white"
+                            >
+                                ← Quay lại
+                            </Button>
+                        </div>
+                    )
+                ))}
+            </div>
+        );
+    }
+
     const renderSearch = () => (
         <div
-            className="h-[500px] !min-w-[350px] bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
-            <Card className="h-auto min-w-[350px] w-auto max-w-md shadow-xl border-0 flex flex-col items-center ">
+            className="h-[500px] w-auto box-border bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
+            <Card className="h-auto w-auto shadow-xl border-0 flex flex-col items-center ">
                 <CardHeader
                     className="h-full w-full text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg pl-10 pr-10">
                     <CardTitle
@@ -187,24 +228,20 @@ export default function KQBH() {
                         Tra Cứu Bảo Hành Phúc Anh
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="p-8 w-full">
-                    <form onSubmit={handleSearch} className="space-y-6">
-                        <div className="space-y-2">
+                <CardContent className="px-16 py-8 w-auto">
+                    <form onSubmit={handleSearch} className="space-y-6 w-full">
+                        <div className="w-full space-y-2">
                             <label htmlFor="search-code" className="block font-medium text-gray-700">
                                 Tra cứu
                             </label>
-                            <Input
-                                id="search-code"
-                                type="text"
-                                placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại"
-                                value={searchCode}
-                                onChange={(e) => setSearchCode(e.target.value)}
-                                className="h-12 border-2 border-gray-200 focus:border-secondary !text-xl"
+                            <Input id="search-code" type="text"
+                                   placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại" value={searchCode}
+                                   onChange={(e) => setSearchCode(e.target.value)}
+                                   className="appearance-none box-border w-full min-w-[350px] h-12 border-2 border-gray-200 focus:border-secondary !text-xl leading-normal"
                             />
                         </div>
                         <button type="submit"
-                                className="w-full h-12 bg-red-300 hover:bg-blue-900 text-white rounded-xl hover:rounded-2xl hover:shadow-md text-xl hover:text-2xl transition-[font-size] duration-300 flex gap-3 items-center justify-center"
-                        >
+                                className="flex items-center justify-center gap-2 text-2xl appearance-none box-border w-full h-12 bg-red-300 hover:bg-blue-900 text-white rounded-xl leading-normal">
                             <Search className="w-5 h-5 mr-2"/> Tìm Kiếm
                         </button>
                     </form>
@@ -264,12 +301,14 @@ export default function KQBH() {
                         </div>
                     </CardHeader>
                     <CardContent className="p-6 space-y-4 bg-gray-50">
-                        <CardTitle className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
+                        <CardTitle
+                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
                             <div className="h-full flex flex-1 items-center overflow-hidden">
                                 <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
                                 <div className=" flex items-center relative flex-1 overflow-hidden">
                                     <div className="flex items-center whitespace-nowrap">
-                                        <span className="h-[25px] flex items-center mr-8 truncate">{tickets[0].Name}</span>
+                                        <span
+                                            className="h-[25px] flex items-center mr-8 truncate">{tickets[0].Name}</span>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +319,7 @@ export default function KQBH() {
                         </CardTitle>
                         {tickets.map((ticket, i) => (
                             <div key={ticket.id}
-                                className="overflow-visible rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
+                                 className="overflow-visible rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
                             >
                                 <Card className="border-l-4 border-l-secondary">
                                     <CardContent className="p-4 space-y-3">
@@ -307,10 +346,13 @@ export default function KQBH() {
                                                 <span className="ml-1">{ticket.serial}</span>
                                             </div>
                                             {/* Mô tả lỗi */}
-                                            <div className="flex flex-1 items-center space-x-1">
+                                            <div className="flex flex-1 items-center space-x-2">
                                                 <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0"/>
                                                 <span
-                                                    className="text-gray-600 text-xm truncate">{ticket.description}</span>
+                                                    className="text-gray-600 text-sm whitespace-pre-line break-words"
+                                                >
+                                                    {ticket.description}
+                                                </span>
                                             </div>
                                         </div>
 
@@ -340,13 +382,24 @@ export default function KQBH() {
                                         </div>
                                         {/* Hàng 4: Status Stepper */}
                                         <div className="!mt-10">
-                                            <StatusStepper currentStatus={statusbh}/>
+                                            <StatusStepper currentStatus={ticket.status}/>
                                         </div>
                                     </CardContent>
                                 </Card>
                             </div>
                         ))}
                     </CardContent>
+                    {tickets.length > 3 && (
+                        <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
+                            <div className="flex items-center space-x-4">
+                                <Button variant="ghost" size="sm" onClick={goBack}
+                                        className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
+                                >
+                                    ← Quay lại
+                                </Button>
+                            </div>
+                        </CardHeader>
+                    )}
                 </Card>
             </div>
         </div>
@@ -355,14 +408,15 @@ export default function KQBH() {
     const findbysdt = () => (
         <div className="min-h-[500px] w-full h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="w-full p-8 mx-auto">
-                <div className="w-auto flex items-center gap-10">
+                <div
+                    className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-10 py-4 mb-6 px-4">
                     <Button variant="ghost" onClick={goBack}
-                            className="w-[100px] h-[30px] text-xl mb-4 text-white bg-blue-500 !hover:bg-blue-300">
+                            className="w-[100px] h-[30px] text-xl !text-white bg-blue-500 !hover:bg-blue-300 !hover:text-white">
                         ← Quay lại
                     </Button>
-                    <h2 className="h-full flex items-center text-2xl font-bold mb-6">
-                        {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
-                    </h2>
+                    <span className="h-full flex items-center text-3xl text-white font-playfair font-semibold">
+                      {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
+                    </span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
@@ -380,10 +434,28 @@ export default function KQBH() {
                                         <span className="font-medium">Số phiếu:</span>
                                         <span className="ml-1">{ticket.sophieunhan}</span>
                                     </div>
-                                    <span
-                                        className={`px-4 py-1 rounded-xl text-xm font-medium ${
-                                            ticket.status === "Đã trả" ? "bg-green-100 text-green-700" : "bg-red-100 text-red-600"
-                                        }`}> {ticket.status} </span>
+                                    {(() => {
+                                        const statusMap: Record<string, string> = {
+                                            "Completed": "Hoàn thành",
+                                            "Processing": "Đang xử lý",
+                                            "Received": "Đã tiếp nhận",
+                                            "Taking": "Đợi kháchlấy",
+                                            "Done": "Hoàn tất",
+                                        };
+                                        const statusColors: Record<string, string> = {
+                                            "Done": "bg-green-100 text-green-700",
+                                            "Taking": "bg-yellow-100 text-yellow-700",
+                                            "Completed": "bg-blue-100 text-blue-700",
+                                            "Processing": "bg-purple-100 text-purple-700",
+                                            "Received": "bg-gray-100 text-gray-700",
+                                        };
+                                        return (
+                                            <span className={`px-4 py-1 rounded-xl text-xm font-medium 
+                                            ${ statusColors[ticket.status] || "bg-gray-100 text-gray-700" }`}>
+                                              {statusMap[ticket.status] || ticket.status}
+                                            </span>
+                                        );
+                                    })()}
                                 </div>
 
                                 <div className="flex items-center justify-between text-gray-700 gap-3">
@@ -426,6 +498,7 @@ export default function KQBH() {
                         </Card>
                     ))}
                 </div>
+                <TicketList tickets={tickets}/>
             </div>
         </div>
     );
@@ -439,6 +512,7 @@ export default function KQBH() {
     };
 
     return (
+
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
             <header className="w-full max-w-screen-2xl mx-auto">
                 <img

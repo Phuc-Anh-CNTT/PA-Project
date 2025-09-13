@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
 # from app.api.routes import items, login, private, users, utils,
-from app.api.routes import KQBH
-from app.core.config import settings
+from .routes import KQBH
+from ..core.config import settings
 
 api_router = APIRouter()
 # api_router.include_router(login.router)
