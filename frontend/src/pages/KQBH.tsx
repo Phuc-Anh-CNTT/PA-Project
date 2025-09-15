@@ -409,13 +409,19 @@ export default function KQBH() {
         <div className="min-h-[500px] w-full h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="w-full p-8 mx-auto">
                 <div
-                    className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-10 py-4 mb-6 px-4">
+                    className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-6 py-4 mb-6 px-4">
                     <Button variant="ghost" onClick={goBack}
                             className="w-[100px] h-[30px] text-xl !text-white bg-blue-500 !hover:bg-blue-300 !hover:text-white">
                         ← Quay lại
                     </Button>
-                    <span className="h-full flex items-center text-3xl text-white font-playfair font-semibold">
-                      {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu"}
+                    <span className="flex items-center gap-2 py-1 px-6 rounded-xl bg-white">
+                        <span className="h-full flex items-center text-3xl text-black font-playfair font-semibold">
+                      {tickets[0]?.kind === "id" ? "Kết quả theo ID" : "Danh sách số phiếu cho"}
+                    </span>
+                    <div className="flex items-center text-black">
+                        <Phone className="w-5 h-5 text-black mr-2"/>
+                        <span>{tickets[0].phoneNumber}</span>
+                    </div>
                     </span>
                 </div>
 
@@ -451,7 +457,7 @@ export default function KQBH() {
                                         };
                                         return (
                                             <span className={`px-4 py-1 rounded-xl text-xm font-medium 
-                                            ${ statusColors[ticket.status] || "bg-gray-100 text-gray-700" }`}>
+                                            ${statusColors[ticket.status] || "bg-gray-100 text-gray-700"}`}>
                                               {statusMap[ticket.status] || ticket.status}
                                             </span>
                                         );
@@ -468,10 +474,7 @@ export default function KQBH() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex items-center">
-                                        <Phone className="w-5 h-5 text-gray-500 mr-2"/>
-                                        <span>{ticket.phoneNumber}</span>
-                                    </div>
+
                                 </div>
 
                                 <div className="grid grid-cols-3 gap-2 text-gray-600 text-[clamp(12px,2vw,14px)]">

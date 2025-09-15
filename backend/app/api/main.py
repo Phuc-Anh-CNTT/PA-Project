@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 # from app.api.routes import items, login, private, users, utils,
-from .routes import KQBH
+from .routes import KQBH, API_Caresoft
 from ..core.config import settings
 
 api_router = APIRouter()
@@ -10,6 +10,7 @@ api_router = APIRouter()
 # api_router.include_router(utils.router)
 # api_router.include_router(items.router)
 api_router.include_router(KQBH.router)
+api_router.include_router(API_Caresoft.router)
 
 # if settings.ENVIRONMENT == "local":
 #     api_router.include_router(private.router)
