@@ -8,7 +8,7 @@ function App() {
             <div className="w-full flex flex-col min-h-screen">
                 <Routes>
                     {/*<Route path="/" element={<ndyduc />} />*/}
-                    <Route path="/searchingKQBH" element={<KQBH/>}/>
+                    <Route path="/" element={<KQBH/>}/>
                 </Routes>
                 <Ndyduc/>
             </div>
