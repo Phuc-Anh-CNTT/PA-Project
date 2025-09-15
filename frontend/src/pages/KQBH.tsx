@@ -803,8 +803,8 @@ export default function KQBH() {
                     </span>
                                                     <a href="https://www.phucanh.vn/page/chinh-sach-bao-hanh"
                                                        target="_blank"
-                                                       className="text-blue-600 hover:underline">
-                                                        Xem chi tiết
+                                                       className="h-full flex items-center text-blue-600 hover:underline">
+                                                        Xem
                                                     </a>
                                                 </li>
                                                 <li className="flex justify-between items-center">
@@ -814,8 +814,8 @@ export default function KQBH() {
                     </span>
                                                     <a href="https://www.phucanh.vn/page/chinh-sach-doi-tra-san-pham"
                                                        target="_blank"
-                                                       className="text-blue-600 hover:underline">
-                                                        Xem chi tiết
+                                                       className="h-full flex items-center text-blue-600 hover:underline">
+                                                        Xem
                                                     </a>
                                                 </li>
                                                 <li className="flex justify-between items-center">
@@ -825,8 +825,8 @@ export default function KQBH() {
                     </span>
                                                     <a href="https://www.phucanh.vn/page/chinh-sach-kinh-doanh"
                                                        target="_blank"
-                                                       className="text-blue-600 hover:underline">
-                                                        Xem chi tiết
+                                                       className="h-full flex items-center text-blue-600 hover:underline">
+                                                        Xem
                                                     </a>
                                                 </li>
                                                 <li className="flex justify-between items-center">
@@ -836,8 +836,8 @@ export default function KQBH() {
                     </span>
                                                     <a href="https://www.phucanh.vn/chinh-sach-kiem-hang.html"
                                                        target="_blank"
-                                                       className="text-blue-600 hover:underline">
-                                                        Xem chi tiết
+                                                       className="h-full flex items-center text-blue-600 hover:underline">
+                                                        Xem
                                                     </a>
                                                 </li>
                                                 <li className="flex justify-between items-center">
@@ -847,8 +847,8 @@ export default function KQBH() {
                     </span>
                                                     <a href="https://www.phucanh.vn/page/van-chuyen-giao-nhan-hang-hoa"
                                                        target="_blank"
-                                                       className="text-blue-600 hover:underline">
-                                                        Xem chi tiết
+                                                       className="h-full flex items-center text-blue-600 hover:underline">
+                                                        Xem
                                                     </a>
                                                 </li>
                                             </ul>
