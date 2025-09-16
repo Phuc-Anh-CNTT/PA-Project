@@ -30,7 +30,7 @@ def get_kqbh_by_key(req: dict = Body(...), db: Session = Depends(get_db)):
             data = get_phieu_by_id(db, keyword, limit=limit)
             kind = "id"
         else:
-            data = get_phieu_by_sdt(db, keyword, limit=limit)
+            data = get_phieu_by_sdt_grouped(db, keyword, limit=limit)
             kind = "phone"
 
         # Xử lý mask serial và sdt
@@ -93,3 +93,21 @@ def mask_half(value: str) -> str:
     n = len(value)
     half = ceil(n / 2)
     return "*" * half + value[half:]
+
+
+def get_phieu_by_sdt_grouped(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
+    raw_result = get_phieu_by_sdt(db, sdt, limit)
+
+    grouped = {}
+    for phieu in raw_result:
+        key = phieu.phieu_nhan
+        if key not in grouped:
+            grouped[key] = phieu
+        else:
+            # Nếu đã có phiếu này, update trạng thái theo quy tắc
+            if phieu.status == "Done":
+                grouped[key].status = "Done"
+            # Tăng amount
+            # grouped[key].amount += phieu.amount
+
+    return list(grouped.values())

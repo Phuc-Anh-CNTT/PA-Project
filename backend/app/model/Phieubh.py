@@ -23,6 +23,16 @@ class PhieuNo(Base):
 	__table_args__ = {"autoload_with": engine}
 
 
+class DailyPhieu(Base):
+	__tablename__ = "new_data_daily"
+	__table_args__ = {"autoload_with": engine}
+
+
+class DailyData:
+	def __init__(self):
+		self
+
+
 class Phieu:
 	def __init__(self, id, phieu_nhan, khach, serial, product, phone, description, taken_date, primised_date, done_date,
 				 status, amount):
@@ -158,6 +168,7 @@ STATUS_ORDER = {
 def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 	result = []
 
+	# 1. Lấy tất cả phiếu trong bảng tra_hang_bh
 	rows_done = (
 		db.query(
 			PhieuBH.id,
@@ -177,6 +188,7 @@ def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 		.all()
 	)
 
+	# Tất cả phiếu trong tra_hang_bh => status = Done
 	for r in rows_done:
 		result.append(
 			Phieu(
@@ -195,22 +207,8 @@ def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 			)
 		)
 
-	subq = (
-		db.query(
-			PhieuNo.so_phieu_nhan.label("so_phieu_nhan"),
-			func.min(
-				case(
-					(PhieuNo.tinh_trang == "Đã tiếp nhận", 1),
-					(PhieuNo.tinh_trang == "Đang xử lý", 2),
-					(PhieuNo.tinh_trang == "Đã hoàn thành xử lý", 3),
-					else_=99,
-				)
-			).label("min_level"),
-		)
-		.filter(PhieuNo.dien_thoai == sdt)
-		.group_by(PhieuNo.so_phieu_nhan)
-		.subquery()
-	)
+	# 2. Lấy phiếu từ no_hang_bh mà chưa có trong tra_hang_bh
+	subq_done = db.query(PhieuBH.so_phieu_nhan).filter(PhieuBH.sdt == sdt).subquery()
 
 	rows_not_done = (
 		db.query(
@@ -224,24 +222,20 @@ def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 			PhieuNo.ngay_nhan,
 			PhieuNo.ngay_hen_tra,
 			PhieuNo.tinh_trang,
-			func.count(PhieuNo.so_phieu_nhan)
-			.over(partition_by=PhieuNo.so_phieu_nhan)
-			.label("amount"),
+			func.count(PhieuNo.so_phieu_nhan).over(partition_by=PhieuNo.so_phieu_nhan).label("amount"),
 		)
-		.join(subq, PhieuNo.so_phieu_nhan == subq.c.so_phieu_nhan)
-		.filter(
-			case(
-				(PhieuNo.tinh_trang == "Đã tiếp nhận", 1),
-				(PhieuNo.tinh_trang == "Đang xử lý", 2),
-				(PhieuNo.tinh_trang == "Đã hoàn thành xử lý", 3),
-				else_=99,
-			)
-			== subq.c.min_level
-		)
+		.filter(PhieuNo.dien_thoai == sdt)
+		.filter(~PhieuNo.so_phieu_nhan.in_(subq_done))
 		.all()
 	)
 
 	for r in rows_not_done:
+		# Lấy trạng thái thấp nhất nếu có nhiều bản ghi cùng so_phieu_nhan
+		status_level = min(
+			[STATUS_ORDER.get(r.tinh_trang, 99)],
+		)
+		status = [k for k, v in STATUS_ORDER.items() if v == status_level][0]
+
 		result.append(
 			Phieu(
 				id=r.id,
@@ -254,8 +248,8 @@ def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 				taken_date=r.ngay_nhan,
 				primised_date=r.ngay_hen_tra,
 				done_date=None,
-				status=STATUS_MAP.get(r.tinh_trang, r.tinh_trang),
-				amount=r.amount
+				status=status,
+				amount=r.amount,
 			)
 		)
 

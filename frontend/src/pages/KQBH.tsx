@@ -284,39 +284,40 @@ export default function KQBH() {
 
     const findbyid = () => (
         <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-4">
-            <div className="max-w-[65vw] mx-auto space-y-6 bg-black/60  rounded-2xl">
-                <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
-                    <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
-                        <div className="flex items-center space-x-4">
+            <div className="max-w-[65vw] mx-auto  bg-gray-50  rounded-2xl">
+                <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 py-3 text-white  rounded-2xl sticky top-2 z-20">
+                        <div className="flex items-center space-x-4 mb-2">
                             <Button variant="ghost" size="sm" onClick={goBack}
                                     className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
                             >
                                 ← Quay lại
                             </Button>
-                            <CardTitle className="flex items-center">
+                            <CardTitle className="flex items-center bg-white rounded-xl py-1.5 text-black px-6">
                                 Kết Quả Tra Cứu cho số phiếu
-                                <FileText className="w-6 h-6 text-white mr-2 ml-2"/>
+                                <FileText className="w-5 h-5 text-gray-500 mr-2 ml-2"/>
                                 {tickets[0].sophieunhan} có {tickets.length} sản phẩm
                             </CardTitle>
                         </div>
-                    </CardHeader>
-                    <CardContent className="p-6 space-y-4 bg-gray-50">
                         <CardTitle
-                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-3 bg-gray-300 rounded-xl overflow-hidden">
+                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-1 bg-white rounded-xl overflow-hidden">
                             <div className="h-full flex flex-1 items-center overflow-hidden">
                                 <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
                                 <div className=" flex items-center relative flex-1 overflow-hidden">
                                     <div className="flex items-center whitespace-nowrap">
                                         <span
-                                            className="h-[25px] flex items-center mr-8 truncate">{tickets[0].Name}</span>
+                                            className="h-[25px] flex text-black items-center mr-8 truncate">{tickets[0].Name}</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2 min-w-[120px]">
-                                <Phone className="w-6 h-6 flex-shrink-0"/>
-                                <span className="truncate">{tickets[0].phoneNumber}</span>
+                                <Phone className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
+                                <span className="text-black truncate">{tickets[0].phoneNumber}</span>
                             </div>
                         </CardTitle>
+
+                    </CardHeader>
+                <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
+                    <CardContent className="p-6 space-y-4 bg-gray-50">
                         {tickets.map((ticket, i) => (
                             <div key={ticket.id}
                                  className="overflow-visible rounded-lg shadow-sm hover:shadow-2xl transition-shadow duration-200 cursor-pointer"
@@ -409,7 +410,7 @@ export default function KQBH() {
         <div className="min-h-[500px] w-full h-auto bg-gradient-to-br from-blue-200 to-red-200 p-6">
             <div className="w-full p-8 mx-auto">
                 <div
-                    className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-6 py-4 mb-6 px-4">
+                    className="w-auto bg-gradient-to-r from-blue-800 to-red-500 rounded-xl flex items-center gap-6 py-4 mb-6 px-4 sticky top-6 z-20">
                     <Button variant="ghost" onClick={goBack}
                             className="w-[100px] h-[30px] text-xl !text-white bg-blue-500 !hover:bg-blue-300 !hover:text-white">
                         ← Quay lại
@@ -501,7 +502,7 @@ export default function KQBH() {
                         </Card>
                     ))}
                 </div>
-                <TicketList tickets={tickets}/>
+                {/*<TicketList tickets={tickets}/>*/}
             </div>
         </div>
     );
@@ -734,8 +735,7 @@ export default function KQBH() {
                                                         alt={item.alt}
                                                         className="max-w-[169px] max-h-[56px] object-contain bg-white p-1"
                                                         style={{
-                                                            background: "transparent",
-                                                            filter: "drop-shadow(0 0 0.3rem rgba(0,0,0,0.1))",
+                                                            background: "transparent"
                                                         }}
                                                     />
                                                 </a>
