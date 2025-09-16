@@ -390,17 +390,17 @@ export default function KQBH() {
                             </div>
                         ))}
                     </CardContent>
-                    {tickets.length > 3 && (
-                        <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">
-                            <div className="flex items-center space-x-4">
-                                <Button variant="ghost" size="sm" onClick={goBack}
-                                        className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
-                                >
-                                    ← Quay lại
-                                </Button>
-                            </div>
-                        </CardHeader>
-                    )}
+                    {/*{tickets.length > 3 && (*/}
+                    {/*    <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 pb-3 text-white  rounded-2xl">*/}
+                    {/*        <div className="flex items-center space-x-4">*/}
+                    {/*            <Button variant="ghost" size="sm" onClick={goBack}*/}
+                    {/*                    className="text-white bg-red-300 !hover:bg-blue-200 text-xl"*/}
+                    {/*            >*/}
+                    {/*                ← Quay lại*/}
+                    {/*            </Button>*/}
+                    {/*        </div>*/}
+                    {/*    </CardHeader>*/}
+                    {/*)}*/}
                 </Card>
             </div>
         </div>
