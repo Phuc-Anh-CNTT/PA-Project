@@ -28,14 +28,8 @@ class DailyPhieu(Base):
 	__table_args__ = {"autoload_with": engine}
 
 
-class DailyData:
-	def __init__(self):
-		self
-
-
 class Phieu:
-	def __init__(self, id, phieu_nhan, khach, serial, product, phone, description, taken_date, primised_date, done_date,
-				 status, amount):
+	def __init__(self, id, phieu_nhan, khach, serial, product, phone, description, taken_date, primised_date, done_date, status, amount):
 		self.id = id
 		self.phieu_nhan = phieu_nhan
 		self.khach = khach

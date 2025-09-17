@@ -349,9 +349,7 @@ export default function KQBH() {
                                             {/* Mô tả lỗi */}
                                             <div className="flex flex-1 items-center space-x-2">
                                                 <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0"/>
-                                                <span
-                                                    className="text-gray-600 text-sm whitespace-pre-line break-words"
-                                                >
+                                                <span className="text-gray-600 whitespace-pre-line break-words">
                                                     {ticket.description}
                                                 </span>
                                             </div>
@@ -360,19 +358,19 @@ export default function KQBH() {
                                         {/* Hàng 3: Ngày nhận + Hẹn trả + Ngày trả */}
                                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xm text-gray-600 ">
                                             <div className="flex items-center gap-2">
-                                                <Inbox className="w-4 h-4 text-blue-500"/>
+                                                <Inbox className="w-5 h-5 text-blue-500"/>
                                                 <span className="font-medium">Ngày nhận:</span>
                                                 <span>{formatDate(ticket.receiveDate)}</span>
                                             </div>
 
                                             <div className="flex items-center gap-2">
-                                                <Clock className="w-4 h-4 text-orange-500"/>
+                                                <Clock className="w-5 h-5 text-orange-500"/>
                                                 <span className="font-medium">Ngày hẹn trả:</span>
                                                 <span>{formatDate(ticket.expectedReturnDate)}</span>
                                             </div>
 
                                             <div className="flex items-center gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500"/>
+                                                <CheckCircle className="w-5 h-5 text-green-500"/>
                                                 <span className="font-medium">Ngày trả:</span>
                                                 <span>
                                                   {ticket.actualReturnDate
