@@ -89,14 +89,11 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 					ticket_source="API",
 					type=0,
 					phone=r.phone,
-					ticket_comment="Kính gửi Quý khách hàng " + r.ten_khach
-								   + ", Trung tâm bảo hành Phúc Anh xin thông báo sản phẩm của Quý khách đã được xử lý xong:"
-								   + "- Số phiếu tiếp nhận: " + str(r.so_phieu_nhan)
+					ticket_comment="- Số phiếu tiếp nhận: " + str(r.so_phieu_nhan)
 								   + "\n - Ngày tiếp nhận: " + r.ngay_nhan.strftime("%Y-%m-%d")
 								   + "\n - Mô tả sản phẩm: " + str(r.tinh_trang_sp)
 								   + "\n - Địa điểm xuất trả: " + str(r.dia_chi_nhan_bh)
-								   + "\n - Chi phi dịch vụ/ linh kiện: " + str(r.tong_gia_tri_don_hang)
-								   + "\n Vui lòng mang theo phiếu tiếp nhận sản phẩm khi đến nhận sản phẩm.\n Cảm ơn Quý khách đã tin dùng sản phẩm, dịch vụ tại Phúc Anh!",
+								   + "\n - Chi phi dịch vụ/ linh kiện: " + str(r.tong_gia_tri_don_hang),
 					requester_id=189722415,
 					group_id=12390,
 					service_id=95096527,
