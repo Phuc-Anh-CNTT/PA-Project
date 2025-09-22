@@ -27,12 +27,13 @@ class Ticket:
 	ticket_comment: str
 	requester_id: int
 	group_id: int
+	service_id: int
 	assignee_id: Optional[int]
 	ticket_subject: str
 	custom_fields: List[CustomField] = field(default_factory=list)
 
 	def __init__(self, status: str, ticket_comment_is_public: int, ticket_source: str, type: int, phone: str,
-				 ticket_comment: str, requester_id: int, group_id: int, assignee_id: Optional[int] = None,
+				 ticket_comment: str, requester_id: int, group_id: int, service_id: int, assignee_id: Optional[int] = None,
 				 ticket_subject: str = None, custom_fields: List[CustomField] = None):
 		self.type = type
 		self.status = status
@@ -42,6 +43,7 @@ class Ticket:
 		self.ticket_comment = ticket_comment
 		self.requester_id = requester_id
 		self.group_id = group_id
+		self.service_id = service_id
 		self.assignee_id = assignee_id
 		self.ticket_subject = ticket_subject
 		self.custom_fields = custom_fields
@@ -88,9 +90,9 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 				ticket_comment="Số điện thoại khách: " + r.phone,
 				requester_id=189722415,
 				group_id=12390,
+				service_id=95096527,
 				assignee_id=None,
-				ticket_subject="Thông báo trả hàng bảo hành sửa chữa phiếu: " + r.so_phieu_nhan,
-				# ticket_subject="Hoàn thành bảo hành cho phiếu: " + r.so_phieu_nhan,
+				ticket_subject="Test Thông báo trả hàng bảo hành sửa chữa phiếu: " + r.so_phieu_nhan,
 				custom_fields=[
 					CustomField(id="5403", value=76164),  # yeu cau xu ly
 					CustomField(id="5405", value=73912),  # phan loai ho tro
