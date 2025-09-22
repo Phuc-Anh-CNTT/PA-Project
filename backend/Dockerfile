@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
+# Set timezone to UTC+7 (Asia/Ho_Chi_Minh)
+RUN apt-get update && apt-get install -y tzdata && \
+    ln -snf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && echo "Asia/Ho_Chi_Minh" > /etc/timezone
+
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
