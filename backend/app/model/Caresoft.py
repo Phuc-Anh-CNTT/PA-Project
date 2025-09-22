@@ -89,7 +89,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 				requester_id=189722415,
 				group_id=12390,
 				assignee_id=None,
-				ticket_subject="Testing for: " + r.so_phieu_nhan,
+				ticket_subject="Thông báo trả hàng bảo hành sửa chữa phiếu: " + r.so_phieu_nhan,
 				# ticket_subject="Hoàn thành bảo hành cho phiếu: " + r.so_phieu_nhan,
 				custom_fields=[
 					CustomField(id="5403", value=76164),  # yeu cau xu ly
