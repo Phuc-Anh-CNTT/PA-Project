@@ -45,7 +45,7 @@ async def test_caresoft():
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
 		call_api,
-		CronTrigger(hour=15, minute=44)
+		CronTrigger(hour=7, minute=30)
 	)
 	scheduler.start()
 	yield
@@ -53,7 +53,7 @@ async def lifespan(app: FastAPI):
 
 
 async def call_api():
-	print("Chay r ne", flush=True)
+	# print("Chay r ne", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
