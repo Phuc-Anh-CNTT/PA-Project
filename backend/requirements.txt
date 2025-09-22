@@ -1,5 +1,6 @@
 uvicorn[standard]
 sqlalchemy
+apscheduler
 pydantic
 pydantic-settings
 pyodbc
