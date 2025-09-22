@@ -98,7 +98,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 					group_id=12390,
 					service_id=95096527,
 					assignee_id=None,
-					ticket_subject="TEST Thông báo trả hàng bảo hành sửa chữa phiếu: " + r.so_phieu_nhan,
+					ticket_subject="Thông báo trả hàng bảo hành sửa chữa phiếu: " + r.so_phieu_nhan,
 					custom_fields=[
 						CustomField(id="5403", value=168259),  # yeu cau xu ly
 						CustomField(id="5405", value=73912),  # phan loai ho tro
