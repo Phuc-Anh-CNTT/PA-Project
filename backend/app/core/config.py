@@ -85,4 +85,3 @@ class Settings(BaseSettings):
 
 settings = Settings()  # type: ignore
 
-print("DATABASE_SqlServer_URL =", settings.DATABASE_SqlServer_URL)

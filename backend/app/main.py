@@ -5,6 +5,8 @@ from starlette.middleware.cors import CORSMiddleware
 
 from .api.main import api_router
 from .core.config import settings
+from .api.routes.API_Caresoft import lifespan
+from .api.routes import API_Caresoft
 
 
 def custom_generate_unique_id(route: APIRoute) -> str:
@@ -18,7 +20,10 @@ app = FastAPI(
 	title=settings.PROJECT_NAME,
 	openapi_url=f"{settings.API_V1_STR}/openapi.json",
 	generate_unique_id_function=custom_generate_unique_id,
+	lifespan=lifespan
 )
+
+app.include_router(API_Caresoft.router)
 
 # Set all CORS enabled origins
 app.add_middleware(
