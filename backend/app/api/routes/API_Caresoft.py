@@ -38,13 +38,13 @@ async def test():
 
 @router.get("/test_caresoft")
 async def test_caresoft():
-	return await call_api_from_db()
+	return await call_api()
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
-		call_api_from_db,
+		call_api,
 		CronTrigger(hour=7, minute=30)
 	)
 	scheduler.start()
@@ -52,15 +52,14 @@ async def lifespan(app: FastAPI):
 	scheduler.shutdown()
 
 
-async def call_api_from_db():
+async def call_api():
 	print("Chay r ne", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
 	done = []
 	try:
-		tickets = get_all_ticket(db, sent=0)
-
+		tickets = get_all_ticket(db, sent=0, limit=5)
 		# Chia tickets thành batch 10
 		for i in range(0, len(tickets), BATCH_SIZE):
 			batch = tickets[i:i + BATCH_SIZE]
@@ -91,6 +90,10 @@ async def call_api_from_db():
 			way = update_ticket(db, so_phieus=done)
 			if way is False:
 				logging.error("Update ticket failed for so_phieus: %s", done)
+
+	except Exception as e:
+		logging.error("Error processing tickets: %s", e)
+		print(f"[DEBUG] Exception in call_api: {e}", flush=True)
 
 	finally:
 		db.close()
