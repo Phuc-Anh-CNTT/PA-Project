@@ -53,6 +53,7 @@ async def lifespan(app: FastAPI):
 
 
 async def call_api_from_db():
+	print("Chay r ne", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
