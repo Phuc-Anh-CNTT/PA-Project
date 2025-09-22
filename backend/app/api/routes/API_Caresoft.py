@@ -45,7 +45,7 @@ async def test_caresoft():
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
 		call_api,
-		CronTrigger(hour=7, minute=30)
+		CronTrigger(hour=15, minute=44)
 	)
 	scheduler.start()
 	yield
