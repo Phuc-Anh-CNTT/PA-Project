@@ -3,15 +3,16 @@ from tqdm import tqdm
 
 from apscheduler.triggers.cron import CronTrigger
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.triggers.interval import IntervalTrigger
 from fastapi import APIRouter, FastAPI, Depends
 from pytz import timezone
 
 from ...core.SqlServerPA import *
-from apscheduler.schedulers.background import BackgroundScheduler
 
 import os
 import json
 import logging
+from datetime import datetime
 from dataclasses import asdict
 from dotenv import load_dotenv
 from ...model.Caresoft import *
@@ -45,7 +46,7 @@ async def test_caresoft():
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
 		call_api,
-		CronTrigger(hour=7, minute=30)
+		IntervalTrigger(hours=1)
 	)
 	scheduler.start()
 	yield
@@ -53,7 +54,7 @@ async def lifespan(app: FastAPI):
 
 
 async def call_api():
-	# print("Chay r ne", flush=True)
+	print(f"[DEBUG] call_api run at: {datetime.now()}", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())

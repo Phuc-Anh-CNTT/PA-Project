@@ -59,7 +59,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 	try:
 		result = []
 
-		query = db.query(
+		query = (db.query(
 			Ticket_PA.so_phieu_nhan,
 			Ticket_PA.dia_chi_nhan_bh,
 			Ticket_PA.ma_khach,
@@ -69,9 +69,11 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 			Ticket_PA.phone,
 			Ticket_PA.ngay_nhan,
 			Ticket_PA.tong_gia_tri_don_hang
-		).filter(
-			Ticket_PA.trigger_date == text("CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)")
-		)
+		))
+
+		# query = query.filter(
+		# 	Ticket_PA.trigger_date == text("CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)")
+		# )
 
 		if sent == 0:
 			query = query.filter(Ticket_PA.made_ticket == 0)
@@ -93,7 +95,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 								   + "\n - Ngày tiếp nhận: " + r.ngay_nhan.strftime("%Y-%m-%d")
 								   + "\n - Mô tả sản phẩm: " + str(r.tinh_trang_sp)
 								   + "\n - Địa điểm xuất trả: " + str(r.dia_chi_nhan_bh)
-								   + "\n - Chi phi dịch vụ/ linh kiện: " + str(r.tong_gia_tri_don_hang),
+								   + "\n - Chi phi dịch vụ/ linh kiện: " + str(r.tong_gia_tri_don_hang if r.tong_gia_tri_don_hang is not None else 0),
 					requester_id=189722415,
 					group_id=12390,
 					service_id=95096527,
@@ -110,7 +112,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 						CustomField(id="10487", value=r.so_phieu_nhan),  # so phieu
 						CustomField(id="10488", value=r.ngay_nhan.strftime("%Y/%m/%d")),  # ngay nhan
 						CustomField(id="10657", value=r.ten_khach),
-						CustomField(id="10635", value=r.tong_gia_tri_don_hang)
+						CustomField(id="10635", value=r.tong_gia_tri_don_hang if r.tong_gia_tri_don_hang is not None else 0)
 					]
 				)
 			)
@@ -131,4 +133,3 @@ def update_ticket(db: Session, so_phieus: list[str]):
 	except Exception as e:
 		print(f"[ERROR][update] {str(e)}")
 		return False
-
