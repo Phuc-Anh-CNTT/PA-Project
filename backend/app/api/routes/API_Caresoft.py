@@ -204,8 +204,8 @@ async def check_user(phone: str):
 		async with httpx.AsyncClient() as client:
 			response = await client.get(url, headers=headers)
 
-		# Nếu API trả về JSON dù 400 vẫn parse được
 		result = response.json()
+
 		if response.status_code == 200 and result.get("code") == "ok":
 			return result.get("contact")
 		elif response.status_code == 400 and result.get("message") == "Not found user":
@@ -216,7 +216,8 @@ async def check_user(phone: str):
 
 	except httpx.RequestError as e:
 		print("[DEBUG] check failed:", e, flush=True)
-		return {"error": str(e)}, False
+
+		return False
 
 
 async def update_user(id: str, name: str):
