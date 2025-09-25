@@ -72,7 +72,8 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 		))
 
 		# query = query.filter(
-		# 	Ticket_PA.trigger_date == text("CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)")
+		# 	# Ticket_PA.trigger_date == text("CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)")
+		# 	Ticket_PA.so_phieu_nhan == "TEST-003"
 		# )
 
 		if sent == 0:
@@ -96,7 +97,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 								   + "\n - Mô tả sản phẩm: " + str(r.tinh_trang_sp)
 								   + "\n - Địa điểm xuất trả: " + str(r.dia_chi_nhan_bh)
 								   + "\n - Chi phi dịch vụ/ linh kiện: " + str(r.tong_gia_tri_don_hang if r.tong_gia_tri_don_hang is not None else 0),
-					requester_id=189722415,
+					requester_id=240444945,
 					group_id=12390,
 					service_id=95096527,
 					assignee_id=None,

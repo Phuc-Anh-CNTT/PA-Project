@@ -24,6 +24,8 @@ scheduler = AsyncIOScheduler(timezone=timezone("Asia/Ho_Chi_Minh"))
 load_dotenv()
 API_CS_URL = os.getenv("CARESOFT_API_URL")
 API_CS_TOKEN = os.getenv("CARESOFT_API_TOKEN")
+API_KH_MAKE = os.getenv("CARESOFT_KH_MAKE")
+API_KH_CHECK = os.getenv("CARESOFT_KH_CHECK")
 
 logging.basicConfig(
 	filename="caresoft_error.log",
@@ -61,16 +63,30 @@ async def call_api():
 	db = next(get_db())
 	done = []
 	try:
-		tickets = get_all_ticket(db, sent=0, limit=5)
-		# Chia tickets thành batch 10
+		tickets = get_all_ticket(db, sent=0, limit=None)
 		for i in range(0, len(tickets), BATCH_SIZE):
 			batch = tickets[i:i + BATCH_SIZE]
-
 			# wrap make_ticket với semaphore để giới hạn concurrency
 			semaphore = asyncio.Semaphore(BATCH_SIZE)
 
 			async def limited_make_ticket(ticket):
 				async with semaphore:
+					exists = await check_user(str(ticket.phone))
+					if not exists:
+						created = await create_user(ticket)
+						if not created:
+							return {"error": "User creation failed"}, False
+						else:
+							ticket.requester_id = created
+					else:
+						ticket.requester_id = exists.get("id")
+						user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
+
+						if user != exists.get("username "):
+							update = await update_user(str(exists.get("id")), user)
+							if not update:
+								return {"error": "User update failed"}, False
+
 					return await make_ticket(ticket)
 
 			tasks = [limited_make_ticket(t) for t in batch]
@@ -128,4 +144,108 @@ async def make_ticket(data):
 	except httpx.RequestError as e:
 		logging.error("Request error: %s | Payload: %s", e, payload)
 		print("[DEBUG] asdict failed:", e, flush=True)
+		return {"error": str(e)}, False
+
+
+async def create_user(data: Ticket):
+	if not API_KH_MAKE or not API_CS_TOKEN:
+		raise ValueError("API URL or Token not found in .env")
+
+	headers = {
+		"Authorization": f"Bearer {API_CS_TOKEN}",
+		"Content-Type": "application/json"
+	}
+
+	try:
+		cf_10657 = next(
+			(cf.value for cf in data.custom_fields if str(cf.id) == "10657"),
+			None
+		)
+
+		payload = json.dumps({
+			"contact": {
+				"phone_no": str(data.phone),
+				"username": cf_10657
+			}
+		}, ensure_ascii=False, default=str)
+
+		async with httpx.AsyncClient() as client:
+			response = await client.post(API_KH_MAKE, headers=headers, data=payload)
+
+		response.raise_for_status()
+		result = response.json()
+
+		if result.get("code") != "ok":
+			logging.error("User create failed | Response: %s | Payload: %s", result, payload)
+			return False
+		else:
+			contact_id = result.get("contact", {}).get("id")
+			print("[DEBUG] Created user id:", contact_id, flush=True)
+			return contact_id
+
+	except httpx.RequestError as e:
+		logging.error("Request error: %s | Payload: %s", e, payload)
+		print("[DEBUG] make failed:", e, flush=True)
+		return False
+
+
+async def check_user(phone: str):
+	if not API_KH_CHECK or not API_CS_TOKEN:
+		raise ValueError("API URL or Token not found in .env")
+
+	headers = {
+		"Authorization": f"Bearer {API_CS_TOKEN}",
+		"Accept": "application/json"
+	}
+
+	try:
+		url = f"{API_KH_CHECK}?phoneNo={phone}"
+		print("[DEBUG] Request URL:", url, flush=True)
+		async with httpx.AsyncClient() as client:
+			response = await client.get(url, headers=headers)
+
+		# Nếu API trả về JSON dù 400 vẫn parse được
+		result = response.json()
+		if response.status_code == 200 and result.get("code") == "ok":
+			return result.get("contact")
+		elif response.status_code == 400 and result.get("message") == "Not found user":
+			return False
+		else:
+			logging.error("Unexpected response: %s", result)
+			return False
+
+	except httpx.RequestError as e:
+		print("[DEBUG] check failed:", e, flush=True)
+		return {"error": str(e)}, False
+
+
+async def update_user(id: str, name: str):
+	headers = {
+		"Authorization": f"Bearer {API_CS_TOKEN}",
+		"Accept": "application/json",
+		"Content-Type": "application/json"
+	}
+
+	payload = {
+		"contact": {
+			"username": name
+		}
+	}
+
+	try:
+		url = f"{API_KH_MAKE.rstrip('/')}/{id}"
+		async with httpx.AsyncClient() as client:
+			response = await client.put(url, headers=headers, json=payload)
+
+		result = response.json()
+		if response.status_code == 200 and result.get("code") == "ok":
+			return True
+		elif response.status_code == 400 and result.get("message") == "Not found user":
+			return False
+		else:
+			logging.error("Unexpected response: %s", result)
+			return False
+
+	except httpx.RequestError as e:
+		print("[DEBUG] check failed:", e, flush=True)
 		return {"error": str(e)}, False
