@@ -34,20 +34,24 @@ def get_kqbh_by_key(req: dict = Body(...), db: Session = Depends(get_db)):
             kind = "phone"
 
         # Xử lý mask serial và sdt
-        for d in data:
-            if d.serial and d.serial is not None:
-                d.serial = mask_half(d.serial)
-            if d.phone:
-                d.phone = mask_half(d.phone)
+        if data is None:
+            data = []
+        else:
+            for d in data:
+                if d.serial and d.serial is not None:
+                    d.serial = mask_half(d.serial)
+                if d.phone:
+                    d.phone = mask_half(d.phone)
 
-        data = sorted(
-            data,
-            key=lambda x: normalize_date(x.taken_date) or normalize_date(x.done_date),
-            reverse=True
-        )
+            data = sorted(
+                data,
+                key=lambda x: normalize_date(x.taken_date) or normalize_date(x.done_date),
+                reverse=True
+            )
 
         return {"kind": kind, "data": data}
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail=str(e))
 
 

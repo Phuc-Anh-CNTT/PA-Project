@@ -71,42 +71,42 @@ def get_phieu_by_id(db: Session, phieu_id: str, limit: int = 50) -> List[Phieu]:
 	result = []
 
 	# Lấy từ bảng đã hoàn thành
-	rows_done = (
-		db.query(
-			PhieuBH.id,
-			PhieuBH.so_phieu_nhan,
-			PhieuBH.ten_khach,
-			PhieuBH.serial_nhan,
-			PhieuBH.ten_hang_nhan,
-			PhieuBH.sdt,
-			PhieuBH.ten_hang_nhan,
-			PhieuBH.mo_ta_loi_luc_tiep_nhan,
-			PhieuBH.ngay_nhan,
-			PhieuBH.ngay_hen_tra,
-			PhieuBH.ngay_tra,
-		)
-		.filter(PhieuBH.so_phieu_nhan == phieu_id)
-		.limit(limit)
-		.all()
-	)
-
-	for r in rows_done:
-		result.append(
-			Phieu(
-				id=r.id,
-				phieu_nhan=r.so_phieu_nhan,
-				khach=r.ten_khach,
-				serial=r.serial_nhan,
-				phone=r.sdt,
-				product=r.ten_hang_nhan,
-				description=r.mo_ta_loi_luc_tiep_nhan,
-				taken_date=r.ngay_nhan,
-				primised_date=r.ngay_hen_tra,
-				done_date=r.ngay_tra,
-				status="Done",
-				amount=1
-			)
-		)
+	# rows_done = (
+	# 	db.query(
+	# 		PhieuBH.id,
+	# 		PhieuBH.so_phieu_nhan,
+	# 		PhieuBH.ten_khach,
+	# 		PhieuBH.serial_nhan,
+	# 		PhieuBH.ten_hang_nhan,
+	# 		PhieuBH.sdt,
+	# 		PhieuBH.ten_hang_nhan,
+	# 		PhieuBH.mo_ta_loi_luc_tiep_nhan,
+	# 		PhieuBH.ngay_nhan,
+	# 		PhieuBH.ngay_hen_tra,
+	# 		PhieuBH.ngay_tra,
+	# 	)
+	# 	.filter(PhieuBH.so_phieu_nhan == phieu_id)
+	# 	.limit(limit)
+	# 	.all()
+	# )
+	#
+	# for r in rows_done:
+	# 	result.append(
+	# 		Phieu(
+	# 			id=r.id,
+	# 			phieu_nhan=r.so_phieu_nhan,
+	# 			khach=r.ten_khach,
+	# 			serial=r.serial_nhan,
+	# 			phone=r.sdt,
+	# 			product=r.ten_hang_nhan,
+	# 			description=r.mo_ta_loi_luc_tiep_nhan,
+	# 			taken_date=r.ngay_nhan,
+	# 			primised_date=r.ngay_hen_tra,
+	# 			done_date=r.ngay_tra,
+	# 			status="Done",
+	# 			amount=1
+	# 		)
+	# 	)
 
 	# Lấy từ bảng chưa hoàn thành
 	rows_not_done = (
@@ -163,43 +163,43 @@ def get_phieu_by_sdt(db: Session, sdt: str, limit: int = 50) -> List[Phieu]:
 	result = []
 
 	# 1. Lấy tất cả phiếu trong bảng tra_hang_bh
-	rows_done = (
-		db.query(
-			PhieuBH.id,
-			PhieuBH.so_phieu_nhan,
-			PhieuBH.ten_khach,
-			PhieuBH.serial_nhan,
-			PhieuBH.ten_hang_tra,
-			PhieuBH.sdt,
-			PhieuBH.mo_ta_loi_luc_tiep_nhan,
-			PhieuBH.ngay_nhan,
-			PhieuBH.ngay_hen_tra,
-			PhieuBH.ngay_tra,
-			func.count(PhieuBH.so_phieu_nhan).over(partition_by=PhieuBH.so_phieu_nhan).label("amount"),
-		)
-		.filter(PhieuBH.sdt == sdt)
-		.limit(limit)
-		.all()
-	)
+	# rows_done = (
+	# 	db.query(
+	# 		PhieuBH.id,
+	# 		PhieuBH.so_phieu_nhan,
+	# 		PhieuBH.ten_khach,
+	# 		PhieuBH.serial_nhan,
+	# 		PhieuBH.ten_hang_tra,
+	# 		PhieuBH.sdt,
+	# 		PhieuBH.mo_ta_loi_luc_tiep_nhan,
+	# 		PhieuBH.ngay_nhan,
+	# 		PhieuBH.ngay_hen_tra,
+	# 		PhieuBH.ngay_tra,
+	# 		func.count(PhieuBH.so_phieu_nhan).over(partition_by=PhieuBH.so_phieu_nhan).label("amount"),
+	# 	)
+	# 	.filter(PhieuBH.sdt == sdt)
+	# 	.limit(limit)
+	# 	.all()
+	# )
 
 	# Tất cả phiếu trong tra_hang_bh => status = Done
-	for r in rows_done:
-		result.append(
-			Phieu(
-				id=r.id,
-				phieu_nhan=r.so_phieu_nhan,
-				khach=r.ten_khach,
-				serial=r.serial_nhan,
-				phone=r.sdt,
-				product=r.ten_hang_tra,
-				description=r.mo_ta_loi_luc_tiep_nhan,
-				taken_date=r.ngay_nhan,
-				primised_date=r.ngay_hen_tra,
-				done_date=r.ngay_tra,
-				status="Done",
-				amount=r.amount,
-			)
-		)
+	# for r in rows_done:
+	# 	result.append(
+	# 		Phieu(
+	# 			id=r.id,
+	# 			phieu_nhan=r.so_phieu_nhan,
+	# 			khach=r.ten_khach,
+	# 			serial=r.serial_nhan,
+	# 			phone=r.sdt,
+	# 			product=r.ten_hang_tra,
+	# 			description=r.mo_ta_loi_luc_tiep_nhan,
+	# 			taken_date=r.ngay_nhan,
+	# 			primised_date=r.ngay_hen_tra,
+	# 			done_date=r.ngay_tra,
+	# 			status="Done",
+	# 			amount=r.amount,
+	# 		)
+	# 	)
 
 	# 2. Lấy phiếu từ no_hang_bh mà chưa có trong tra_hang_bh
 	subq_done = db.query(PhieuBH.so_phieu_nhan).filter(PhieuBH.sdt == sdt).subquery()

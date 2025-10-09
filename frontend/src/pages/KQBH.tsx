@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import {Button} from "../components/ui/button";
 import {Input} from "../components/ui/input";
 import {Card, CardContent, CardHeader, CardTitle} from "../components/ui/card";
-import {Package} from "lucide-react";
+import {CircleCheckBig, Package} from "lucide-react";
 import {
     Facebook,
     Youtube,
@@ -66,6 +66,8 @@ export default function KQBH() {
     const [tickets, setTickets] = useState<Ticket[]>([]);
     const [phoneTickets, setPhoneTickets] = useState<Ticket[]>([]);
     const [pageStack, setPageStack] = useState<PageState[]>([]);
+    // "empty" for no results, "network" for network error
+    const [noResultType, setNoResultType] = useState<"empty" | "network">("empty");
 
     const goToPage = (page: PageState) => {
         setPageStack(prev => [...prev, currentPage]);
@@ -145,6 +147,7 @@ export default function KQBH() {
                             kind: "id",
                         }))
                     );
+                    setNoResultType("empty");
                     console.log(json.data[0].description);
                     goToPage("findbyid")
                 } else if (json.kind === "phone") {
@@ -163,13 +166,20 @@ export default function KQBH() {
                     }))
                     setTickets(data);
                     setPhoneTickets(data);
+                    setNoResultType("empty");
                     goToPage("findbyphonenb");
                 }
             } else {
+                setNoResultType("empty");
                 setCurrentPage("no-results");
             }
         } catch (err) {
             console.error(err);
+            if (err instanceof TypeError) {
+                setNoResultType("network"); // network error
+            } else {
+                setNoResultType("empty"); // lỗi khác hoặc server trả []
+            }
             setCurrentPage("no-results");
         }
     };
@@ -262,11 +272,25 @@ export default function KQBH() {
                 </CardHeader>
                 <CardContent className="p-8 text-center">
                     <div className="flex flex-col items-center space-y-4">
-                        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
-                            <AlertTriangle className="w-6 h-6 text-primary"/>
-                        </div>
-                        <h3 className="font-medium text-gray-900">Không tìm thấy kết quả</h3>
-                        <p className="text-gray-600">Không có kết quả trùng khớp với mã tra cứu bạn nhập.</p>
+                        {noResultType === "network" ?
+                            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center">
+                                <AlertTriangle className="w-6 h-6 text-primary"/>
+                            </div>
+                            :
+                            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                                <CircleCheckBig className="w-6 h-6 text-primary"/>
+                            </div>
+                        }
+                        <h3 className="font-medium text-gray-900">
+                            {noResultType === "network"
+                                ? "Không thể kết nối đến máy chủ"
+                                : "Không tìm thấy kết quả"}
+                        </h3>
+                        <p className="text-gray-600">
+                            {noResultType === "network"
+                                ? "Không thể kết nối đến máy chủ. Vui lòng thử lại sau."
+                                : "Bạn không có phiếu nào đang xử lý"}
+                        </p>
                         <Button
                             onClick={() => {
                                 setCurrentPage("search");
@@ -285,37 +309,38 @@ export default function KQBH() {
     const findbyid = () => (
         <div className="h-auto bg-gradient-to-br from-blue-200 to-red-200 p-4">
             <div className="max-w-[65vw] mx-auto  bg-gray-50  rounded-2xl">
-                <CardHeader className="bg-gradient-to-r from-blue-800 to-red-500 py-3 text-white  rounded-2xl sticky top-2 z-20">
-                        <div className="flex items-center space-x-4 mb-2">
-                            <Button variant="ghost" size="sm" onClick={goBack}
-                                    className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
-                            >
-                                ← Quay lại
-                            </Button>
-                            <CardTitle className="flex items-center bg-white rounded-xl py-1.5 text-black px-6">
-                                Kết Quả Tra Cứu cho số phiếu
-                                <FileText className="w-5 h-5 text-gray-500 mr-2 ml-2"/>
-                                {tickets[0].sophieunhan} có {tickets.length} sản phẩm
-                            </CardTitle>
-                        </div>
-                        <CardTitle
-                            className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-1 bg-white rounded-xl overflow-hidden">
-                            <div className="h-full flex flex-1 items-center overflow-hidden">
-                                <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
-                                <div className=" flex items-center relative flex-1 overflow-hidden">
-                                    <div className="flex items-center whitespace-nowrap">
+                <CardHeader
+                    className="bg-gradient-to-r from-blue-800 to-red-500 py-3 text-white  rounded-2xl sticky top-2 z-20">
+                    <div className="flex items-center space-x-4 mb-2">
+                        <Button variant="ghost" size="sm" onClick={goBack}
+                                className="text-white bg-red-300 !hover:bg-blue-200 text-xl"
+                        >
+                            ← Quay lại
+                        </Button>
+                        <CardTitle className="flex items-center bg-white rounded-xl py-1.5 text-black px-6">
+                            Kết Quả Tra Cứu cho số phiếu
+                            <FileText className="w-5 h-5 text-gray-500 mr-2 ml-2"/>
+                            {tickets[0].sophieunhan} có {tickets.length} sản phẩm
+                        </CardTitle>
+                    </div>
+                    <CardTitle
+                        className="h-auto flex flex-col sm:flex-row gap-2 px-6 py-1 bg-white rounded-xl overflow-hidden">
+                        <div className="h-full flex flex-1 items-center overflow-hidden">
+                            <User className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
+                            <div className=" flex items-center relative flex-1 overflow-hidden">
+                                <div className="flex items-center whitespace-nowrap">
                                         <span
                                             className="h-[25px] flex text-black items-center mr-8 truncate">{tickets[0].Name}</span>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-2 min-w-[120px]">
-                                <Phone className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
-                                <span className="text-black truncate">{tickets[0].phoneNumber}</span>
-                            </div>
-                        </CardTitle>
+                        </div>
+                        <div className="flex items-center gap-2 min-w-[120px]">
+                            <Phone className="w-6 h-6 flex-shrink-0 text-gray-500 mr-2"/>
+                            <span className="text-black truncate">{tickets[0].phoneNumber}</span>
+                        </div>
+                    </CardTitle>
 
-                    </CardHeader>
+                </CardHeader>
                 <Card className="shadow-md border-0 overflow-hidden rounded-2xl">
                     <CardContent className="p-6 space-y-4 bg-gray-50">
                         {tickets.map((ticket, i) => (
