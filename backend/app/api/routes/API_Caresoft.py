@@ -34,21 +34,17 @@ logging.basicConfig(
 )
 
 
-@router.get("/test")
-async def test():
-	return {"test": "test"}
-
-
 @router.get("/test_caresoft")
 async def test_caresoft():
-	return await call_api()
+	return await call_api("kscl_baohanh")
 
 
+# scheduler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
-		call_api,
-		IntervalTrigger(hours=1),
+		do_something,
+		IntervalTrigger(hours=12),
 		next_run_time=datetime.now()
 	)
 	scheduler.start()
@@ -56,14 +52,29 @@ async def lifespan(app: FastAPI):
 	scheduler.shutdown()
 
 
-async def call_api():
+def do_something():
+	loop = asyncio.get_event_loop()
+	loop.create_task(call_api("baohanh"))
+	loop.create_task(call_api("kscl_banhang"))
+	loop.create_task(call_api("kscl_baohanh"))
+
+
+async def call_api(kind: str):
 	print(f"[DEBUG] call_api run at: {datetime.now()}", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
 	done = []
 	try:
-		tickets = get_all_ticket(db, sent=0, limit=None)
+		if kind == "baohanh":
+			tickets = get_all_ticket(db, sent=0, limit=None)
+		elif kind == "kscl_banhang":
+			tickets = make_rate_ticket(db, sent=0, limit=10)
+		elif kind == "kscl_baohanh":
+			tickets = make_kscl_saubh(db, sent=0, limit=10)
+		else:
+			tickets = []
+
 		for i in range(0, len(tickets), BATCH_SIZE):
 			batch = tickets[i:i + BATCH_SIZE]
 			# wrap make_ticket với semaphore để giới hạn concurrency
@@ -98,16 +109,28 @@ async def call_api():
 				resp, status = await f
 				results.append((resp, status))
 
-			# Xử lý kết quả batch
 			for (resp, status), t in zip(results, batch):
 				if status:
-					done.append(t.custom_fields[7].value)
+					done.append(t.custom_fields[0].value)
 
 		# Update ticket cuối cùng
 		if done:
-			way = update_ticket(db, so_phieus=done)
-			if way is False:
-				logging.error("Update ticket failed for so_phieus: %s", done)
+			if kind == "baohanh":
+				way = update_ticket(db, so_phieus=done)
+				if way is False:
+					logging.error("Update ticket failed for so_phieus: %s", done)
+
+			elif kind == "kscl_banhang":
+				way = ud_rate_ticket(db, so_don_hangs=done)
+				if way is False:
+					logging.error("Update ticket failed for so_don_hangs: %s", done)
+			elif kind == "kscl_baohanh":
+				way = update_saubh(db, bh=done)
+				if way is False:
+					logging.error("Update ticket failed for so_don_hangs: %s", done)
+
+			else:
+				pass
 
 	except Exception as e:
 		logging.error("Error processing tickets: %s", e)
@@ -141,9 +164,16 @@ async def make_ticket(data):
 		else:
 			return result, True  # thêm status True
 
+	except httpx.HTTPStatusError as e:
+		error_text = e.response.text if e.response else "No response body"
+		print(f"[DEBUG] HTTP error ({e.response.status_code}): {error_text}", flush=True)
+		logging.error("HTTP error %s | Response: %s | Payload: %s", e.response.status_code, error_text, payload)
+
+		return {"error": error_text}, False
+
 	except httpx.RequestError as e:
 		logging.error("Request error: %s | Payload: %s", e, payload)
-		print("[DEBUG] asdict failed:", e, flush=True)
+		print(f"[DEBUG] Request failed: {e}", flush=True)
 		return {"error": str(e)}, False
 
 

@@ -1,12 +1,12 @@
-from fastapi import APIRouter, HTTPException, Depends
-from pydantic import BaseModel
-from typing import Optional
 from math import ceil
+from typing import Optional
+
+from fastapi import APIRouter, Depends
 from fastapi import Body, HTTPException
-from sqlalchemy.orm import Session
+from pydantic import BaseModel
+
 from ...core.SqlServerPA import *
 from ...model.Phieubh import *
-from fastapi import Form
 
 router = APIRouter(prefix="/kqbh", tags=["kqbh"])
 
