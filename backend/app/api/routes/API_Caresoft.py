@@ -52,7 +52,7 @@ async def do_something():
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
 		do_something,
-		IntervalTrigger(hours=12),
+		IntervalTrigger(hours=1),
 		next_run_time=datetime.now()
 	)
 	scheduler.start()
