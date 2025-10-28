@@ -36,7 +36,7 @@ logging.basicConfig(
 
 @router.get("/test_caresoft")
 async def test_caresoft():
-	return await call_api("kscl_baohanh")
+	return await call_api("kscl_banhang")
 
 
 # scheduler
@@ -53,10 +53,11 @@ async def lifespan(app: FastAPI):
 
 
 def do_something():
-	loop = asyncio.get_event_loop()
-	loop.create_task(call_api("baohanh"))
-	loop.create_task(call_api("kscl_banhang"))
-	loop.create_task(call_api("kscl_baohanh"))
+	# loop = asyncio.get_event_loop()
+	# loop.create_task(call_api("baohanh"))
+	# loop.create_task(call_api("kscl_banhang"))
+	# loop.create_task(call_api("kscl_baohanh"))
+	pass
 
 
 async def call_api(kind: str):
