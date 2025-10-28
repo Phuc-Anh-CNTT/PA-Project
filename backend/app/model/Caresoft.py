@@ -5,7 +5,7 @@ from ..core.SqlServerPA import engine, Base
 
 from sqlalchemy.orm import Session
 from datetime import date, datetime
-from sqlalchemy import Date, text, func, and_, Column, Boolean, String, DateTime, Integer
+from sqlalchemy import Date, text, func, and_, or_, Column, Boolean, String, DateTime, Integer
 
 
 @dataclass
@@ -90,6 +90,7 @@ class don_hang_ban(Base):
 	Tel: Column(String)
 	BizDocId: Column(String)
 	DocDate: Column(Date)
+	DocNo: Column(String)
 	JobCode: Column(String)
 	TTGH: Column(String)
 	Created_at: datetime
@@ -105,6 +106,7 @@ class don_hang_BH(Base):
 	ma_khach: Integer
 	ten_khach: String
 	sdt: String
+	so_phieu_nhan: String
 	so_phieu_tra: String
 	ngay_tra: datetime
 	serial_nhan: String
@@ -134,6 +136,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			don_hang_BH.ma_khach,
 			don_hang_BH.ten_khach,
 			don_hang_BH.sdt,
+			don_hang_BH.so_phieu_nhan,
 			don_hang_BH.so_phieu_tra,
 			don_hang_BH.ngay_tra,
 			don_hang_BH.serial_nhan,
@@ -141,7 +144,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			don_hang_BH.chenh_lech_ngay_tra_ngay_hen_tra,
 			don_hang_BH.so_don_hang,
 			don_hang_BH.da_tao_phieu
-		)
+		).filter(don_hang_BH.sdt == '0989313229')
 
 		if sent is not None:
 			query = query.filter(don_hang_BH.da_tao_phieu == sent)
@@ -154,10 +157,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 		for r in rows:
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
 
-			if r.chenh_lech_ngay_tra_ngay_hen_tra >= 14:
-				kind = 74238
-			else:
-				kind = 74239
+			kind = 74238 if r.chenh_lech_ngay_tra_ngay_hen_tra >= 14 else 74239
 
 			results.append(
 				Ticket(
@@ -171,8 +171,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					group_id=12390,
 					service_id=95098188,
 					assignee_id=None,
-					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho đơn hàng : " + (
-						sodonhang if sodonhang else "(Không có)"),
+					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho số phiếu trả : " + r.so_phieu_nhan,
 					custom_fields=[
 						CustomField(id="10699", value=r.so_phieu_tra),  # Phieu xuat tra bh
 						CustomField(id="5395", value=sodonhang),  # so don hang web
@@ -186,6 +185,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					]
 				)
 			)
+			print(f'{r.so_phieu_tra} - {r.so_don_hang} - {r.ngay_tra.date().strftime("%Y/%m/%d")} - {r.ma_khach} - {r.ten_khach}')
 
 		return results
 
@@ -203,17 +203,22 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			don_hang_ban.Tel,
 			don_hang_ban.BizDocId,
 			don_hang_ban.DocDate,
+			don_hang_ban.DocNo,
 			don_hang_ban.JobCode,
 			don_hang_ban.TTGH,
 			don_hang_ban.Created_at,
 			don_hang_ban.Modified_at,
 			don_hang_ban.da_tao_phieu
 		).filter(
-			and_(
+			or_(and_(
 				don_hang_ban.da_tao_phieu == False,
 				don_hang_ban.JobCode != "KDPP",
-				don_hang_ban.Modified_at != don_hang_ban.Created_at
-			)
+				don_hang_ban.Modified_at != don_hang_ban.Created_at,
+				don_hang_ban.Tel == "0989313229"
+			), (and_(don_hang_ban.TTGH == "Đã giao hàng",
+				don_hang_ban.da_tao_phieu == False,
+				don_hang_ban.JobCode != "KDPP",
+				don_hang_ban.Tel == "0989313229")))
 		)
 		# Nếu có điều kiện (ví dụ sent = 0 nghĩa là chưa lập phiếu)
 		if sent is not None:
@@ -226,7 +231,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 
 		for r in rows:
 			name = None
-			if not r.Tel or len(r.Tel) > 11 or len(r.Tel) < 9 or r.Tel.startswith(("024", "1900", "1800")):
+			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(("024", "1900", "1800")):
 				comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 			elif r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				if r.Tel in get_list_phone(db):
@@ -248,11 +253,11 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						ticket_comment=f"Phiếu khảo sát chât lượng cho {r.CustomerName} với đơn hàng số: {r.BizDocId} \n" + comment,
 						requester_id=240444945,
 						group_id=12390,
-						service_id=95096527,
+						service_id=95098188,
 						assignee_id=None,
 						ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: " + r.BizDocId,
 						custom_fields=[
-							CustomField(id="5395", value=r.BizDocId),  # so don hang web
+							CustomField(id="5395", value=r.DocNo),  # so don hang web
 							CustomField(id="5403", value=168259),  # yeu cau xu ly
 							CustomField(id="5419", value=79220),  # ket qua xu ly
 							CustomField(id="5418", value=74209),  # phan loai phieu ghi
@@ -263,6 +268,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						]
 					)
 				)
+				print(f'{r.BizDocId} - {r.DocDate.strftime("%Y/%m/%d")} - {r.CustomerId} - {name}')
 
 		return results
 
@@ -356,8 +362,9 @@ def update_ticket(db: Session, so_phieus: list[str]):
 
 def ud_rate_ticket(db: Session, so_don_hangs: list[str]):
 	try:
+		print(so_don_hangs)
 		if so_don_hangs:
-			ud_rows = db.query(don_hang_ban).filter(don_hang_ban.BizDocId.in_(so_don_hangs)).update(
+			ud_rows = db.query(don_hang_ban).filter(don_hang_ban.DocNo.in_(so_don_hangs)).update(
 				{don_hang_ban.da_tao_phieu: True}, synchronize_session=False)
 			db.commit()
 			return ud_rows > 0

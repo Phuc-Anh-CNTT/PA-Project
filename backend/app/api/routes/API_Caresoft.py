@@ -39,6 +39,14 @@ async def test_caresoft():
 	return await call_api("kscl_banhang")
 
 
+async def do_something():
+	await asyncio.gather(
+		call_api("baohanh"),
+		call_api("kscl_banhang"),
+		call_api("kscl_baohanh")
+	)
+
+
 # scheduler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -52,14 +60,6 @@ async def lifespan(app: FastAPI):
 	scheduler.shutdown()
 
 
-def do_something():
-	# loop = asyncio.get_event_loop()
-	# loop.create_task(call_api("baohanh"))
-	# loop.create_task(call_api("kscl_banhang"))
-	# loop.create_task(call_api("kscl_baohanh"))
-	pass
-
-
 async def call_api(kind: str):
 	print(f"[DEBUG] call_api run at: {datetime.now()}", flush=True)
 	BATCH_SIZE = 10
@@ -70,9 +70,9 @@ async def call_api(kind: str):
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_banhang":
-			tickets = make_rate_ticket(db, sent=0, limit=10)
+			tickets = make_rate_ticket(db, sent=0, limit=5)
 		elif kind == "kscl_baohanh":
-			tickets = make_kscl_saubh(db, sent=0, limit=10)
+			tickets = make_kscl_saubh(db, sent=0, limit=5)
 		else:
 			tickets = []
 
@@ -83,6 +83,7 @@ async def call_api(kind: str):
 
 			async def limited_make_ticket(ticket):
 				async with semaphore:
+
 					exists = await check_user(str(ticket.phone))
 					if not exists:
 						created = await create_user(ticket)
@@ -94,7 +95,7 @@ async def call_api(kind: str):
 						ticket.requester_id = exists.get("id")
 						user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
 
-						if user != exists.get("username "):
+						if user != exists.get("username ") and ticket.phone != '0989313229':
 							update = await update_user(str(exists.get("id")), user)
 							if not update:
 								return {"error": "User update failed"}, False
@@ -113,8 +114,10 @@ async def call_api(kind: str):
 			for (resp, status), t in zip(results, batch):
 				if status:
 					done.append(t.custom_fields[0].value)
+				else:
+					print(status, resp, t.custom_fields[0].value)
 
-		# Update ticket cuối cùng
+		# Update ticket Thanh cong
 		if done:
 			if kind == "baohanh":
 				way = update_ticket(db, so_phieus=done)
