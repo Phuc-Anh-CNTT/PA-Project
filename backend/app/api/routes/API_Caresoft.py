@@ -40,6 +40,7 @@ async def test_caresoft():
 
 
 async def do_something():
+	print("Already doing something")
 	await asyncio.gather(
 		call_api("baohanh"),
 		call_api("kscl_banhang"),
