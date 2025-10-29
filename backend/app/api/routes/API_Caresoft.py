@@ -71,9 +71,10 @@ async def call_api(kind: str):
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_banhang":
-			tickets = make_rate_ticket(db, sent=0, limit=5)
+			tickets = make_rate_ticket(db, sent=0, limit=2)
 		elif kind == "kscl_baohanh":
-			tickets = make_kscl_saubh(db, sent=0, limit=0)
+			tickets = make_kscl_saubh(db, sent=0, limit=2)
+			tickets = list({tickets.so_phieu_nhan: ticket for ticket in tickets}.values())
 		else:
 			tickets = []
 
@@ -84,7 +85,6 @@ async def call_api(kind: str):
 
 			async def limited_make_ticket(ticket):
 				async with semaphore:
-
 					exists = await check_user(str(ticket.phone))
 					if not exists:
 						created = await create_user(ticket)

@@ -174,6 +174,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho số phiếu trả : " + r.so_phieu_nhan,
 					custom_fields=[
 						CustomField(id="10699", value=r.so_phieu_tra),  # Phieu xuat tra bh
+						CustomField(id="10487", value=r.so_phieu_nhan),  # So phieu nhan
 						CustomField(id="5395", value=sodonhang),  # so don hang web
 						CustomField(id="5403", value=168259),  # yeu cau xu ly
 						CustomField(id="5419", value=79220),  # ket qua xu ly
