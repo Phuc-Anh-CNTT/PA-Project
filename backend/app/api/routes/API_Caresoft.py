@@ -285,5 +285,3 @@ async def update_user(id: str, name: str):
 	except httpx.RequestError as e:
 		print("[DEBUG] check failed:", e, flush=True)
 		return {"error": str(e)}, False
-
-
