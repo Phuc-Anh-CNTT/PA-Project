@@ -229,12 +229,15 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 
 		for r in rows:
 			name = None
+			serviceID = 95098188
 			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(
 				("024", "1900", "1800")) or not r.Tel.startswith("0"):
 				comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
+				serviceID = 95098303
 			elif r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				if r.Tel in get_list_phone(db):
 					comment = "Đơn hàng dùng số điện thoại nhân viên!"
+					serviceID = 95098303
 				else:
 					comment = ""
 					name = r.CustomerName
@@ -252,7 +255,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						ticket_comment=f"Phiếu khảo sát chât lượng cho {r.CustomerName} với đơn hàng số: {r.DocNo} \n" + comment,
 						requester_id=240444945,
 						group_id=12390,
-						service_id=95098188,
+						service_id=serviceID,
 						assignee_id=None,
 						ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: " + r.DocNo,
 						custom_fields=[
