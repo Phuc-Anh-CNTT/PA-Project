@@ -229,7 +229,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 		for r in rows:
 			name = None
 			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(
-				("024", "1900", "1800")) or not r.Tel.startwith("0"):
+				("024", "1900", "1800")) or not r.Tel.startswith("0"):
 				comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 			elif r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				if r.Tel in get_list_phone(db):
