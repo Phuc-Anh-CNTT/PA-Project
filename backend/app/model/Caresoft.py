@@ -166,15 +166,15 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					ticket_source="API",
 					type=0,
 					phone=r.sdt,
-					ticket_comment=f"Phiếu khảo sát chất lượng bảo hành cho {r.ten_khach} với số phiếu trả: {r.so_phieu_tra} \n",
+					ticket_comment=f"Phiếu khảo sát chất lượng bảo hành cho {r.ten_khach} với số phiếu: {r.so_phieu_tra} \n",
 					requester_id=240444945,
 					group_id=12390,
 					service_id=95098188,
 					assignee_id=None,
-					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho số phiếu trả : " + r.so_phieu_nhan,
+					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho số phiếu nhận: " + r.so_phieu_nhan,
 					custom_fields=[
-						CustomField(id="10699", value=r.so_phieu_tra),  # Phieu xuat tra bh
 						CustomField(id="10487", value=r.so_phieu_nhan),  # So phieu nhan
+						CustomField(id="10699", value=r.so_phieu_tra),  # Phieu xuat tra bh
 						CustomField(id="5395", value=sodonhang),  # so don hang web
 						CustomField(id="5403", value=168259),  # yeu cau xu ly
 						CustomField(id="5419", value=79220),  # ket qua xu ly
@@ -249,12 +249,12 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						ticket_source="API",
 						type=0,
 						phone=r.Tel,
-						ticket_comment=f"Phiếu khảo sát chât lượng cho {r.CustomerName} với đơn hàng số: {r.BizDocId} \n" + comment,
+						ticket_comment=f"Phiếu khảo sát chât lượng cho {r.CustomerName} với đơn hàng số: {r.DocNo} \n" + comment,
 						requester_id=240444945,
 						group_id=12390,
 						service_id=95098188,
 						assignee_id=None,
-						ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: " + r.BizDocId,
+						ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: " + r.DocNo,
 						custom_fields=[
 							CustomField(id="5395", value=r.DocNo),  # so don hang web
 							CustomField(id="5403", value=168259),  # yeu cau xu ly
@@ -376,7 +376,7 @@ def ud_rate_ticket(db: Session, so_don_hangs: list[str]):
 def update_saubh(db: Session, bh: list[str]):
 	try:
 		if bh:
-			ud_tics = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_tra.in_(bh)).update(
+			ud_tics = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_nhan.in_(bh)).update(
 				{don_hang_BH.da_tao_phieu: True}, synchronize_session=False)
 			db.commit()
 			return ud_tics > 0

@@ -74,7 +74,7 @@ async def call_api(kind: str):
 			tickets = make_rate_ticket(db, sent=0, limit=2)
 		elif kind == "kscl_baohanh":
 			tickets = make_kscl_saubh(db, sent=0, limit=2)
-			tickets = list({tickets.so_phieu_nhan: ticket for ticket in tickets}.values())
+			tickets = list({tickets.custom_fields[0]: ticket for ticket in tickets}.values())
 		else:
 			tickets = []
 
