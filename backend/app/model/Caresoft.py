@@ -210,15 +210,12 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			don_hang_ban.Modified_at,
 			don_hang_ban.da_tao_phieu
 		).filter(
-			or_(and_(
+			and_(
 				don_hang_ban.da_tao_phieu == False,
 				don_hang_ban.JobCode != "KDPP",
-				don_hang_ban.Modified_at != don_hang_ban.Created_at,
-				don_hang_ban.Tel == "0989313229"
-			), (and_(don_hang_ban.TTGH == "Đã giao hàng",
-				don_hang_ban.da_tao_phieu == False,
-				don_hang_ban.JobCode != "KDPP",
-				don_hang_ban.Tel == "0989313229")))
+				or_(don_hang_ban.Modified_at != don_hang_ban.Created_at,
+				don_hang_ban.TTGH == "Đã giao hàng"),
+				don_hang_ban.Tel == "0989313229")
 		)
 		# Nếu có điều kiện (ví dụ sent = 0 nghĩa là chưa lập phiếu)
 		if sent is not None:
@@ -231,7 +228,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 
 		for r in rows:
 			name = None
-			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(("024", "1900", "1800")):
+			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(("024", "1900", "1800")) or not r.Tel.startwith("0"):
 				comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 			elif r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				if r.Tel in get_list_phone(db):

@@ -62,7 +62,7 @@ async def lifespan(app: FastAPI):
 
 
 async def call_api(kind: str):
-	print(f"[DEBUG] call_api run at: {datetime.now()}", flush=True)
+	print(f"[DEBUG] call_api for {kind} run at: {datetime.now()}", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
