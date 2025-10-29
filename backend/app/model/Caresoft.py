@@ -144,7 +144,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			don_hang_BH.chenh_lech_ngay_tra_ngay_hen_tra,
 			don_hang_BH.so_don_hang,
 			don_hang_BH.da_tao_phieu
-		).filter(don_hang_BH.sdt == '0989313229')
+		)
 
 		if sent is not None:
 			query = query.filter(don_hang_BH.da_tao_phieu == sent)
@@ -185,7 +185,8 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					]
 				)
 			)
-			print(f'{r.so_phieu_tra} - {r.so_don_hang} - {r.ngay_tra.date().strftime("%Y/%m/%d")} - {r.ma_khach} - {r.ten_khach}')
+			print(
+				f'{r.so_phieu_tra} - {r.so_don_hang} - {r.ngay_tra.date().strftime("%Y/%m/%d")} - {r.ma_khach} - {r.ten_khach}')
 
 		return results
 
@@ -214,8 +215,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 				don_hang_ban.da_tao_phieu == False,
 				don_hang_ban.JobCode != "KDPP",
 				or_(don_hang_ban.Modified_at != don_hang_ban.Created_at,
-				don_hang_ban.TTGH == "Đã giao hàng"),
-				don_hang_ban.Tel == "0989313229")
+					don_hang_ban.TTGH == "Đã giao hàng"))
 		)
 		# Nếu có điều kiện (ví dụ sent = 0 nghĩa là chưa lập phiếu)
 		if sent is not None:
@@ -228,7 +228,8 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 
 		for r in rows:
 			name = None
-			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(("024", "1900", "1800")) or not r.Tel.startwith("0"):
+			if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(
+				("024", "1900", "1800")) or not r.Tel.startwith("0"):
 				comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 			elif r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				if r.Tel in get_list_phone(db):
@@ -374,7 +375,8 @@ def ud_rate_ticket(db: Session, so_don_hangs: list[str]):
 def update_saubh(db: Session, bh: list[str]):
 	try:
 		if bh:
-			ud_tics = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_tra.in_(bh)).update({don_hang_BH.da_tao_phieu: True}, synchronize_session=False)
+			ud_tics = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_tra.in_(bh)).update(
+				{don_hang_BH.da_tao_phieu: True}, synchronize_session=False)
 			db.commit()
 			return ud_tics > 0
 	except Exception as e:
