@@ -49,11 +49,16 @@ async def do_something():
 	# )
 
 
+async def bao_nhan_bh():
+	print(f"bao nhan BH luc: {datetime.now()}")
+	await asyncio.gather(call_api("baohanh"))
+
+
 # scheduler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
-		call_api("baohanh"),
+		bao_nhan_bh,
 		IntervalTrigger(hours=1),
 		next_run_time=datetime.now()
 	)
