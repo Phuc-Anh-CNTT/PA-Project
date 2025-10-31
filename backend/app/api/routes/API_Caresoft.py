@@ -1,4 +1,6 @@
 from contextlib import asynccontextmanager
+
+import pytz
 from tqdm import tqdm
 
 from apscheduler.triggers.cron import CronTrigger
@@ -41,21 +43,26 @@ async def test_caresoft():
 
 async def do_something():
 	print("Already doing something")
-	await asyncio.gather(
-		call_api("baohanh"),
-		# call_api("kscl_banhang"),
-		# call_api("kscl_baohanh")
-	)
+	# await asyncio.gather(
+	# 	call_api("kscl_banhang"),
+	# 	call_api("kscl_baohanh")
+	# )
 
 
 # scheduler
 @asynccontextmanager
 async def lifespan(app: FastAPI):
 	scheduler.add_job(
-		do_something,
+		call_api("baohanh"),
 		IntervalTrigger(hours=1),
 		next_run_time=datetime.now()
 	)
+
+	scheduler.add_job(
+		do_something,
+		CronTrigger(hour=7, minute=0, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
+	)
+
 	scheduler.start()
 	yield
 	scheduler.shutdown()
