@@ -113,6 +113,7 @@ class don_hang_BH(Base):
 	serial_tra: String
 	chenh_lech_ngay_tra_ngay_hen_tra: Integer
 	so_don_hang: String
+	CreatedAt: datetime
 	da_tao_phieu: Column(Boolean, default=False)
 
 
@@ -144,7 +145,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			don_hang_BH.chenh_lech_ngay_tra_ngay_hen_tra,
 			don_hang_BH.so_don_hang,
 			don_hang_BH.da_tao_phieu
-		)
+		).filter(don_hang_BH.CreatedAt >= datetime(2025, 11, 1))
 
 		if sent is not None:
 			query = query.filter(don_hang_BH.da_tao_phieu == sent)
@@ -216,7 +217,9 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 				don_hang_ban.da_tao_phieu == False,
 				don_hang_ban.JobCode != "KDPP",
 				or_(don_hang_ban.Modified_at != don_hang_ban.Created_at,
-					don_hang_ban.TTGH == "Đã giao hàng"))
+					don_hang_ban.TTGH == "Đã giao hàng"),
+				don_hang_ban.Created_at >= datetime(2025, 11, 1)
+			)
 		)
 		# Nếu có điều kiện (ví dụ sent = 0 nghĩa là chưa lập phiếu)
 		if sent is not None:
