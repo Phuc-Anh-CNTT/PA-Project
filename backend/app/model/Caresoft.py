@@ -96,6 +96,7 @@ class don_hang_ban(Base):
 	Created_at: datetime
 	Modified_at: datetime
 	da_tao_phieu: Column(Boolean, default=False)
+	da_tao_ZNS: Column(Boolean, default=False)
 
 
 class don_hang_BH(Base):
@@ -115,6 +116,7 @@ class don_hang_BH(Base):
 	so_don_hang: String
 	CreatedAt: datetime
 	da_tao_phieu: Column(Boolean, default=False)
+	da_tao_ZNS: Column(Boolean, default=False)
 
 
 def get_list_phone(db: Session):
@@ -160,6 +162,8 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 
 			kind = 74238 if r.chenh_lech_ngay_tra_ngay_hen_tra >= 14 else 74239
 
+			check_ZNS(db, r.so_phieu_nhan, "don_hang_BH")
+
 			results.append(
 				Ticket(
 					status="new",
@@ -167,7 +171,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					ticket_source="API",
 					type=0,
 					phone=r.sdt,
-					ticket_comment=f"Phiếu khảo sát chất lượng bảo hành cho {r.ten_khach} với số phiếu: {r.so_phieu_tra} \n",
+					ticket_comment=f"Phiếu khảo sát chất lượng bảo hành cho {r.ten_khach} với số phiếu: {r.so_phieu_nhan} \n",
 					requester_id=240444945,
 					group_id=12390,
 					service_id=95098188,
@@ -188,7 +192,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 				)
 			)
 			print(
-				f'{r.so_phieu_tra} - {r.so_don_hang} - {r.ngay_tra.date().strftime("%Y/%m/%d")} - {r.ma_khach} - {r.ten_khach}')
+				f'{r.so_phieu_nhan} - {r.so_don_hang} - {r.ngay_tra.date().strftime("%Y/%m/%d")} - {r.ma_khach} - {r.ten_khach}')
 
 		return results
 
@@ -244,6 +248,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 				else:
 					comment = ""
 					name = r.CustomerName
+					check_ZNS(db, r.DocNo, "don_hang_ban")
 			else:
 				comment = ""
 
@@ -388,4 +393,29 @@ def update_saubh(db: Session, bh: list[str]):
 			return ud_tics > 0
 	except Exception as e:
 		print(f"[ERROR][update_saubh] {str(e)}")
+		return False
+
+
+def check_ZNS(db: Session, ZNS: str, type):
+	try:
+		if not ZNS:
+			return False
+
+		if type == "don_hang_ban":
+			up_zns = db.query(don_hang_ban).filter(don_hang_ban.DocNo == ZNS).update(
+				{don_hang_ban.da_tao_ZNS: True}, synchronize_session=False)
+			db.commit()
+
+		elif type == "don_hang_BH":
+			up_zns = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_nhan == ZNS).update(
+				{don_hang_BH.da_tao_ZNS: True}, synchronize_session=False)
+			db.commit()
+
+		else:
+			up_zns = 0
+
+		return up_zns > 0
+
+	except Exception as e:
+		print(f"[ERROR][check_ZNS] {str(e)}")
 		return False

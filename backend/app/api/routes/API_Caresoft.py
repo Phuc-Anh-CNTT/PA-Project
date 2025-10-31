@@ -43,8 +43,8 @@ async def do_something():
 	print("Already doing something")
 	await asyncio.gather(
 		call_api("baohanh"),
-		call_api("kscl_banhang"),
-		call_api("kscl_baohanh")
+		# call_api("kscl_banhang"),
+		# call_api("kscl_baohanh")
 	)
 
 
@@ -71,10 +71,10 @@ async def call_api(kind: str):
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_banhang":
-			tickets = make_rate_ticket(db, sent=0, limit=2)
+			tickets = make_rate_ticket(db, sent=0, limit=1)
 		elif kind == "kscl_baohanh":
-			tickets = make_kscl_saubh(db, sent=0, limit=2)
-			tickets = list({tickets.custom_fields[0]: ticket for ticket in tickets}.values())
+			tickets = make_kscl_saubh(db, sent=0, limit=1)
+			tickets = list({ticket.custom_fields[0].value: ticket for ticket in tickets}.values())
 		else:
 			tickets = []
 
@@ -133,7 +133,6 @@ async def call_api(kind: str):
 				way = update_saubh(db, bh=done)
 				if way is False:
 					logging.error("Update ticket failed for so_don_hangs: %s", done)
-
 			else:
 				pass
 
