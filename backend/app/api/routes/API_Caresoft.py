@@ -38,20 +38,24 @@ logging.basicConfig(
 
 @router.get("/test_caresoft")
 async def test_caresoft():
-	return await call_api("kscl_banhang")
+	return count_ticket(next(get_db()))
 
 
 async def do_something():
 	print("Already doing something")
-	# await asyncio.gather(
-	# 	call_api("kscl_banhang"),
-	# 	call_api("kscl_baohanh")
-	# )
+	await asyncio.gather(
+		call_api("kscl_banhang"),
+		call_api("kscl_baohanh")
+	)
 
 
 async def bao_nhan_bh():
 	print(f"bao nhan BH luc: {datetime.now()}")
-	await asyncio.gather(call_api("baohanh"))
+	await asyncio.gather(
+		call_api("baohanh"),
+		call_api("kscl_banhang"),
+		call_api("kscl_baohanh")
+	)
 
 
 # scheduler
@@ -63,10 +67,10 @@ async def lifespan(app: FastAPI):
 		next_run_time=datetime.now()
 	)
 
-	scheduler.add_job(
-		do_something,
-		CronTrigger(hour=7, minute=0, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
-	)
+	# scheduler.add_job(
+	# 	do_something,
+	# 	CronTrigger(hour=7, minute=0, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
+	# )
 
 	scheduler.start()
 	yield
@@ -83,9 +87,9 @@ async def call_api(kind: str):
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_banhang":
-			tickets = make_rate_ticket(db, sent=0, limit=1)
+			tickets = make_rate_ticket(db, sent=0, limit=5)
 		elif kind == "kscl_baohanh":
-			tickets = make_kscl_saubh(db, sent=0, limit=1)
+			tickets = make_kscl_saubh(db, sent=0, limit=5)
 			tickets = list({ticket.custom_fields[0].value: ticket for ticket in tickets}.values())
 		else:
 			tickets = []
@@ -97,21 +101,27 @@ async def call_api(kind: str):
 
 			async def limited_make_ticket(ticket):
 				async with semaphore:
-					exists = await check_user(str(ticket.phone))
-					if not exists:
-						created = await create_user(ticket)
-						if not created:
-							return {"error": "User creation failed"}, False
-						else:
-							ticket.requester_id = created
-					else:
-						ticket.requester_id = exists.get("id")
-						user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
 
-						if user != exists.get("username ") and ticket.phone != '0989313229':
-							update = await update_user(str(exists.get("id")), user)
-							if not update:
-								return {"error": "User update failed"}, False
+					if not ticket.phone or len(ticket.phone) != 10 or ticket.phone == '0000000000' or ticket.phone.startswith(
+						("024", "1900", "1800")) or not ticket.phone.startswith("0"):
+						pass
+
+					else:
+						exists = await check_user(str(ticket.phone))
+						if not exists:
+							created = await create_user(ticket)
+							if not created:
+								return {"error": "User creation failed"}, False
+							else:
+								ticket.requester_id = created
+						else:
+							ticket.requester_id = exists.get("id")
+							user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
+
+							if user != exists.get("username ") and ticket.phone != '0989313229':
+								update = await update_user(str(exists.get("id")), user)
+								if not update:
+									return {"error": "User update failed"}, False
 
 					return await make_ticket(ticket)
 
@@ -119,10 +129,15 @@ async def call_api(kind: str):
 
 			# Chạy batch song song
 			results = []
-			for f in tqdm(asyncio.as_completed(tasks), total=len(tasks),
-						  desc=f"Processing batch {i // BATCH_SIZE + 1}"):
-				resp, status = await f
-				results.append((resp, status))
+			for f in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc=f"Processing batch {i // BATCH_SIZE + 1}"):
+				try:
+					resp, status = await f
+					results.append((resp, status))
+				except Exception as e:
+					# Ghi log lỗi nhưng không làm crash batch
+					logging.error(f"Task failed: {e}")
+					results.append(({"error": str(e)}, False))
+					continue
 
 			for (resp, status), t in zip(results, batch):
 				if status:
@@ -149,8 +164,10 @@ async def call_api(kind: str):
 				pass
 
 	except Exception as e:
-		logging.error("Error processing tickets: %s", e)
-		print(f"[DEBUG] Exception in call_api: {e}", flush=True)
+		import traceback
+		error_details = traceback.format_exc()
+		logging.error("Error processing tickets for kind '%s': %s\nTraceback:\n%s", kind, str(e), error_details)
+		print(f"[DEBUG] Exception in call_api {kind}: {e}\n{error_details}", flush=True)
 
 	finally:
 		db.close()
@@ -197,6 +214,8 @@ async def create_user(data: Ticket):
 	if not API_KH_MAKE or not API_CS_TOKEN:
 		raise ValueError("API URL or Token not found in .env")
 
+	print("[DEBUG] Created user phone:", data.phone, flush=True)
+
 	headers = {
 		"Authorization": f"Bearer {API_CS_TOKEN}",
 		"Content-Type": "application/json"
@@ -226,7 +245,7 @@ async def create_user(data: Ticket):
 			return False
 		else:
 			contact_id = result.get("contact", {}).get("id")
-			print("[DEBUG] Created user id:", contact_id, flush=True)
+			print("[DEBUG] Successfully Created user id:", contact_id, flush=True)
 			return contact_id
 
 	except httpx.RequestError as e:
@@ -288,9 +307,11 @@ async def update_user(id: str, name: str):
 		if response.status_code == 200 and result.get("code") == "ok":
 			return True
 		elif response.status_code == 400 and result.get("message") == "Not found user":
+			print("not found user", result, flush=True)
 			return False
 		else:
 			logging.error("Unexpected response: %s", result)
+			print("Unexpected response: %s", result, flush=True)
 			return False
 
 	except httpx.RequestError as e:
