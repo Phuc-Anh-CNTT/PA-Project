@@ -53,8 +53,8 @@ async def bao_nhan_bh():
 	print(f"bao nhan BH luc: {datetime.now()}")
 	await asyncio.gather(
 		call_api("baohanh"),
-		call_api("kscl_banhang"),
-		call_api("kscl_baohanh")
+		# call_api("kscl_banhang"),
+		# call_api("kscl_baohanh")
 	)
 
 
@@ -87,9 +87,9 @@ async def call_api(kind: str):
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_banhang":
-			tickets = make_rate_ticket(db, sent=0, limit=5)
+			tickets = make_rate_ticket(db, sent=0, limit=None)
 		elif kind == "kscl_baohanh":
-			tickets = make_kscl_saubh(db, sent=0, limit=5)
+			tickets = make_kscl_saubh(db, sent=0, limit=None)
 			tickets = list({ticket.custom_fields[0].value: ticket for ticket in tickets}.values())
 		else:
 			tickets = []
@@ -101,42 +101,36 @@ async def call_api(kind: str):
 
 			async def limited_make_ticket(ticket):
 				async with semaphore:
-
-					if not ticket.phone or len(ticket.phone) != 10 or ticket.phone == '0000000000' or ticket.phone.startswith(
-						("024", "1900", "1800")) or not ticket.phone.startswith("0"):
-						pass
-
+					exists = await check_user(str(ticket.phone))
+					if not exists:
+						created = await create_user(ticket)
+						if not created:
+							return ticket, {"error": "User creation failed"}, False
+						ticket.requester_id = created
 					else:
-						exists = await check_user(str(ticket.phone))
-						if not exists:
-							created = await create_user(ticket)
-							if not created:
-								return {"error": "User creation failed"}, False
-							else:
-								ticket.requester_id = created
-						else:
-							ticket.requester_id = exists.get("id")
-							user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
+						ticket.requester_id = exists.get("id")
+						user = next((cf.value for cf in ticket.custom_fields if str(cf.id) == "10657"), None)
 
-							if user != exists.get("username ") and ticket.phone != '0989313229':
-								update = await update_user(str(exists.get("id")), user)
-								if not update:
-									return {"error": "User update failed"}, False
+						if user != exists.get("username ") and ticket.phone != '0989313229':
+							update = await update_user(str(exists.get("id")), user)
+							if not update:
+								return ticket, {"error": "User update failed"}, False
 
-					return await make_ticket(ticket)
+					resp, ok = await make_ticket(ticket)
+					return ticket, resp, ok
 
 			tasks = [limited_make_ticket(t) for t in batch]
-
-			# Chạy batch song song
 			results = []
-			for f in tqdm(asyncio.as_completed(tasks), total=len(tasks), desc=f"Processing batch {i // BATCH_SIZE + 1}"):
+			for f in tqdm(asyncio.as_completed(tasks), total=len(tasks),
+						  desc=f"Processing batch {i // BATCH_SIZE + 1}"):
 				try:
-					resp, status = await f
-					results.append((resp, status))
+					ticket, resp, ok = await f
+					if ok:
+						done.append(ticket.custom_fields[0].value)
+					else:
+						print(f"[FAILED] {ticket.custom_fields[0].value}: {resp}")
 				except Exception as e:
-					# Ghi log lỗi nhưng không làm crash batch
 					logging.error(f"Task failed: {e}")
-					results.append(({"error": str(e)}, False))
 					continue
 
 			for (resp, status), t in zip(results, batch):
@@ -195,6 +189,7 @@ async def make_ticket(data):
 			logging.error("Ticket create failed | Response: %s | Payload: %s", result, payload)
 			return result, False  # thêm status False
 		else:
+			print("[DEBUG] Ticket created: " + data.custom_fields[0].value)
 			return result, True  # thêm status True
 
 	except httpx.HTTPStatusError as e:
