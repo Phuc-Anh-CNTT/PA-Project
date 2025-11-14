@@ -36,7 +36,7 @@ logging.basicConfig(
 )
 
 
-@router.get("/test_caresoft")
+@router.get("/test")
 async def test_caresoft():
 	return count_ticket(next(get_db()))
 
@@ -53,8 +53,8 @@ async def bao_nhan_bh():
 	print(f"bao nhan BH luc: {datetime.now()}")
 	await asyncio.gather(
 		call_api("baohanh"),
-		# call_api("kscl_banhang"),
-		# call_api("kscl_baohanh")
+		call_api("kscl_banhang"),
+		call_api("kscl_baohanh")
 	)
 
 
@@ -77,12 +77,15 @@ async def lifespan(app: FastAPI):
 	scheduler.shutdown()
 
 
-async def call_api(kind: str):
+async def call_api(kind: str, loop: bool = False):
 	print(f"[DEBUG] call_api for {kind} run at: {datetime.now()}", flush=True)
 	BATCH_SIZE = 10
 	tickets = []
 	db = next(get_db())
 	done = []
+	zns = []
+	success_count = 0
+	fail_count = 0
 	try:
 		if kind == "baohanh":
 			tickets = get_all_ticket(db, sent=0, limit=None)
@@ -120,24 +123,25 @@ async def call_api(kind: str):
 					return ticket, resp, ok
 
 			tasks = [limited_make_ticket(t) for t in batch]
-			results = []
+
 			for f in tqdm(asyncio.as_completed(tasks), total=len(tasks),
 						  desc=f"Processing batch {i // BATCH_SIZE + 1}"):
 				try:
 					ticket, resp, ok = await f
 					if ok:
 						done.append(ticket.custom_fields[0].value)
+						zns.append(ticket.custom_fields[1].value)
+						print(f"[SUCCESS] {ticket.custom_fields[0].value}")
+						success_count += 1
 					else:
 						print(f"[FAILED] {ticket.custom_fields[0].value}: {resp}")
+						logging.error(f"Ticket failed: {ticket.custom_fields[0].value} | {resp}")
+						fail_count += 1
 				except Exception as e:
-					logging.error(f"Task failed: {e}")
-					continue
+					print(f"[DEBUG] fail in tqdm: {e}")
+					fail_count += 1
 
-			for (resp, status), t in zip(results, batch):
-				if status:
-					done.append(t.custom_fields[0].value)
-				else:
-					print(status, resp, t.custom_fields[0].value)
+		print(f"[SUMMARY] {success_count} ticket(s) of {kind} created successfully, {fail_count} failed.")
 
 		# Update ticket Thanh cong
 		if done:
@@ -150,12 +154,17 @@ async def call_api(kind: str):
 				way = ud_rate_ticket(db, so_don_hangs=done)
 				if way is False:
 					logging.error("Update ticket failed for so_don_hangs: %s", done)
+				check_ZNS(db, done, zns, kind)
 			elif kind == "kscl_baohanh":
 				way = update_saubh(db, bh=done)
 				if way is False:
 					logging.error("Update ticket failed for so_don_hangs: %s", done)
+				check_ZNS(db, done, zns, kind)
 			else:
 				pass
+
+		if fail_count > 0 and loop:
+			await call_api(kind)
 
 	except Exception as e:
 		import traceback
@@ -209,8 +218,6 @@ async def create_user(data: Ticket):
 	if not API_KH_MAKE or not API_CS_TOKEN:
 		raise ValueError("API URL or Token not found in .env")
 
-	print("[DEBUG] Created user phone:", data.phone, flush=True)
-
 	headers = {
 		"Authorization": f"Bearer {API_CS_TOKEN}",
 		"Content-Type": "application/json"
@@ -229,6 +236,8 @@ async def create_user(data: Ticket):
 			}
 		}, ensure_ascii=False, default=str)
 
+		print(payload)
+
 		async with httpx.AsyncClient() as client:
 			response = await client.post(API_KH_MAKE, headers=headers, data=payload)
 
@@ -236,7 +245,12 @@ async def create_user(data: Ticket):
 		result = response.json()
 
 		if result.get("code") != "ok":
-			logging.error("User create failed | Response: %s | Payload: %s", result, payload)
+			if result.get("message") == "phone_no already exist":
+				return
+			error_message = result.get("message", "Unknown error")
+			logging.error("User create failed | Code: %s | Message: %s | Response: %s | Payload: %s",
+						  result.get("code"), error_message, result, payload)
+			print(f"[DEBUG] User create failed | Code: {result.get('code')} | Message: {error_message} | Payload: {payload}", flush=True)
 			return False
 		else:
 			contact_id = result.get("contact", {}).get("id")
@@ -245,7 +259,7 @@ async def create_user(data: Ticket):
 
 	except httpx.RequestError as e:
 		logging.error("Request error: %s | Payload: %s", e, payload)
-		print("[DEBUG] make failed:", e, flush=True)
+		print("[DEBUG] create user failed:", e, flush=True)
 		return False
 
 
@@ -263,6 +277,7 @@ async def check_user(phone: str):
 		print("[DEBUG] Request URL:", url, flush=True)
 		async with httpx.AsyncClient() as client:
 			response = await client.get(url, headers=headers)
+			# print(f"Response: {response}")
 
 		result = response.json()
 

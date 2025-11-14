@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from http.client import HTTPException
 from typing import List, Optional, Union, Any
 
 from ..core.SqlServerPA import engine, Base
@@ -9,6 +10,7 @@ from datetime import date, datetime
 from sqlalchemy import Date, text, func, and_, or_, Column, Boolean, String, DateTime, Integer
 
 import pandas as pd
+import traceback
 
 
 @dataclass
@@ -355,16 +357,20 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 				invalid_keys.add(key)
 
 		for r in rows:
+			name = r.ten_khach
+			serviceID = 95098188
+
 			if (r.so_phieu_nhan, r.ngay_tra.date()) in invalid_keys:
 				name = None
-			else:
-				name = r.ten_khach
+
+			if not r.sdt or len(r.sdt) != 10 or r.sdt == '0000000000' or r.sdt.startswith(
+				("024", "1900", "1800")) or not r.sdt.startswith("0"):
+				name = None
+				serviceID = 95098303
 
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
 
 			kind = 74238 if r.chenh_lech_ngay_tra_ngay_hen_tra >= 14 else 74239
-
-			check_ZNS(db, r.so_phieu_nhan, "don_hang_BH")
 
 			results.append(
 				Ticket(
@@ -377,11 +383,12 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					requester_id=240444945,
 					group_id=12390,
 					ticket_priority="Low",
-					service_id=95098188,
+					service_id=serviceID,
 					assignee_id=None,
 					ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bảo hành cho số phiếu trả: " + r.so_phieu_tra,
 					custom_fields=[
 						CustomField(id="10699", value=r.so_phieu_tra),  # Phieu xuat tra bh
+						CustomField(id="10657", value=name),
 						CustomField(id="10487", value=r.so_phieu_nhan),  # So phieu nhan
 						CustomField(id="5395", value=sodonhang),  # so don hang web
 						CustomField(id="5403", value=168259),  # yeu cau xu ly
@@ -390,7 +397,6 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 						CustomField(id="10700", value=r.ngay_tra.date().strftime("%Y/%m/%d")),  # ngay tra
 						CustomField(id="5418", value=74209),  # phan loai phieu ghi
 						CustomField(id="10264", value=r.ma_khach),  # ma khach bravo
-						CustomField(id="10657", value=name),
 					]
 				)
 			)
@@ -400,7 +406,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 		return results
 
 	except Exception as e:
-		print(f"[ERROR][make_rate_ticket] {str(e)}")
+		print(f"[ERROR][make_BH_ticket] {str(e)}")
 		return []
 
 
@@ -453,7 +459,6 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 				else:
 					comment = ""
 					name = r.Person
-					check_ZNS(db, r.DocNo, "don_hang_ban")
 
 				results.append(
 					Ticket(
@@ -471,6 +476,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						ticket_subject="Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: " + r.DocNo,
 						custom_fields=[
 							CustomField(id="5395", value=r.DocNo),  # so don hang web
+							CustomField(id="10657", value=name),
 							CustomField(id="5403", value=168259),  # yeu cau xu ly
 							CustomField(id="5419", value=79220),  # ket qua xu ly
 							CustomField(id="5418", value=74209),  # phan loai phieu ghi
@@ -482,12 +488,13 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 					)
 				)
 				print(
-					f'{r.DocNo} - {r.DocDate.strftime("%Y/%m/%d")} - {r.CustomerId} - {name if name is not None else "None"}')
+					f'{r.DocNo} - {r.DocDate.strftime("%Y/%m/%d")} - {r.Tel} - {r.CustomerId} - {name if name is not None else "None"}')
 
 		return results
 
 	except Exception as e:
-		print(f"[ERROR][make_rate_ticket] {str(e)}")
+		print(f"[ERROR][make_rate_ticket] Type: {type(e).__name__}, Message: {str(e)}")
+		print(traceback.format_exc())
 	return []
 
 
@@ -600,26 +607,34 @@ def update_saubh(db: Session, bh: list[str]):
 		return False
 
 
-def check_ZNS(db: Session, ZNS: str, type):
-	try:
-		if not ZNS:
-			return False
-
-		if type == "don_hang_ban":
-			up_zns = db.query(don_hang_ban).filter(don_hang_ban.DocNo == ZNS).update(
-				{don_hang_ban.da_tao_ZNS: True}, synchronize_session=False)
-			db.commit()
-
-		elif type == "don_hang_BH":
-			up_zns = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_nhan == ZNS).update(
-				{don_hang_BH.da_tao_ZNS: True}, synchronize_session=False)
-			db.commit()
-
-		else:
-			up_zns = 0
-
-		return up_zns > 0
-
-	except Exception as e:
-		print(f"[ERROR][check_ZNS] {str(e)}")
+def check_ZNS(db: Session, ZNS: list[str], name: list[str], type: str):
+	if not ZNS:
 		return False
+
+	success = False
+	for i, j in zip(ZNS, name):
+		try:
+			if not j:
+				continue
+
+			if type == "kscl_banhang":
+				up_zns = db.query(don_hang_ban).filter(don_hang_ban.DocNo == i).update(
+					{don_hang_ban.da_tao_ZNS: True}, synchronize_session=False)
+			elif type == "kscl_baohanh":
+				up_zns = db.query(don_hang_BH).filter(don_hang_BH.so_phieu_tra == i).update(
+					{don_hang_BH.da_tao_ZNS: True}, synchronize_session=False)
+			else:
+				up_zns = 0
+
+			if up_zns == 0:
+				print(f"[WARN] Không có record nào cập nhật được cho {i}, name: {j}")
+				continue
+
+			db.commit()
+			success = True
+
+		except Exception as e:
+			db.rollback()
+			raise HTTPException(status=400, reason=f"Lỗi khi cập nhật ZNS cho {i}: {str(e)}")
+
+	return success
