@@ -452,7 +452,11 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			name = None
 			serviceID = 95098188
 			if r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
-				if not r.Tel or len(r.Tel) != 10 or r.Tel == '0000000000' or r.Tel.startswith(
+				normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
+				if not normalized_sdt or set(normalized_sdt) == {"0"}:
+					continue
+
+				elif not r.Tel or len(r.Tel) != 10 or r.Tel.startswith(
 					("024", "1900", "1800")) or not r.Tel.startswith("0"):
 					comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 					serviceID = 95098303
