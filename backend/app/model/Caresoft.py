@@ -363,10 +363,14 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			if (r.so_phieu_nhan, r.ngay_tra.date()) in invalid_keys:
 				name = None
 
-			if not r.sdt or len(r.sdt) != 10 or r.sdt == '0000000000' or r.sdt.startswith(
+			if not r.sdt or len(r.sdt) != 10 or r.sdt.startswith(
 				("024", "1900", "1800")) or not r.sdt.startswith("0"):
 				name = None
 				serviceID = 95098303
+
+			normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
+			if not normalized_sdt or set(normalized_sdt) == {"0"}:
+				continue
 
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
 

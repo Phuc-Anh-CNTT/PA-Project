@@ -163,8 +163,10 @@ async def call_api(kind: str, loop: bool = False):
 			else:
 				pass
 
-		if fail_count > 0 and loop:
-			await call_api(kind)
+		if fail_count > 0:
+			if not loop:
+				print("Do again !", flush=True)
+				await call_api(kind, True)
 
 	except Exception as e:
 		import traceback
