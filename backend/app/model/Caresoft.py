@@ -452,7 +452,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			name = None
 			serviceID = 95098188
 			if r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
-				normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
+				normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
 				if not normalized_sdt or set(normalized_sdt) == {"0"}:
 					continue
 
