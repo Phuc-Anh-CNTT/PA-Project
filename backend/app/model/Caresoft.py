@@ -369,7 +369,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 				serviceID = 95098303
 
 			normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
-			if not normalized_sdt or set(normalized_sdt) == {"0"}:
+			if not normalized_sdt or set(normalized_sdt) == {"0"} or set(normalized_sdt) == {"1"}:
 				continue
 
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
@@ -453,7 +453,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			serviceID = 95098188
 			if r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
-				if not normalized_sdt or set(normalized_sdt) == {"0"}:
+				if not normalized_sdt or set(normalized_sdt) == {"0"} or set(normalized_sdt) != {"1"}:
 					continue
 
 				elif not r.Tel or len(r.Tel) != 10 or r.Tel.startswith(

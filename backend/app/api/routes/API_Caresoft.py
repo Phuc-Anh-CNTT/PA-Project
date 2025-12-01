@@ -14,7 +14,6 @@ from ...core.SqlServerPA import *
 import os
 import json
 import logging
-from datetime import datetime
 from dataclasses import asdict
 from dotenv import load_dotenv
 from ...model.Caresoft import *
