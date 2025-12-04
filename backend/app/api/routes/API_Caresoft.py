@@ -325,9 +325,6 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
         }
     else:
         if data and phone and data.get("phone_no") != phone:
-            print("""################################################
-            UPDATE
-            ################################################""")
             payload = {
                 "contact": {
                     "username": name,
@@ -336,7 +333,6 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
                     "phone_no3": data.get("phone_no3") if data.get("phone_no2") == phone else data.get("phone_no")
                 }
             }
-            print(payload)
         else:
             payload = {
                 "contact": {
