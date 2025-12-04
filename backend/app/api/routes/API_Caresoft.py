@@ -211,7 +211,6 @@ async def make_ticket(data):
             print("[DEBUG] Ticket created: " + data.custom_fields[0].value)
             return result, True  # thêm status True
 
-
     except httpx.HTTPStatusError as e:
         error_text = e.response.text if e.response else "No response body"
         print(f"[DEBUG] HTTP error ({e.response.status_code}): {error_text}", flush=True)
@@ -308,7 +307,7 @@ async def check_user(phone: str):
         return False
 
 
-async def update_user(id: str, name: str, data: Ticket = None, phone: str = None, delphone: bool = False):
+async def update_user(id: str, name: str, data=None, phone: str = None, delphone: bool = False):
     headers = {
         "Authorization": f"Bearer {API_CS_TOKEN}",
         "Accept": "application/json",
@@ -352,13 +351,14 @@ async def update_user(id: str, name: str, data: Ticket = None, phone: str = None
 
         result = response.json()
         if response.status_code == 200 and result.get("code") == "ok":
-            return true
+            return True
+
         elif response.status_code == 400 and result.get("message") == "Not found user":
             print("not found user", result, flush=True)
             return False
         else:
             logging.error("Unexpected response: %s", result)
-            print("Unexpected response: %s\n", result, flush=True)
+            print("Unexpected response: ", result, flush=True)
             return False
 
     except httpx.RequestError as e:
