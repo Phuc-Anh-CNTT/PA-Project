@@ -11,6 +11,7 @@ from pytz import timezone
 
 from ...core.SqlServerPA import *
 
+from datetime import datetime
 import os
 import json
 import logging
@@ -123,7 +124,8 @@ async def call_api(kind: str, loop: bool = False):
                                 if not deleted:
                                     return ticket, {"error": "User deletion!!! failed"}, False
 
-                            update = await update_user(id=str(exists.get("id")), name=user, data=exists, phone=ticket.phone)
+                            update = await update_user(id=str(exists.get("id")), name=user, data=exists,
+                                                       phone=ticket.phone)
 
                             if not update:
                                 return ticket, {"error": "User update failed"}, False
@@ -196,26 +198,45 @@ async def make_ticket(data):
     }
 
     try:
-        payload = json.dumps({"ticket": asdict(data)}, ensure_ascii=False, default=str)
+        payload = json.dumps(
+            {"ticket": asdict(data)},
+            ensure_ascii=False,
+            default=str
+        )
 
         async with httpx.AsyncClient() as client:
             response = await client.post(API_CS_URL, headers=headers, data=payload)
+
         response.raise_for_status()
         result = response.json()
-        # print("[DEBUG] API payload:", payload, flush=True)
 
         if result.get("code") != "ok":
             logging.error("Ticket create failed | Response: %s | Payload: %s", result, payload)
-            return result, False  # thêm status False
-        else:
-            print("[DEBUG] Ticket created: " + data.custom_fields[0].value)
-            return result, True  # thêm status True
+            return result, False
+
+        # SUCCESS
+        print("[DEBUG] Ticket created: " + data.custom_fields[0].value)
+
+        # ---- CREATE FOLDER + FILE DAILY ----
+        log_folder = "tickets_logs"
+        os.makedirs(log_folder, exist_ok=True)
+
+        today = datetime.now().strftime("%Y-%m-%d")
+        log_file = os.path.join(log_folder, f"tickets_{today}.jsonl")
+
+        try:
+            with open(log_file, "a", encoding="utf-8") as f:
+                f.write(payload + ",\n")
+        except Exception as e:
+            logging.error("Failed to write payload to file: %s", e)
+
+        return result, True
 
     except httpx.HTTPStatusError as e:
         error_text = e.response.text if e.response else "No response body"
         print(f"[DEBUG] HTTP error ({e.response.status_code}): {error_text}", flush=True)
-        logging.error("HTTP error %s | Response: %s | Payload: %s\n", e.response.status_code, error_text, payload)
-
+        logging.error("HTTP error %s | Response: %s | Payload: %s\n",
+                      e.response.status_code, error_text, payload)
         return {"error": error_text}, False
 
     except httpx.RequestError as e:
@@ -358,5 +379,48 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
             return False
 
     except httpx.RequestError as e:
-        print("[DEBUG] check failed:", e, flush=True)
-        return {"error": str(e)}, False
+        tb = traceback.format_exc()
+        req = getattr(e, "request", None)
+
+        if req is not None:
+            try:
+                req_info = f"{req.method} {req.url}"
+                req_body = getattr(req, "content", None)
+
+            except Exception:
+                req_info = str(req)
+                req_body = None
+        else:
+            req_info = "No request attached"
+            req_body = None
+
+        resp = getattr(e, "response", None)
+
+        if resp is not None:
+            try:
+                resp_status = resp.status_code
+                resp_text = resp.text
+            except Exception:
+                resp_status = "<unable to read status>"
+                resp_text = "<unable to read body>"
+        else:
+            resp_status = None
+            resp_text = None
+
+        logging.error("HTTPX RequestError: %s\nRequest: %s\nRequest body: %s\nResponse status: %s\nResponse body: %s\nTraceback:\n%s",
+            str(e), req_info, repr(req_body), resp_status, resp_text, tb
+
+    )
+    print(f"[DEBUG] RequestError: {e}", flush=True)
+    print(f"[DEBUG] Request: {req_info}", flush=True)
+    if req_body is not None:
+        print(f"[DEBUG] Request body: {repr(req_body)[:1000]}", flush=True)  # rút gọn nếu quá dài
+    if resp_status is not None:
+        print(f"[DEBUG] Response status: {resp_status}", flush=True)
+    if resp_text is not None:
+        print(f"[DEBUG] Response body: {resp_text[:2000]}", flush=True)  # rút gọn
+
+    print(f"[DEBUG] Traceback:\n{tb}", flush=True)
+
+
+    return {"error": str(e)}, False

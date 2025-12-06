@@ -1,0 +1,1631 @@
+2025-11-20 08:24:07,651 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:07,651 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-11-20 08:24:07,670 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:07,670 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-11-20 08:24:07,708 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:07,708 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-11-20 08:24:07,713 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:07,713 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-11-20 08:24:07,818 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:07,819 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-11-20 08:24:08,485 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:08,485 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-11-20 08:24:08,555 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:08,556 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-11-20 08:24:08,627 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:08,627 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:08,627 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-11-20 08:24:08,627 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-11-20 08:24:08,689 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-11-20 08:24:08,689 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-01 11:54:06,701 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-01 11:54:06,701 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-01 11:54:11,119 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-01 11:54:11,119 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:05:45,687 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:05:45,687 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:05:45,687 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:05:45,687 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:05:45,687 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:05:45,728 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:05:55,861 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:05:55,861 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:05:55,861 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:05:55,861 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:05:55,861 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:05:55,887 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:07:30,428 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:07:30,428 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:07:30,481 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:07:30,481 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:07:30,481 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:07:30,608 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:07:46,429 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:07:46,429 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:07:46,505 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:07:46,506 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:07:46,993 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:07:46,993 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:07:47,075 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:07:47,076 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:16:48,319 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:16:48,319 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:16:48,320 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:16:48,320 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:16:48,320 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:16:48,354 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:25:13,993 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:25:13,993 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:25:14,049 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:25:14,049 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:25:14,584 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:25:14,584 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:25:14,593 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:25:14,593 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:26:12,655 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:26:12,655 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:26:12,760 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:26:12,760 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:26:13,228 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:26:13,228 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:26:13,361 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:26:13,362 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:27:46,787 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:27:46,787 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:27:46,878 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:27:46,878 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:27:47,403 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:27:47,403 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:27:47,417 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:27:47,417 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:30:30,428 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:30:30,428 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:30:30,428 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:30:30,428 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:30:30,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:30:30,496 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:32:16,376 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:32:16,376 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:32:16,446 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:32:16,446 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:32:16,895 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:32:16,895 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:32:16,903 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:32:16,903 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:34:31,690 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:34:31,690 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:34:31,799 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:34:31,800 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:34:32,301 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:34:32,301 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:34:32,348 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:34:32,348 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:35:55,686 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:35:55,686 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:35:55,746 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:35:55,746 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:35:55,746 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:35:55,791 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:36:40,084 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:36:40,084 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:36:40,186 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:36:40,186 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:36:40,589 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:36:40,590 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:36:40,668 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:36:40,668 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:38:15,913 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:15,913 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:38:15,985 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:15,985 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:38:16,439 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:16,439 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:38:16,558 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:16,558 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:38:41,230 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:41,230 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:38:41,313 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:41,313 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:38:41,826 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:41,826 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:38:41,836 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:38:41,836 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:39:35,668 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:39:35,668 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:39:35,791 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:39:35,791 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:39:41,200 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:39:41,201 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:40:23,838 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:40:23,838 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:40:23,891 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:40:23,891 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:40:23,891 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:40:23,932 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:40:34,060 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:40:34,060 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:40:34,060 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:40:34,060 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:40:34,060 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:40:34,068 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:42:54,770 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:42:54,770 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:42:54,824 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:42:54,824 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:42:54,824 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:42:54,859 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:42:58,337 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:42:58,337 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:42:58,376 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:42:58,376 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:44:40,563 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,563 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:44:40,639 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,639 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 10:44:40,734 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,734 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-12-04 10:44:40,772 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,772 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 10:44:40,776 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,776 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 10:44:40,837 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,837 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 10:44:40,914 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,914 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:44:40,994 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,994 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,995 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:40,995 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 10:44:40,995 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 10:44:40,995 - ERROR - Ticket failed: SO25-126588 | {'error': 'User update failed'}
+2025-12-04 10:44:41,511 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:41,511 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 10:44:41,834 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:41,834 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 10:44:41,955 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:44:41,955 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 10:46:57,549 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,549 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 10:46:57,609 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,610 - ERROR - Ticket failed: SO25-126588 | {'error': 'User update failed'}
+2025-12-04 10:46:57,666 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,667 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 10:46:57,680 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,680 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 10:46:57,682 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,682 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 10:46:57,740 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,740 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 10:46:57,804 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,804 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 10:46:57,810 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:57,811 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-12-04 10:46:58,237 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:46:58,237 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 10:54:53,708 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:54:53,709 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:54:53,709 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 10:54:53,709 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 10:54:53,709 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 10:54:53,709 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,709 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,761 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,761 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,761 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0972978893", "username": "Trần Thị Minh Thư"}}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0362562806", "username": "Đỗ Minh Chiến"}}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 10:54:53,800 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 10:54:53,800 - ERROR - Ticket failed: SO25-121879 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,800 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,800 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,801 - ERROR - Ticket failed: SO25-126588 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,801 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,801 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,803 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 10:54:53,803 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:54:53,803 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 10:54:53,803 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:55:03,796 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 10:55:03,796 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 10:55:03,808 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 10:55:03,808 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 10:55:03,930 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 10:55:03,930 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 10:55:03,930 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 10:55:04,091 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 10:55:09,446 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,446 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 10:55:09,485 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,486 - ERROR - Ticket failed: SO25-126588 | {'error': 'User update failed'}
+2025-12-04 10:55:09,495 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,496 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-12-04 10:55:09,563 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,563 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 10:55:09,635 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,635 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 10:55:09,646 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,646 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 10:55:09,716 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,716 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 10:55:09,759 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:09,759 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 10:55:10,212 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 10:55:10,212 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 11:09:48,749 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:48,749 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 11:09:49,043 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:49,043 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:49,043 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 11:09:49,313 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 11:09:49,863 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:49,863 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-12-04 11:09:49,891 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:49,891 - ERROR - Ticket failed: SO25-126588 | {'error': 'User update failed'}
+2025-12-04 11:09:49,934 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:49,935 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 11:09:50,022 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,023 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 11:09:50,075 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,075 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 11:09:50,076 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,076 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 11:09:50,155 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,155 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 11:09:50,163 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,163 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 11:09:50,583 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:09:50,583 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 11:13:26,202 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:26,202 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 11:13:26,241 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:26,241 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 11:13:26,400 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:26,400 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 11:13:27,617 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,617 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 11:13:27,638 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,638 - ERROR - Ticket failed: SO25-126588 | {'error': 'User update failed'}
+2025-12-04 11:13:27,699 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,699 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 11:13:27,703 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,703 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 11:13:27,715 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,716 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 11:13:27,789 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,789 - ERROR - Ticket failed: SO25-121879 | {'error': 'User update failed'}
+2025-12-04 11:13:27,831 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,831 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 11:13:27,850 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:27,850 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 11:13:28,329 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 11:13:28,329 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 13:15:11,012 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 13:15:11,013 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 13:15:11,013 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,013 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,079 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:15:11,079 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:15:11,079 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 13:15:11,079 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0972978893", "username": "Trần Thị Minh Thư"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0362562806", "username": "Đỗ Minh Chiến"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 13:15:11,080 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-121879 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-126588 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 13:15:11,080 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 13:15:17,546 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,546 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 13:15:17,620 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,620 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 13:15:17,643 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,643 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 13:15:17,742 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,742 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 13:15:17,791 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,791 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 13:15:17,813 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:17,813 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 13:15:18,256 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 13:15:18,256 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 13:51:28,433 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 13:51:28,434 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,590 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 13:51:28,590 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 13:51:28,590 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:51:28,590 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 13:51:28,590 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 13:51:28,591 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:51:28,591 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 13:51:28,591 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 13:51:28,591 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 13:51:28,591 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 13:51:28,597 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 13:51:28,597 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,641 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 13:51:28,739 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,476 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 14:32:59,478 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 14:32:59,478 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 14:32:59,478 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,478 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,519 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0976110555", "username": "Phương Liên"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 14:32:59,619 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 14:32:59,619 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-129011 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,620 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 14:32:59,756 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 14:38:04,222 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:38:04,223 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 14:38:04,223 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:38:04,227 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 14:38:04,234 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 14:38:04,234 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 14:38:04,235 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,235 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,271 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 14:38:04,452 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,727 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 14:42:31,728 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 14:42:31,728 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 14:42:31,728 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,728 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,765 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 14:42:31,865 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 14:42:31,865 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,866 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 14:42:31,970 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,332 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 14:45:11,332 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 14:45:11,497 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 14:45:11,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 14:45:11,504 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,544 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 14:45:11,649 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 14:54:41,343 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,343 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 14:54:41,398 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,398 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 14:54:41,467 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,467 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 14:54:41,516 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,516 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 14:54:41,594 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,594 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 14:54:41,609 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,610 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 14:54:41,659 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,659 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 14:54:41,721 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,722 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 14:54:41,737 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 14:54:41,737 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:00:16,229 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:00:16,229 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:00:16,557 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:00:16,557 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,601 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,601 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,601 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,624 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:00:16,738 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:00:20,086 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,086 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:00:20,163 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,163 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:00:20,199 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,199 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:00:20,251 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,251 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:00:20,263 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,263 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:00:20,290 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,291 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:00:20,359 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,359 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:00:20,432 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,432 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:00:20,462 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:00:20,462 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:14:15,502 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:14:15,502 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:14:15,502 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:14:15,503 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:15,507 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:14:15,511 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:14:15,511 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:14:15,511 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,511 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,566 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:14:15,779 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,125 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:14:26,129 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:14:26,129 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,129 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,136 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:14:26,142 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:15:36,217 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,217 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:15:36,313 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,313 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,313 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:15:36,313 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:15:36,475 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,475 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:15:36,487 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,487 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:15:36,539 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,540 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:15:36,573 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,573 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:15:36,583 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,583 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:15:36,663 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:15:36,663 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:18:05,959 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:05,959 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:18:05,982 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:05,982 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:18:06,016 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,016 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:18:06,017 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,017 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:18:06,024 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,024 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:18:06,126 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,126 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:18:06,218 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,219 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:18:06,249 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,249 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:18:06,342 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,342 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:18:06,842 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,842 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:18:06,893 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:06,893 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:18:11,723 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:11,723 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:18:11,901 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:11,901 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:18:11,961 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:11,961 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:18:11,976 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:11,977 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:18:12,034 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,034 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:18:12,041 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,041 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:18:12,047 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,047 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:18:12,192 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,216 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,216 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:18:12,216 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:18:12,542 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,543 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:18:12,948 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:12,948 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:18:13,174 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,174 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:18:13,223 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,223 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:18:13,226 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,226 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:18:13,270 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,271 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:18:13,287 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,287 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:18:13,409 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,409 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:18:13,445 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:18:13,445 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:23:39,412 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:23:39,412 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:23:39,412 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,413 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:39,621 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:23:39,622 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:23:40,324 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:23:49,646 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:23:49,646 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:23:49,646 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:23:49,646 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,877 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:50,877 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:23:50,879 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,879 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:23:50,885 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:25:40,428 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,428 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:25:40,478 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,478 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:25:40,480 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,480 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:25:40,547 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,547 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,547 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:25:40,547 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:25:40,692 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,692 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,692 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:25:40,693 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:25:40,762 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,762 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:25:40,763 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:40,763 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:25:41,172 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,172 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:25:41,679 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,680 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:25:41,711 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,711 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:25:41,713 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,713 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:25:41,836 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,836 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:25:41,841 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,841 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:25:41,913 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,913 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:25:41,993 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:41,993 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:25:42,001 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:25:42,001 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:30:44,854 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:30:44,854 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:30:44,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:30:44,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:30:44,855 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:30:44,889 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,007 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:30:45,007 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:30:45,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,009 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:30:45,110 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:40:17,047 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,047 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:40:17,124 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,125 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:40:17,160 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,160 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:40:17,187 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,187 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:40:17,272 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,272 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:40:17,332 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,332 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,332 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:40:17,332 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:40:17,340 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,340 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:40:17,412 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:17,412 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:40:18,000 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,001 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:40:18,223 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,223 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:40:18,274 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,274 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:40:18,361 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,361 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:40:18,366 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,366 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:40:18,398 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,398 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:40:18,410 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,410 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:40:18,472 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,473 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:40:18,473 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:40:18,473 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:44:03,016 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:44:03,017 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": null}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:03,182 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:44:03,182 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: Wy-030202 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,223 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,246 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:44:03,246 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:44:03,246 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:44:03,362 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,268 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:44:13,271 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:44:13,272 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,272 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": null}}
+2025-12-04 15:44:13,677 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: Wy-030202 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,678 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,680 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:13,680 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:44:13,680 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:44:13,680 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:44:13,680 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:44:13,680 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,680 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,680 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,680 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:44:13,724 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,583 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 15:54:03,584 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,753 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 15:54:03,753 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 15:54:03,753 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 15:54:03,753 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 15:54:03,753 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": null}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:54:03,754 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 15:54:03,754 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,799 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,800 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,824 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 15:54:03,952 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 15:54:04,070 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 15:54:39,191 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,191 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:54:39,239 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,240 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:54:39,299 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,299 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:54:39,358 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,358 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:54:39,367 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,367 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:54:39,450 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,450 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:54:39,538 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,538 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:54:39,539 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,539 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:54:39,562 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:39,562 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:54:40,485 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,485 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:54:40,568 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,568 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:54:40,582 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,582 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:54:40,619 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,619 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:54:40,633 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,633 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:54:40,767 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,767 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:54:40,769 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,769 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:54:40,819 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,819 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:54:40,829 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 15:54:40,829 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:57:19,386 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:57:19,458 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:57:19,482 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:57:19,499 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:57:19,550 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:57:19,650 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:57:19,650 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:57:19,771 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 15:57:19,814 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:57:20,248 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 15:57:20,255 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 15:57:20,791 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 15:57:20,794 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 15:57:20,825 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 15:57:20,902 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 15:57:20,910 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 15:57:20,925 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 15:57:20,964 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:00:17,931 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:00:18,301 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:00:18,535 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:00:18,603 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:00:18,630 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:00:18,639 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:00:18,696 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:00:18,703 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:00:18,752 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:04:04,365 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,365 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:04:04,381 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,381 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:04:04,464 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,464 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:04:04,488 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,488 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:04:04,565 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,565 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:04:04,623 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,623 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:04:04,632 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,632 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:04:04,651 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,651 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:04:04,714 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:04,714 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:04:05,444 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,444 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:04:05,547 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,547 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:04:05,654 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,654 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:04:05,678 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,678 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:04:05,689 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,689 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:04:05,755 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,755 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:04:05,758 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,758 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:04:05,871 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,871 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:04:05,872 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:04:05,872 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:08:16,718 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,718 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:08:16,771 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,771 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:08:16,915 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,915 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,915 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,915 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,915 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:08:16,915 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:08:16,915 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:08:16,971 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:08:16,984 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:16,984 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:08:17,045 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,045 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:08:17,049 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,049 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:08:17,819 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,819 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:08:17,934 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,934 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:08:17,950 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,950 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:08:17,956 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:17,956 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:08:18,027 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:18,027 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:08:18,035 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:18,035 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:08:18,042 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:18,042 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:08:18,126 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:18,126 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:08:18,154 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:08:18,154 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:11:43,532 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,533 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:11:43,560 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,560 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:11:43,716 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,716 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:11:43,758 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,758 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:11:43,822 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,822 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:11:43,894 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,894 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:11:43,910 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,910 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:11:43,990 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:43,990 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:11:44,055 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:44,055 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:11:44,874 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:44,874 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:11:44,940 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:44,940 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:11:45,023 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,023 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:11:45,140 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,140 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:11:45,217 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,217 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:11:45,259 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,259 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:11:45,281 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,281 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:11:45,363 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,363 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:11:45,426 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:11:45,426 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:15:27,904 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:27,904 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:15:28,322 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,322 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:15:28,328 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,328 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:15:28,394 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,395 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:15:28,429 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,429 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:15:28,433 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,433 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:15:28,481 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,481 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:15:28,569 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,569 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:15:28,571 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:15:28,571 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:21:43,592 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 16:21:43,593 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 16:21:43,594 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 16:21:43,594 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,594 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,651 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,674 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 16:21:43,674 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 16:21:43,674 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:43,674 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 16:21:43,674 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,674 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,674 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 16:21:43,925 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 16:21:53,697 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 16:21:53,698 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 16:21:53,698 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 16:21:53,699 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,242 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 16:21:54,242 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-04 16:21:54,242 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 16:21:54,243 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 16:21:54,243 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:54,243 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,243 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,243 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,243 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,243 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:21:54,244 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 16:21:54,244 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,244 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,244 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,244 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,244 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 16:21:54,253 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,091 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 16:22:08,092 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 16:22:08,092 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 16:22:08,092 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:22:08,092 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-04 16:22:08,093 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:22:08,093 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 16:22:08,093 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 16:22:08,093 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 16:22:08,093 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,093 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,125 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,149 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 16:22:08,149 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 16:22:08,149 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:22:08,149 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 16:22:08,149 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,149 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,149 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 16:22:08,255 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 16:22:13,677 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:13,677 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:22:13,811 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:13,811 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:22:13,875 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:13,875 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:22:13,929 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:13,929 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:22:13,935 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:13,935 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:22:14,041 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:14,041 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:22:14,087 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:14,087 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:22:14,090 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:14,090 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:22:14,101 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:22:14,101 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:24:27,919 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:27,919 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:24:28,042 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,042 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:24:28,058 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,058 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:24:28,134 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,134 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:24:28,213 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,213 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:24:28,243 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,243 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:24:28,247 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,247 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:24:28,314 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,314 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:24:28,369 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,369 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:24:28,910 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:28,922 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:24:29,360 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,360 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:24:29,466 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,466 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:24:29,538 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,538 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:24:29,635 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,635 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:24:29,652 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,653 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:24:29,706 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,706 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:24:29,718 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,718 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:24:29,772 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:24:29,772 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:29:25,562 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,562 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:29:25,709 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,709 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:29:25,754 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,754 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:29:25,785 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,785 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:29:25,830 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,830 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:29:25,896 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,897 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:29:25,960 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,960 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:29:25,979 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:25,979 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:29:26,004 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:26,004 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:29:43,736 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:43,736 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:29:43,853 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:43,853 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:29:43,889 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:43,889 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:29:43,917 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:43,917 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:29:44,047 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,047 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:29:44,057 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,058 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:29:44,152 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,152 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,152 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,152 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:29:44,152 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:29:44,237 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:29:44,841 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,841 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:44,841 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:29:44,857 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:29:45,407 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,407 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:29:45,446 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,446 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:29:45,465 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,465 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:29:45,549 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,549 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,549 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:29:45,549 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:29:45,613 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,614 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:29:45,636 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:29:45,636 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:31:11,610 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,610 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:31:11,670 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,670 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:31:11,789 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,789 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:31:11,795 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,795 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:31:11,797 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,797 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:31:11,865 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,866 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:31:11,872 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,873 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:31:11,937 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:11,937 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:31:12,340 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:12,367 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:31:12,737 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:12,737 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:31:13,179 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,179 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:31:13,277 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,277 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:31:13,287 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,287 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,287 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:31:13,287 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:31:13,365 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,366 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:31:13,399 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,399 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:31:13,420 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,420 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:31:13,426 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:31:13,426 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:57:23,392 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 16:57:23,392 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 16:57:23,563 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:57:23,569 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 16:57:23,570 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,662 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 16:57:23,761 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 16:57:29,121 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,121 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:57:29,173 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,174 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:57:29,196 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,196 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:57:29,303 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,304 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:57:29,309 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,309 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:57:29,350 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,350 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:57:29,354 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,355 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:57:29,375 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,376 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:57:29,439 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:57:29,439 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:58:19,587 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,587 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:58:19,590 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,590 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:58:19,647 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,647 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:58:19,734 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,734 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,734 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:58:19,735 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:58:19,777 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,778 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:58:19,857 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,857 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:58:19,930 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,930 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:58:19,944 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:19,944 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:58:20,707 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,707 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:58:20,769 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,770 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:58:20,832 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,832 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:58:20,874 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,874 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:58:20,881 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,881 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:58:20,925 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,925 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:58:20,945 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,945 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:58:20,979 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:20,980 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:58:21,061 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:58:21,061 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:59:04,367 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,367 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:59:04,376 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,376 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:59:04,437 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,438 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:59:04,521 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,521 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:59:04,593 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,593 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,593 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:59:04,594 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:59:04,648 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,648 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:59:04,713 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,713 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:59:04,717 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:04,781 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:59:05,478 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,478 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 16:59:05,668 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,668 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 16:59:05,730 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,730 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 16:59:05,737 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,737 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 16:59:05,844 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,844 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 16:59:05,871 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,871 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 16:59:05,873 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,873 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 16:59:05,939 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:05,939 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 16:59:06,013 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 16:59:06,014 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 16:59:57,940 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 16:59:57,941 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 16:59:57,941 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 16:59:57,941 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:59:57,941 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-04 16:59:57,941 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 16:59:57,942 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 16:59:57,942 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,942 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 16:59:57,995 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 16:59:58,142 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 17:00:03,979 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:03,979 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 17:00:04,006 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,006 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 17:00:04,086 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,086 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 17:00:04,120 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,120 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 17:00:04,141 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,141 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 17:00:04,194 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,194 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 17:00:04,252 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,252 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 17:00:04,318 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,318 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 17:00:04,322 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:00:04,322 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 17:02:36,566 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 17:02:36,568 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 17:02:36,568 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 17:02:36,568 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:02:36,568 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-04 17:02:36,568 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,568 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,609 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,609 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,609 - ERROR - Ticket failed: TEST-030202 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,660 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:02:36,661 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,661 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 17:02:36,768 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 17:12:48,655 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:48,655 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-04 17:12:48,906 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:48,906 - ERROR - Ticket failed: WX25-008174 | {'error': 'User update failed'}
+2025-12-04 17:12:49,077 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,077 - ERROR - Ticket failed: SO25-122182 | {'error': 'User update failed'}
+2025-12-04 17:12:49,084 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,084 - ERROR - Ticket failed: SO25-127075 | {'error': 'User update failed'}
+2025-12-04 17:12:49,130 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,130 - ERROR - Ticket failed: SO25-121588 | {'error': 'User update failed'}
+2025-12-04 17:12:49,173 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,173 - ERROR - Ticket failed: SO25-125371 | {'error': 'User update failed'}
+2025-12-04 17:12:49,179 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,179 - ERROR - Ticket failed: SO25-121038 | {'error': 'User update failed'}
+2025-12-04 17:12:49,252 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,252 - ERROR - Ticket failed: SO25-127305 | {'error': 'User update failed'}
+2025-12-04 17:12:49,256 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-04 17:12:49,256 - ERROR - Ticket failed: SO25-121967 | {'error': 'User update failed'}
+2025-12-04 17:16:04,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 17:16:04,009 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 17:16:04,010 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 17:16:04,013 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 17:16:04,014 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 17:16:04,014 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:04,014 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 17:16:04,015 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,015 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,056 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,057 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 17:16:04,153 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,494 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982095396", "username": "Nguyễn Huy Đạt"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0394920978", "username": "Anh Hiếu"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0398304325", "username": "Nguyễn Minh Khuê"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0868252588", "username": "Anh Khánh"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0326197555", "username": "Nguyễn Đắc Đạt"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-04 17:16:14,496 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0869832662", "username": "CÔNG TY TNHH HOÀNG QUỐC"}}
+2025-12-04 17:16:14,496 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,496 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-122182 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-127075 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-121038 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-121967 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-125371 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-127305 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-121588 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,503 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-04 17:16:14,510 - ERROR - Ticket failed: WX25-008174 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,049 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-06 09:35:38,049 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,109 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-06 09:35:38,109 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-06 09:35:38,109 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-06 09:35:38,109 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-06 09:35:38,109 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-06 09:35:38,109 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,148 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,148 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,148 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-06 09:35:38,298 - ERROR - Ticket failed: WY-18112002 | {'error': 'User creation failed'}
+2025-12-06 09:38:45,130 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:38:45,130 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:38:45,386 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:38:45,386 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:38:45,928 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:38:45,928 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:38:46,006 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:38:46,007 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:40:09,321 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:40:09,321 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:40:09,435 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:40:09,435 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:40:10,170 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:40:10,170 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:40:10,224 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:40:10,224 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:43:16,140 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:43:16,140 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:43:16,194 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:43:16,195 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:48:47,201 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:48:47,201 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:48:47,308 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:48:47,309 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 09:48:47,847 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:48:47,847 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 09:48:48,023 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 09:48:48,023 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:02:07,085 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-06 10:02:07,085 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-06 10:02:07,146 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-06 10:02:07,146 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-06 10:02:07,146 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-06 10:02:07,146 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-06 10:02:07,146 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0982735564", "username": null}}
+2025-12-06 10:02:07,146 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-06 10:02:07,185 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-06 10:02:07,185 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-06 10:02:07,185 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-06 10:02:07,287 - ERROR - Ticket failed: WX25-008254 | {'error': 'User creation failed'}
+2025-12-06 10:02:47,368 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:02:47,369 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:02:47,556 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:02:47,556 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:02:48,137 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:02:48,137 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:02:48,212 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:02:48,212 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:07:42,990 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-06 10:07:42,990 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-06 10:07:42,990 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-06 10:07:42,990 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-06 10:07:42,990 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-06 10:07:42,990 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-06 10:07:42,990 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-06 10:07:43,004 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-06 10:07:43,006 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-06 10:07:43,006 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-06 10:07:48,482 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:07:48,482 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:07:48,565 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:07:48,565 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:08:51,075 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:08:51,075 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:08:51,180 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:08:51,181 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:08:51,731 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:08:51,731 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:08:51,822 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:08:51,822 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:19:06,662 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:19:06,663 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:19:06,800 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:19:06,800 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:19:07,408 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:19:07,408 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:19:07,693 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:19:07,693 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:20:47,691 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:20:47,691 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:20:47,780 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:20:47,780 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-06 10:20:48,401 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:20:48,401 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-06 10:20:48,427 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-06 10:20:48,427 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}

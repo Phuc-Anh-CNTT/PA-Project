@@ -356,20 +356,22 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 			if len(so_phieu_tras) > 1:
 				invalid_keys.add(key)
 
+		print("\nINVALID:", invalid_keys)
+
 		for r in rows:
 			name = r.ten_khach
 			serviceID = 95098188
+			sdt = r.sdt[:10] if len(r.sdt) > 15 else r.sdt
 
 			if (r.so_phieu_nhan, r.ngay_tra.date()) in invalid_keys:
 				name = None
 
-			if not r.sdt or len(r.sdt) != 10 or r.sdt.startswith(
-				("024", "1900", "1800")) or not r.sdt.startswith("0"):
+			if not sdt or len(sdt) != 10 or sdt.startswith(("024", "1900", "1800")) or not sdt.startswith("0"):
 				name = None
 				serviceID = 95098303
 
-			normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
-			if not normalized_sdt or set(normalized_sdt) == {"0"} or r.sdt == '1111111111':
+			normalized_sdt = "".join(ch for ch in sdt if ch.isdigit())
+			if not normalized_sdt or set(normalized_sdt) == {"0"} or sdt == '1111111111':
 				continue
 
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
@@ -382,7 +384,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 					ticket_comment_is_public=0,
 					ticket_source="API",
 					type=0,
-					phone=r.sdt[:10],
+					phone=sdt[:10],
 					ticket_comment=f"Phiếu khảo sát chất lượng bảo hành cho {r.ten_khach} với số phiếu: {r.so_phieu_tra} \n",
 					requester_id=240444945,
 					group_id=12390,
