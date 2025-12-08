@@ -1898,3 +1898,586 @@
 2025-12-08 13:13:50,811 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
 2025-12-08 13:13:50,981 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
 2025-12-08 13:13:50,981 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:13:45,221 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:13:45,490 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:45,491 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:45,561 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:45,575 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:45,631 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:46,185 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:13:46,185 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:13:46,194 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:46,314 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:46,393 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:13:46,393 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:13:46,408 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:13:46,415 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:14,918 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:28:14,919 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:28:14,986 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 14:28:14,986 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:28:14,986 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:28:14,986 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,013 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,013 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,228 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,228 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,228 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 14:28:25,228 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,748 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,748 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,762 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,762 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,785 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:28:44,786 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:28:54,938 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:54,939 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:55,050 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:55,061 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:55,088 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:28:55,110 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:41,540 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:30:41,540 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:30:41,566 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:30:41,566 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:30:41,713 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:41,733 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:41,787 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:41,790 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:42,366 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:30:42,366 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:30:42,387 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:42,437 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:30:42,437 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:30:42,505 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:42,555 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:30:42,565 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:29,492 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:29,542 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:31:29,543 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:31:29,584 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:29,584 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:29,597 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:29,612 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:31:29,612 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:31:30,157 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:31:30,157 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:31:30,164 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:30,235 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:31:30,235 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:31:30,266 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:30,357 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:31:30,366 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:22,246 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:22,252 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:22,281 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:32:22,281 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:32:22,347 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:22,387 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:22,478 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:32:22,479 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:32:23,013 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:23,078 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:32:23,078 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:32:23,285 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:23,341 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:32:23,341 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:32:23,345 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:32:23,349 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 14:33:33,348 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:33:33,348 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:33:33,361 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 14:33:33,361 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:33:33,385 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:33:33,385 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:33:38,877 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:33:38,877 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:33:38,915 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:33:39,009 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'ticket' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 157, in call_api
+    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", ticket, str(e),
+                                                            ^^^^^^
+UnboundLocalError: cannot access local variable 'ticket' where it is not associated with a value
+
+2025-12-08 14:33:39,016 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:33:55,049 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:33:55,058 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:33:55,058 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:33:55,066 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:33:55,163 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:35:16,881 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:35:17,024 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:35:17,105 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:35:17,122 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:35:29,562 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:35:29,562 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:35:29,672 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:35:29,676 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:35:29,676 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:35:29,786 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:36:06,662 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:36:06,662 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:36:06,692 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:36:06,728 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:36:06,763 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:37:10,855 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:37:10,858 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:37:10,875 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:37:10,987 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:37:38,690 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:37:38,690 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 14:37:38,760 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:37:38,782 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:37:38,782 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 14:37:38,800 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:38:09,192 - ERROR - Error processing tickets for kind 'kscl_banhang': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:38:09,393 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'error_details' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 290, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 158, in call_api
+    error_details)
+    ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'error_details' where it is not associated with a value
+
+2025-12-08 14:38:09,417 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:38:09,450 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 14:38:51,127 - ERROR - Request error:  | Payload: 0902298094
+2025-12-08 14:38:51,139 - ERROR - Request error:  | Payload: 0842319999
+2025-12-08 14:38:51,151 - ERROR - Request error:  | Payload: 0366106494
+2025-12-08 14:38:51,163 - ERROR - Request error:  | Payload: 0349994704
+2025-12-08 14:38:51,175 - ERROR - Request error:  | Payload: 0813682867
+2025-12-08 14:38:51,187 - ERROR - Request error:  | Payload: 0368928017
+2025-12-08 14:38:56,200 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 14:38:56,201 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 14:38:56,201 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 14:38:56,201 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 14:38:56,201 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 14:38:56,201 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 14:38:56,201 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:38:56,201 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:38:56,232 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 14:38:56,232 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:38:56,254 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:38:56,254 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:39:01,434 - ERROR - Request error:  | Payload: 0902298094
+2025-12-08 14:39:01,446 - ERROR - Request error:  | Payload: 0842319999
+2025-12-08 14:39:01,482 - ERROR - Request error:  | Payload: 0349994704
+2025-12-08 14:39:01,493 - ERROR - Request error:  | Payload: 0813682867
+2025-12-08 14:39:01,504 - ERROR - Request error:  | Payload: 0368928017
+2025-12-08 14:39:01,518 - ERROR - Request error:  | Payload: 0366106494
+2025-12-08 14:39:06,459 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 14:39:06,459 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 14:39:06,459 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 14:39:06,459 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 14:39:06,530 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 14:39:06,531 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 14:39:06,531 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 14:39:06,531 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}

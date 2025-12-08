@@ -154,6 +154,7 @@ async def call_api(kind: str, loop: bool = False):
                         fail_count += 1
                 except Exception as e:
                     print(f"[DEBUG] fail in tqdm: {e}")
+                    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), ticket)
                     write_daily_log(e, success=False)
                     fail_count += 1
 
@@ -217,6 +218,7 @@ async def make_ticket(data):
         result = response.json()
 
         if result.get("code") != "ok":
+            logging.error("Ticket create failed | Response: %s | Payload: %s", result, payload)
             write_daily_log(payload, success=False)
             return result, False
 
@@ -226,10 +228,12 @@ async def make_ticket(data):
 
     except httpx.HTTPStatusError as e:
         error_text = e.response.text if e.response else "No response body"
+        logging.error("HTTP error %s | Response: %s | Payload: %s\n", e.response.status_code, error_text, payload)
         write_daily_log(payload, success=False)
         return {"error": error_text}, False
 
     except httpx.RequestError as e:
+        logging.error("Request error: %s | Payload: %s", e, payload)
         write_daily_log(payload, success=False)
         return {"error": str(e)}, False
 
@@ -297,6 +301,7 @@ async def create_user(data: Ticket):
             return False
         else:
             contact_id = result.get("contact", {}).get("id")
+            logging.error("Request error: %s | Payload: %s", e, payload)
             print("[DEBUG] Successfully Created user id:", contact_id, flush=True)
             return contact_id
 
@@ -306,6 +311,7 @@ async def create_user(data: Ticket):
             "payload": payload,
             "error": str(e)
         }, success=False)
+        logging.error("Request error: %s | Payload: %s", e, payload)
 
         print("[DEBUG] create user failed:", e, flush=True)
         return False
@@ -344,6 +350,7 @@ async def check_user(phone: str):
             "phone": phone,
             "error": str(e)
         }, success=False)
+        logging.error("Request error: %s | Payload: %s", e, phone)
 
         return False
 
@@ -399,6 +406,7 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
             return False
 
     except httpx.RequestError as e:
+        logging.error("Request error: %s | Payload: %s", e, payload)
         write_daily_log({
             "type": "user_update_failed",
             "payload": payload,
