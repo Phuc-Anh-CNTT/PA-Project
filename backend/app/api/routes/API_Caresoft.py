@@ -28,6 +28,11 @@ API_CS_URL = os.getenv("CARESOFT_API_URL")
 API_CS_TOKEN = os.getenv("CARESOFT_API_TOKEN")
 API_KH_MAKE = os.getenv("CARESOFT_KH_MAKE")
 API_KH_CHECK = os.getenv("CARESOFT_KH_CHECK")
+LOG_DIR = os.getenv("LOG_PATH", "./logs")
+
+os.makedirs(LOG_DIR, exist_ok=True)
+
+
 
 logging.basicConfig(
     filename="caresoft_error.log",
@@ -149,6 +154,7 @@ async def call_api(kind: str, loop: bool = False):
                         fail_count += 1
                 except Exception as e:
                     print(f"[DEBUG] fail in tqdm: {e}")
+                    write_daily_log(e, success=False)
                     fail_count += 1
 
         print(f"[SUMMARY] {success_count} ticket(s) of {kind} created successfully, {fail_count} failed.")
@@ -197,13 +203,13 @@ async def make_ticket(data):
         "Content-Type": "application/json"
     }
 
-    try:
-        payload = json.dumps(
-            {"ticket": asdict(data)},
-            ensure_ascii=False,
-            default=str
-        )
+    payload = json.dumps(
+        {"ticket": asdict(data)},
+        ensure_ascii=False,
+        default=str
+    )
 
+    try:
         async with httpx.AsyncClient() as client:
             response = await client.post(API_CS_URL, headers=headers, data=payload)
 
@@ -211,38 +217,42 @@ async def make_ticket(data):
         result = response.json()
 
         if result.get("code") != "ok":
-            logging.error("Ticket create failed | Response: %s | Payload: %s", result, payload)
+            write_daily_log(payload, success=False)
             return result, False
 
-        # SUCCESS
-        print("[DEBUG] Ticket created: " + data.custom_fields[0].value)
-
-        # ---- CREATE FOLDER + FILE DAILY ----
-        log_folder = "tickets_logs"
-        os.makedirs(log_folder, exist_ok=True)
-
-        today = datetime.now().strftime("%Y-%m-%d")
-        log_file = os.path.join(log_folder, f"tickets_{today}.jsonl")
-
-        try:
-            with open(log_file, "a", encoding="utf-8") as f:
-                f.write(payload + ",\n")
-        except Exception as e:
-            logging.error("Failed to write payload to file: %s", e)
-
+        print("[DEBUG] Ticket created:", data.custom_fields[0].value)
+        write_daily_log(payload, success=True)
         return result, True
 
     except httpx.HTTPStatusError as e:
         error_text = e.response.text if e.response else "No response body"
-        print(f"[DEBUG] HTTP error ({e.response.status_code}): {error_text}", flush=True)
-        logging.error("HTTP error %s | Response: %s | Payload: %s\n",
-                      e.response.status_code, error_text, payload)
+        write_daily_log(payload, success=False)
         return {"error": error_text}, False
 
     except httpx.RequestError as e:
-        logging.error("Request error: %s | Payload: %s", e, payload)
-        print(f"[DEBUG] Request failed: {e} \n", flush=True)
+        write_daily_log(payload, success=False)
         return {"error": str(e)}, False
+
+
+def write_daily_log(payload, success: bool):
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    file_name = (
+        f"{today}_success.jsonl" if success
+        else f"{today}_failed.jsonl"
+    )
+
+    file_path = os.path.join(LOG_DIR, file_name)
+    print("[DEBUG] Write to:", file_path, flush=True)
+
+    try:
+        if not isinstance(payload, str):
+            payload = json.dumps(payload, ensure_ascii=False)
+
+        with open(file_path, "a", encoding="utf-8") as f:
+            f.write(payload + "\n")
+    except Exception as e:
+        logging.error(f"Failed to write log file {file_name}: {e}")
 
 
 async def create_user(data: Ticket):
@@ -291,7 +301,12 @@ async def create_user(data: Ticket):
             return contact_id
 
     except httpx.RequestError as e:
-        logging.error("Request error: %s | Payload: %s", e, payload)
+        write_daily_log({
+            "type": "user_create_failed",
+            "payload": payload,
+            "error": str(e)
+        }, success=False)
+
         print("[DEBUG] create user failed:", e, flush=True)
         return False
 
@@ -324,6 +339,11 @@ async def check_user(phone: str):
 
     except httpx.RequestError as e:
         print("[DEBUG] check failed:", e, flush=True)
+        write_daily_log({
+            "type": "user_check_failed",
+            "phone": phone,
+            "error": str(e)
+        }, success=False)
 
         return False
 
@@ -379,6 +399,12 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
             return False
 
     except httpx.RequestError as e:
+        write_daily_log({
+            "type": "user_update_failed",
+            "payload": payload,
+            "error": str(e)
+        }, success=False)
+
         tb = traceback.format_exc()
         req = getattr(e, "request", None)
 

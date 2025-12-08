@@ -1629,3 +1629,272 @@
 2025-12-06 10:20:48,401 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
 2025-12-06 10:20:48,427 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
 2025-12-06 10:20:48,427 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:30:27,450 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:30:27,452 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:30:27,506 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:30:27,506 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 11:30:27,506 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 11:30:27,506 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:30:27,517 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 11:30:27,517 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 11:30:27,542 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 11:30:27,542 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 11:30:27,543 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 11:30:27,543 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 11:30:37,567 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:30:37,568 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:30:37,568 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:30:37,568 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:34:39,835 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:34:39,835 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:34:39,923 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:34:39,923 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:34:40,641 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:34:40,642 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:34:40,838 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:34:40,838 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:41:17,039 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 11:41:17,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-08 11:41:17,040 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,040 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,076 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,133 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,133 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,133 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 11:41:17,214 - ERROR - Ticket failed: WY-TEST | {'error': 'User creation failed'}
+2025-12-08 11:41:27,293 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:41:27,293 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:41:27,293 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,293 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,388 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 11:41:27,389 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 11:41:27,389 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 11:41:27,389 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 11:41:27,389 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-08 11:41:27,389 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,389 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,389 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,389 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 11:41:27,397 - ERROR - Ticket failed: WY-TEST | {'error': 'User creation failed'}
+2025-12-08 11:42:32,313 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:42:32,313 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:42:32,351 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:42:32,351 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:42:33,102 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:42:33,102 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:42:33,191 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:42:33,191 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:46:30,173 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:46:30,173 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:46:30,294 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:46:30,294 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:51:45,399 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:51:45,400 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,504 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:51:45,504 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 11:51:45,504 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 11:51:45,504 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 11:51:45,504 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 11:51:45,508 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-08 11:51:45,508 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,549 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,549 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,549 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,549 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 11:51:45,629 - ERROR - Ticket failed: WY-TEST1 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,796 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-08 11:51:55,797 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-08 11:51:55,797 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,797 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349994704", "username": "Anh Tuấn"}}
+2025-12-08 11:51:55,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-08 11:51:55,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-08 11:51:55,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0813682867", "username": "Anh Vinh"}}
+2025-12-08 11:51:55,855 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0349583748", "username": "ndyduc"}}
+2025-12-08 11:51:55,855 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,855 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,855 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,855 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 11:51:55,863 - ERROR - Ticket failed: WY-TEST1 | {'error': 'User creation failed'}
+2025-12-08 11:54:37,536 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:54:37,537 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:54:37,537 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:54:37,548 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:54:38,066 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:54:38,066 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:54:38,197 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:54:38,198 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:55:50,073 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:55:50,073 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:55:50,074 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:55:50,074 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:55:50,735 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:55:50,735 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:55:50,936 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:55:50,936 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:56:08,751 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:56:08,752 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:56:08,766 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:56:08,766 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:56:09,470 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:56:09,470 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:56:09,537 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:56:09,537 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:59:42,432 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:42,432 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:59:42,515 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:42,516 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:59:43,156 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:43,156 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:59:43,305 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:43,305 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:59:55,924 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:55,924 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:59:56,124 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:56,125 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 11:59:56,483 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:56,483 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 11:59:56,991 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 11:59:56,991 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 12:00:41,481 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:00:41,481 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 12:00:41,517 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:00:41,517 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 12:00:42,014 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:00:42,014 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 12:00:42,212 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:00:42,212 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 12:01:28,548 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:01:28,548 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 12:01:28,691 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:01:28,691 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 12:01:29,357 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:01:29,358 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 12:01:29,496 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 12:01:29,497 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:01:31,735 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 13:01:31,794 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 13:01:31,806 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 13:01:31,806 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 13:01:31,833 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 13:01:31,833 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 13:01:41,860 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 13:01:41,860 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 13:01:42,076 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 13:01:42,076 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 13:01:42,076 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 13:01:42,076 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 13:03:28,724 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:28,724 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:03:28,745 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:28,868 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:28,889 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:28,894 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:28,894 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:03:28,912 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:29,352 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:29,352 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:03:29,513 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:29,645 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:29,647 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:29,677 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:29,834 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:29,834 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:03:51,119 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:51,119 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:03:51,175 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:51,302 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:51,302 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:03:51,322 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:51,395 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:51,416 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:51,853 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:51,953 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:51,953 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:03:52,050 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:52,069 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:52,094 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:52,094 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:03:52,124 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:59,189 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:59,191 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:59,260 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:59,260 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:03:59,286 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:03:59,286 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:03:59,365 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:03:59,396 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:00,133 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:00,133 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:04:00,165 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:00,249 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:00,261 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:00,304 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:00,304 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:04:00,355 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:10,708 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:10,708 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:10,709 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:04:10,749 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:10,749 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:04:10,830 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:10,900 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:10,924 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:11,436 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:11,463 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:11,463 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:04:11,536 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:11,552 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:11,580 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:11,580 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:04:11,768 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:15,565 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:15,567 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:15,613 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:15,613 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:04:15,635 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:15,766 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:15,766 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:15,766 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:04:16,266 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:16,266 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:04:16,275 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:16,324 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:16,326 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:04:16,397 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:04:16,397 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:04:16,426 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:00,126 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:00,164 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:08:00,164 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:08:00,265 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:08:00,265 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:08:00,265 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:00,318 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:00,329 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:00,844 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:08:00,844 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-08 13:08:00,909 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:01,074 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:08:01,074 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-08 13:08:01,165 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:01,240 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:08:01,300 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:45,186 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-08 13:13:45,241 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-08 13:13:45,262 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-08 13:13:45,262 - ERROR - Ticket failed: SO25-122654 | {'error': 'User creation failed'}
+2025-12-08 13:13:45,286 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
+2025-12-08 13:13:45,286 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-08 13:13:50,539 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:50,690 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:50,788 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:50,796 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:50,811 - ERROR - Failed to write log file 2025-12-08_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-08 13:13:50,981 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-08 13:13:50,981 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
