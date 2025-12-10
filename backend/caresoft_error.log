@@ -2481,3 +2481,100 @@ UnboundLocalError: cannot access local variable 'error_details' where it is not 
 2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-124923 | {'error': 'User creation failed'}
 2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
 2025-12-08 14:39:06,531 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-10 14:29:59,054 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 14:29:59,056 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 14:29:59,071 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Ticket(status='new', ticket_comment_is_public=0, ticket_source='API', type=0, phone='0902298094', ticket_comment='- Số phiếu tiếp nhận: WN25-006722\n - Ngày tiếp nhận: 2025-10-08\n - Mô tả sản phẩm: Hàng đã sửa dịch vụ\n - Địa điểm xuất trả: Số 15 Xã Đàn, Phường Kim Liên, Thành Phố Hà Nội\n - Chi phi dịch vụ/ linh kiện: 0', ticket_priority=None, requester_id=109302089, group_id=12390, service_id=95096527, assignee_id=None, ticket_subject='Thông báo trả hàng bảo hành sửa chữa phiếu: WN25-006722', custom_fields=[CustomField(id='10487', value='WN25-006722'), CustomField(id='5403', value=168259), CustomField(id='5405', value=73912), CustomField(id='5419', value=79217), CustomField(id='5418', value=74208), CustomField(id='5529', value='Số 15 Xã Đàn, Phường Kim Liên, Thành Phố Hà Nội'), CustomField(id='10264', value='80009588'), CustomField(id='10442', value='Hàng đã sửa dịch vụ'), CustomField(id='10488', value='2025/10/08'), CustomField(id='10657', value='Công Ty TNHH Terumo Việt Nam'), CustomField(id='10635', value=0)])
+2025-12-10 14:29:59,071 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:29:59,599 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 14:29:59,599 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 14:29:59,673 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Ticket(status='new', ticket_comment_is_public=0, ticket_source='API', type=0, phone='0902298094', ticket_comment='- Số phiếu tiếp nhận: WN25-006722\n - Ngày tiếp nhận: 2025-10-08\n - Mô tả sản phẩm: Hàng đã sửa dịch vụ\n - Địa điểm xuất trả: Số 15 Xã Đàn, Phường Kim Liên, Thành Phố Hà Nội\n - Chi phi dịch vụ/ linh kiện: 0', ticket_priority=None, requester_id=109302089, group_id=12390, service_id=95096527, assignee_id=None, ticket_subject='Thông báo trả hàng bảo hành sửa chữa phiếu: WN25-006722', custom_fields=[CustomField(id='10487', value='WN25-006722'), CustomField(id='5403', value=168259), CustomField(id='5405', value=73912), CustomField(id='5419', value=79217), CustomField(id='5418', value=74208), CustomField(id='5529', value='Số 15 Xã Đàn, Phường Kim Liên, Thành Phố Hà Nội'), CustomField(id='10264', value='80009588'), CustomField(id='10442', value='Hàng đã sửa dịch vụ'), CustomField(id='10488', value='2025/10/08'), CustomField(id='10657', value='Công Ty TNHH Terumo Việt Nam'), CustomField(id='10635', value=0)])
+2025-12-10 14:29:59,673 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:30:39,245 - ERROR - Error processing tickets for kind 'baohanh': cannot access local variable 'ticket' where it is not associated with a value
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 289, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 157, in call_api
+    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), ticket)
+                                                                          ^^^^^^
+UnboundLocalError: cannot access local variable 'ticket' where it is not associated with a value
+
+2025-12-10 14:30:39,313 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 14:31:42,251 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 14:31:42,251 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 14:31:42,395 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f88b61bfc60>
+2025-12-10 14:31:42,395 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:31:42,854 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 14:31:42,854 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 14:31:42,884 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f88b5701e50>
+2025-12-10 14:31:42,884 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:33:54,208 - ERROR - Request error:  | Payload: 0902298094
+2025-12-10 14:33:54,220 - ERROR - Request error:  | Payload: 0842319999
+2025-12-10 14:33:59,232 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-10 14:33:59,232 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-10 14:33:59,232 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-10 14:33:59,232 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-10 14:34:04,322 - ERROR - Request error:  | Payload: 0902298094
+2025-12-10 14:34:04,336 - ERROR - Request error:  | Payload: 0842319999
+2025-12-10 14:34:05,766 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f68a0473440>
+2025-12-10 14:34:05,766 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:34:05,788 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f689f9bb2a0>
+2025-12-10 14:34:05,788 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 14:45:36,837 - ERROR - Request error:  | Payload: 0989313229
+2025-12-10 14:45:41,850 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0989313229", "username": null}}
+2025-12-10 14:45:41,850 - ERROR - Ticket failed: WY-3213121 | {'error': 'User creation failed'}
+2025-12-10 14:45:46,939 - ERROR - Request error:  | Payload: 0989313229
+2025-12-10 14:45:49,274 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f26b3a3e190>
+2025-12-10 14:45:49,274 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 15:04:54,139 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f5b22f9b2a0>
+2025-12-10 15:04:54,140 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-10 15:04:54,190 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 15:04:54,190 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 15:04:54,639 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-10 15:04:54,639 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-10 15:04:54,696 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f5b22ed65a0>
+2025-12-10 15:04:54,696 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable

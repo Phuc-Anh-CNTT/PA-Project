@@ -58,8 +58,8 @@ async def bao_nhan_bh():
     print(f"bao nhan BH luc: {datetime.now()}")
     await asyncio.gather(
         call_api("baohanh"),
-        # call_api("kscl_banhang"),
-        # call_api("kscl_baohanh")
+        call_api("kscl_banhang"),
+        call_api("kscl_baohanh")
     )
 
 
@@ -154,7 +154,7 @@ async def call_api(kind: str, loop: bool = False):
                         fail_count += 1
                 except Exception as e:
                     print(f"[DEBUG] fail in tqdm: {e}")
-                    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), ticket)
+                    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), f)
                     write_daily_log(e, success=False)
                     fail_count += 1
 

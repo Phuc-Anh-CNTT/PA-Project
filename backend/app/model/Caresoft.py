@@ -435,12 +435,13 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			and_(
 				don_hang_ban.da_tao_phieu == 0,
 				don_hang_ban.da_tao_ZNS == 0,
-				don_hang_ban.JobCode != "KDPP",
-				or_(
-					don_hang_ban.Modified_at != don_hang_ban.Created_at,
-					don_hang_ban.TTGH == "Đã giao hàng"
-				),
-				don_hang_ban.Created_at >= datetime(2025, 11, 4),
+				# don_hang_ban.JobCode != "KDPP",
+				# or_(
+				# 	don_hang_ban.Modified_at != don_hang_ban.Created_at,
+				# 	don_hang_ban.TTGH == "Đã giao hàng"
+				# ),
+				# don_hang_ban.Created_at >= datetime(2025, 11, 4),
+				don_hang_ban.Tel == '0989313229'
 			)
 		)
 
@@ -457,6 +458,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			serviceID = 95098188
 			if r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
+
 				if not normalized_sdt or set(normalized_sdt) == {"0"} or r.Tel == '1111111111':
 					continue
 
@@ -465,7 +467,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 					comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
 					serviceID = 95098303
 
-				elif r.Tel in get_list_phone(db):
+				elif r.Tel in get_list_phone(db) and r.Tel != '0989313229':
 					comment = "Đơn hàng dùng số điện thoại nhân viên!"
 					serviceID = 95098303
 				else:
@@ -499,8 +501,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 						]
 					)
 				)
-				print(
-					f'{r.DocNo} - {r.DocDate.strftime("%Y/%m/%d")} - {r.Tel} - {r.CustomerId} - {name if name is not None else "None"}')
+				print(f'{r.DocNo} - {r.DocDate.strftime("%Y/%m/%d")} - {r.Tel} - {r.CustomerId} - {name if name is not None else "None"}')
 
 		return results
 
