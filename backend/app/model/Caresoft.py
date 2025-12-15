@@ -370,8 +370,9 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 				name = None
 				serviceID = 95098303
 
-			normalized_sdt = "".join(ch for ch in sdt if ch.isdigit())
-			if not normalized_sdt or set(normalized_sdt) == {"0"} or sdt == '1111111111':
+			normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
+
+			if not normalized_sdt or normalized_sdt.strip("0") == "" or normalized_sdt.strip("1") == "":
 				continue
 
 			sodonhang = r.so_don_hang if r.so_don_hang else ""
@@ -435,13 +436,13 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			and_(
 				don_hang_ban.da_tao_phieu == 0,
 				don_hang_ban.da_tao_ZNS == 0,
-				# don_hang_ban.JobCode != "KDPP",
-				# or_(
-				# 	don_hang_ban.Modified_at != don_hang_ban.Created_at,
-				# 	don_hang_ban.TTGH == "Đã giao hàng"
-				# ),
-				# don_hang_ban.Created_at >= datetime(2025, 11, 4),
-				don_hang_ban.Tel == '0989313229'
+				don_hang_ban.JobCode != "KDPP",
+				or_(
+					don_hang_ban.Modified_at != don_hang_ban.Created_at,
+					don_hang_ban.TTGH == "Đã giao hàng"
+				),
+				don_hang_ban.Created_at >= datetime(2025, 12, 4),
+				# don_hang_ban.Tel == '0989313229'
 			)
 		)
 
@@ -459,7 +460,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
 			if r.Created_at != r.Modified_at or r.TTGH == "Đã giao hàng":
 				normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
 
-				if not normalized_sdt or set(normalized_sdt) == {"0"} or r.Tel == '1111111111':
+				if not normalized_sdt or normalized_sdt.strip("0") == "" or normalized_sdt.strip("1") == "":
 					continue
 
 				elif not r.Tel or len(r.Tel) != 10 or r.Tel.startswith(

@@ -2578,3 +2578,1392 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 Traceback:
 <coroutine object as_completed.<locals>._wait_for_one at 0x7f5b22ed65a0>
 2025-12-10 15:04:54,696 - ERROR - Failed to write log file 2025-12-10_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:40:38,169 - ERROR - Request error:  | Payload: 0902298094
+2025-12-15 08:40:38,194 - ERROR - Request error:  | Payload: 0842319999
+2025-12-15 08:40:43,193 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-15 08:40:43,194 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-15 08:40:43,215 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 08:40:43,216 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 08:40:48,307 - ERROR - Request error:  | Payload: 0902298094
+2025-12-15 08:40:48,324 - ERROR - Request error:  | Payload: 0842319999
+2025-12-15 08:40:53,336 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-15 08:40:53,336 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 08:40:53,337 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-15 08:40:53,337 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 08:42:04,240 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28103510>
+2025-12-15 08:42:04,240 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:04,245 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdf2a0>
+2025-12-15 08:42:04,245 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:04,262 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28103510>
+2025-12-15 08:42:04,262 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:04,391 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:42:04,392 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:42:04,448 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:42:04,448 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:42:04,473 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:04,473 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:04,915 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:42:04,915 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:42:04,915 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:04,915 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:05,531 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28103510>
+2025-12-15 08:42:05,531 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:10,285 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0983730373", "ticket_comment": "Phiếu khảo sát chât lượng cho Trương Tùng với đơn hàng số: SO25-131427 \n", "ticket_priority": "Low", "requester_id": 116480111, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-131427", "custom_fields": [{"id": "5395", "value": "SO25-131427"}, {"id": "10657", "value": "Trương Tùng"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/09"}, {"id": "10264", "value": "17680841"}, {"id": "10657", "value": "Trương Tùng"}]}}
+2025-12-15 08:42:10,285 - ERROR - Ticket failed: SO25-131427 | {'error': ''}
+2025-12-15 08:42:15,372 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102f60>
+2025-12-15 08:42:15,372 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:17,381 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28153920>
+2025-12-15 08:42:17,381 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:24,238 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102f60>
+2025-12-15 08:42:24,239 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:24,886 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28152dc0>
+2025-12-15 08:42:24,886 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:26,456 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdee90>
+2025-12-15 08:42:26,456 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:31,922 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0987532191", "username": "Anh Hưng"}}
+2025-12-15 08:42:31,922 - ERROR - Ticket failed: SO25-131619 | {'error': 'User creation failed'}
+2025-12-15 08:42:32,808 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:32,808 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:32,861 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:32,862 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:33,896 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:33,896 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:35,434 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28151e50>
+2025-12-15 08:42:35,434 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:36,674 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:36,674 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:36,916 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdf2a0>
+2025-12-15 08:42:36,916 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:39,014 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28152190>
+2025-12-15 08:42:39,014 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:39,046 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:39,046 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:42,541 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28152670>
+2025-12-15 08:42:42,542 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:42,698 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102f60>
+2025-12-15 08:42:42,698 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:47,109 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdee90>
+2025-12-15 08:42:47,109 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:51,894 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdf2a0>
+2025-12-15 08:42:51,894 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:51,964 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28152260>
+2025-12-15 08:42:51,964 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:52,199 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28150d40>
+2025-12-15 08:42:52,199 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:42:52,536 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:52,536 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:56,681 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdee90>
+2025-12-15 08:42:56,681 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:56,681 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28152400>
+2025-12-15 08:42:56,681 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:57,969 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdf2a0>
+2025-12-15 08:42:57,969 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:59,435 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:42:59,435 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:42:59,527 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf281525a0>
+2025-12-15 08:42:59,527 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:02,656 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdee90>
+2025-12-15 08:43:02,656 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:05,376 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102f60>
+2025-12-15 08:43:05,376 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:05,476 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdee90>
+2025-12-15 08:43:05,476 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:08,216 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102f60>
+2025-12-15 08:43:08,216 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:08,485 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28102cf0>
+2025-12-15 08:43:08,485 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:08,503 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fdf28cdf2a0>
+2025-12-15 08:43:08,503 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:43:31,701 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:43:31,701 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:43:31,743 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0424e10>
+2025-12-15 08:43:31,744 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:43:31,952 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:43:31,952 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:43:36,387 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 08:43:36,387 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 08:43:36,997 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:43:36,997 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:43:37,003 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427d30>
+2025-12-15 08:43:37,003 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:43:40,935 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:43:40,935 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:00,285 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0834668789", "ticket_comment": "Phiếu khảo sát chât lượng cho Đào Văn Tuấn với đơn hàng số: SO25-131802 \n", "ticket_priority": "Low", "requester_id": 245921960, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-131802", "custom_fields": [{"id": "5395", "value": "SO25-131802"}, {"id": "10657", "value": "Đào Văn Tuấn"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/10"}, {"id": "10264", "value": "17686401"}, {"id": "10657", "value": "Đào Văn Tuấn"}]}}
+2025-12-15 08:44:00,285 - ERROR - Ticket failed: SO25-131802 | {'error': ''}
+2025-12-15 08:44:10,689 - ERROR - Request error:  | Payload: 0904114396
+2025-12-15 08:44:10,704 - ERROR - Request error:  | Payload: 0911053443
+2025-12-15 08:44:10,716 - ERROR - Request error:  | Payload: 0989426790
+2025-12-15 08:44:10,728 - ERROR - Request error:  | Payload: 0947246697
+2025-12-15 08:44:10,741 - ERROR - Request error:  | Payload: 0912521803
+2025-12-15 08:44:10,753 - ERROR - Request error:  | Payload: 0945453686
+2025-12-15 08:44:10,765 - ERROR - Request error:  | Payload: 0779748999
+2025-12-15 08:44:10,776 - ERROR - Request error:  | Payload: 0963876686
+2025-12-15 08:44:10,788 - ERROR - Request error:  | Payload: 0364977952
+2025-12-15 08:44:10,800 - ERROR - Request error:  | Payload: 02435860110
+2025-12-15 08:44:11,087 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:11,087 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,161 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427780>
+2025-12-15 08:44:11,162 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,170 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:11,171 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,184 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427c60>
+2025-12-15 08:44:11,184 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,226 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:11,226 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,280 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427030>
+2025-12-15 08:44:11,281 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,281 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:11,281 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,293 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:44:11,293 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,353 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:11,353 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:11,444 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427370>
+2025-12-15 08:44:11,444 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:44:13,688 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425490>
+2025-12-15 08:44:13,688 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:14,885 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04276b0>
+2025-12-15 08:44:14,886 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:16,109 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427030>
+2025-12-15 08:44:16,109 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:16,430 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:16,430 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,482 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:17,482 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,580 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:17,580 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,614 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04275e0>
+2025-12-15 08:44:17,614 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,614 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427c60>
+2025-12-15 08:44:17,614 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,676 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:17,676 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,687 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:44:17,687 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:17,740 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:17,740 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:18,681 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ed0>
+2025-12-15 08:44:18,681 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:18,823 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:44:18,824 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:18,954 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427370>
+2025-12-15 08:44:18,954 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:19,957 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:19,957 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:20,024 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:20,024 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:20,098 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427e00>
+2025-12-15 08:44:20,098 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:20,138 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:44:20,138 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:20,206 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425490>
+2025-12-15 08:44:20,206 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:21,186 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:44:21,186 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:21,254 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:44:21,254 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:21,265 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427e00>
+2025-12-15 08:44:21,265 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:21,329 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:44:21,329 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:22,395 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:44:22,395 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:22,455 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:44:22,455 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:24,362 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:24,362 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:29,367 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:29,367 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:29,502 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426f60>
+2025-12-15 08:44:29,502 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:32,862 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0ef6e90>
+2025-12-15 08:44:32,862 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:32,972 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ed0>
+2025-12-15 08:44:32,972 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:33,015 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425490>
+2025-12-15 08:44:33,015 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:34,327 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:44:34,327 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:40,386 - ERROR - Request error:  | Payload: {'contact': {'username': 'Anh Khương'}}
+2025-12-15 08:44:40,390 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/129420333
+Request body: b'{"contact": {"username": "Anh Kh\\u01b0\\u01a1ng"}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:44:40,390 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:44:40,390 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:41,156 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:44:41,156 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:41,346 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427c60>
+2025-12-15 08:44:41,346 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:42,340 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:44:42,340 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:42,625 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:44:42,626 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:43,804 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427c60>
+2025-12-15 08:44:43,804 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:43,949 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:44:43,949 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:44,743 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:44:44,743 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:45,018 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04276b0>
+2025-12-15 08:44:45,018 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:46,280 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:44:46,280 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:47,576 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427c60>
+2025-12-15 08:44:47,576 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:47,657 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425490>
+2025-12-15 08:44:47,657 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:52,017 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0915089098", "ticket_comment": "Phiếu khảo sát chât lượng cho Anh Lợi với đơn hàng số: SO25-132390 \n", "ticket_priority": "Low", "requester_id": 128609969, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132390", "custom_fields": [{"id": "5395", "value": "SO25-132390"}, {"id": "10657", "value": "Anh Lợi"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/11"}, {"id": "10264", "value": "16636521"}, {"id": "10657", "value": "Anh Lợi"}]}}
+2025-12-15 08:44:52,017 - ERROR - Ticket failed: SO25-132390 | {'error': ''}
+2025-12-15 08:44:52,827 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:44:52,827 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:44:58,941 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0967359941", "ticket_comment": "Phiếu khảo sát chât lượng cho Hoa Nguyễn với đơn hàng số: SO25-132414 \n", "ticket_priority": "Low", "requester_id": 213924534, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132414", "custom_fields": [{"id": "5395", "value": "SO25-132414"}, {"id": "10657", "value": "Hoa Nguyễn"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/11"}, {"id": "10264", "value": "8992841"}, {"id": "10657", "value": "Hoa Nguyễn"}]}}
+2025-12-15 08:44:58,942 - ERROR - Ticket failed: SO25-132414 | {'error': ''}
+2025-12-15 08:45:05,583 - ERROR - Request error:  | Payload: 0931892753
+2025-12-15 08:45:05,596 - ERROR - Request error:  | Payload: 0983168628
+2025-12-15 08:45:05,607 - ERROR - Request error:  | Payload: 0964928865
+2025-12-15 08:45:05,623 - ERROR - Request error:  | Payload: 0935431020
+2025-12-15 08:45:05,635 - ERROR - Request error:  | Payload: 0948366838
+2025-12-15 08:45:05,648 - ERROR - Request error:  | Payload: 0982578868
+2025-12-15 08:45:05,659 - ERROR - Request error:  | Payload: 0902234522
+2025-12-15 08:45:05,672 - ERROR - Request error:  | Payload: 0986158286
+2025-12-15 08:45:05,685 - ERROR - Request error:  | Payload: 0904969883
+2025-12-15 08:45:05,697 - ERROR - Request error:  | Payload: 0964637693
+2025-12-15 08:45:05,974 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04275e0>
+2025-12-15 08:45:05,974 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:05,989 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:45:05,989 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:06,043 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:45:06,043 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,047 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ed0>
+2025-12-15 08:45:06,047 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,082 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426f60>
+2025-12-15 08:45:06,082 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,113 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:45:06,114 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,146 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:45:06,146 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,162 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0424e10>
+2025-12-15 08:45:06,162 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,218 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04276b0>
+2025-12-15 08:45:06,218 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:06,232 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:45:06,232 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:07,561 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ed0>
+2025-12-15 08:45:07,562 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:09,586 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:45:09,587 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:10,150 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:45:10,150 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:12,378 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04275e0>
+2025-12-15 08:45:12,378 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:12,426 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04276b0>
+2025-12-15 08:45:12,426 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:16,340 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:45:16,340 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:16,442 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:45:16,443 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:21,859 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:45:21,859 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:21,946 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:45:21,946 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:21,946 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:45:21,946 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:45:23,703 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:45:23,704 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:29,844 - ERROR - Request error:  | Payload: {'contact': {'username': 'Anh Tùng'}}
+2025-12-15 08:45:29,845 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/243762263
+Request body: b'{"contact": {"username": "Anh T\\u00f9ng"}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:45:29,845 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426e90>
+2025-12-15 08:45:29,845 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:31,834 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:45:31,834 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:40,830 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0392420262", "ticket_comment": "Phiếu khảo sát chât lượng cho Nguyễn Vũ Hướng với đơn hàng số: SO25-132614 \n", "ticket_priority": "Low", "requester_id": 132266495, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132614", "custom_fields": [{"id": "5395", "value": "SO25-132614"}, {"id": "10657", "value": "Nguyễn Vũ Hướng"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "8861081"}, {"id": "10657", "value": "Nguyễn Vũ Hướng"}]}}
+2025-12-15 08:45:40,830 - ERROR - Ticket failed: SO25-132614 | {'error': ''}
+2025-12-15 08:45:40,896 - ERROR - Request error:  | Payload: {'contact': {'username': None}}
+2025-12-15 08:45:40,897 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/160834022
+Request body: b'{"contact": {"username": null}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:45:40,897 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:45:40,897 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:40,913 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0912936378", "username": "Trần Minh Hải"}}
+2025-12-15 08:45:40,913 - ERROR - Ticket failed: SO25-132606 | {'error': 'User creation failed'}
+2025-12-15 08:45:40,977 - ERROR - Request error:  | Payload: {'contact': {'username': 'Bùi Chí Văn'}}
+2025-12-15 08:45:40,978 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/245991031
+Request body: b'{"contact": {"username": "B\\u00f9i Ch\\u00ed V\\u0103n"}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:45:40,978 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:45:40,978 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:41,043 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0382071567", "ticket_comment": "Phiếu khảo sát chât lượng cho Hà Văn Triển với đơn hàng số: SO25-132609 \n", "ticket_priority": "Low", "requester_id": 216105948, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132609", "custom_fields": [{"id": "5395", "value": "SO25-132609"}, {"id": "10657", "value": "Hà Văn Triển"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "13628481"}, {"id": "10657", "value": "Hà Văn Triển"}]}}
+2025-12-15 08:45:41,044 - ERROR - Ticket failed: SO25-132609 | {'error': ''}
+2025-12-15 08:45:41,056 - ERROR - Request error:  | Payload: {'contact': {'username': None}}
+2025-12-15 08:45:41,057 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/244965888
+Request body: b'{"contact": {"username": null}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:45:41,057 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425490>
+2025-12-15 08:45:41,057 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:41,085 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0363597011", "ticket_comment": "Phiếu khảo sát chât lượng cho Hoàng Quốc Đạt với đơn hàng số: SO25-132608 \n", "ticket_priority": "Low", "requester_id": 189407674, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132608", "custom_fields": [{"id": "5395", "value": "SO25-132608"}, {"id": "10657", "value": "Hoàng Quốc Đạt"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "13902761"}, {"id": "10657", "value": "Hoàng Quốc Đạt"}]}}
+2025-12-15 08:45:41,086 - ERROR - Ticket failed: SO25-132608 | {'error': ''}
+2025-12-15 08:45:41,098 - ERROR - Request error:  | Payload: {'contact': {'username': None}}
+2025-12-15 08:45:41,099 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/208287005
+Request body: b'{"contact": {"username": null}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:45:41,099 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:45:41,099 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:41,181 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0912474896", "ticket_comment": "Phiếu khảo sát chât lượng cho Trần Quang Tuyến với đơn hàng số: SO25-132623 \n", "ticket_priority": "Low", "requester_id": 116254982, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132623", "custom_fields": [{"id": "5395", "value": "SO25-132623"}, {"id": "10657", "value": "Trần Quang Tuyến"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "17696201"}, {"id": "10657", "value": "Trần Quang Tuyến"}]}}
+2025-12-15 08:45:41,182 - ERROR - Ticket failed: SO25-132623 | {'error': ''}
+2025-12-15 08:45:46,313 - ERROR - Request error:  | Payload: 0983362396
+2025-12-15 08:45:46,325 - ERROR - Request error:  | Payload: 0964356999
+2025-12-15 08:45:46,342 - ERROR - Request error:  | Payload: 0963972299
+2025-12-15 08:45:46,355 - ERROR - Request error:  | Payload: 1111111111111
+2025-12-15 08:45:46,367 - ERROR - Request error:  | Payload: 0981726666
+2025-12-15 08:45:46,379 - ERROR - Request error:  | Payload: 0966612926
+2025-12-15 08:45:46,391 - ERROR - Request error:  | Payload: 111111111111
+2025-12-15 08:45:46,404 - ERROR - Request error:  | Payload: 0979330907
+2025-12-15 08:45:46,416 - ERROR - Request error:  | Payload: 0987905069
+2025-12-15 08:45:46,433 - ERROR - Request error:  | Payload: 0904145559
+2025-12-15 08:45:51,447 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0983362396", "username": "Nguyễn Huy Khải"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0964356999", "username": "Vũ Hoàng"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0963972299", "username": "A Hải"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "1111111111111", "username": null}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0981726666", "username": "Chị Thủy"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0966612926", "username": "Chị Phương"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "111111111111", "username": null}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0979330907", "username": "Anh Cường"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0987905069", "username": "Hương Giang"}}
+2025-12-15 08:45:51,448 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0904145559", "username": "Tô Ngọc Phước"}}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132631 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132640 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132634 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132629 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132639 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132637 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132632 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132636 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132627 | {'error': 'User creation failed'}
+2025-12-15 08:45:51,448 - ERROR - Ticket failed: SO25-132633 | {'error': 'User creation failed'}
+2025-12-15 08:45:56,573 - ERROR - Request error:  | Payload: 0839568782
+2025-12-15 08:45:56,817 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:45:56,817 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:56,907 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:45:56,907 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:57,100 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0269cb0>
+2025-12-15 08:45:57,100 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:45:57,193 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427510>
+2025-12-15 08:45:57,194 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:46:02,096 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0962210632", "ticket_comment": "Phiếu khảo sát chât lượng cho Đặng Hoàng Tùng với đơn hàng số: SO25-132648 \n", "ticket_priority": "Low", "requester_id": 127391990, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132648", "custom_fields": [{"id": "5395", "value": "SO25-132648"}, {"id": "10657", "value": "Đặng Hoàng Tùng"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "17696801"}, {"id": "10657", "value": "Đặng Hoàng Tùng"}]}}
+2025-12-15 08:46:02,097 - ERROR - Ticket failed: SO25-132648 | {'error': ''}
+2025-12-15 08:46:04,392 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:46:04,393 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:04,674 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:46:04,675 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:05,075 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426f60>
+2025-12-15 08:46:05,076 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:46:08,813 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04272a0>
+2025-12-15 08:46:08,813 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:08,929 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0424e10>
+2025-12-15 08:46:08,930 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:10,157 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:46:10,157 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:13,426 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:46:13,426 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:13,773 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426e90>
+2025-12-15 08:46:13,773 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:13,773 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:46:13,773 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:14,439 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0426e90>
+2025-12-15 08:46:14,439 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:18,571 - ERROR - Request error:  | Payload: {'contact': {'username': 'Anh Hải'}}
+2025-12-15 08:46:18,573 - ERROR - HTTPX RequestError: 
+Request: PUT https://api.caresoft.vn/phucanh/api/v1/contacts/246094736
+Request body: b'{"contact": {"username": "Anh H\\u1ea3i"}}'
+Response status: None
+Response body: None
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 377, in handle_async_request
+    resp = await self._pool.handle_async_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 256, in handle_async_request
+    raise exc from None
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 236, in handle_async_request
+    response = await connection.handle_async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 101, in handle_async_request
+    raise exc
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 78, in handle_async_request
+    stream = await self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_async/connection.py", line 124, in _connect
+    stream = await self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/auto.py", line 31, in connect_tcp
+    return await self._backend.connect_tcp(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 113, in connect_tcp
+    with map_exceptions(exc_map):
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 394, in update_user
+    response = await client.put(url, headers=headers, json=payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1942, in put
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1585, in request
+    return await self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1674, in send
+    response = await self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1702, in _send_handling_auth
+    response = await self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1739, in _send_handling_redirects
+    response = await self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_client.py", line 1776, in _send_single_request
+    response = await transport.handle_async_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 376, in handle_async_request
+    with map_httpcore_exceptions():
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout
+
+2025-12-15 08:46:18,573 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:46:18,573 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:21,190 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:46:21,190 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:26,795 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0912181606", "username": "Anh Hùng"}}
+2025-12-15 08:46:26,795 - ERROR - Ticket failed: SO25-132800 | {'error': 'User creation failed'}
+2025-12-15 08:46:28,110 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04279f0>
+2025-12-15 08:46:28,110 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:28,498 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:46:28,498 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:30,079 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:46:30,079 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:30,196 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427100>
+2025-12-15 08:46:30,196 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:31,489 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:46:31,489 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:34,638 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:46:34,638 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:34,691 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:46:34,691 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:34,758 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b04275e0>
+2025-12-15 08:46:34,759 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:36,156 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0424e10>
+2025-12-15 08:46:36,156 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:38,073 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427ac0>
+2025-12-15 08:46:38,073 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:38,155 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0424e10>
+2025-12-15 08:46:38,155 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:46:38,174 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0425220>
+2025-12-15 08:46:38,174 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:46:43,328 - ERROR - Request error:  | Payload: {"ticket": {"status": "new", "ticket_comment_is_public": 0, "ticket_source": "API", "type": 0, "phone": "0984440885", "ticket_comment": "Phiếu khảo sát chât lượng cho Cao Vũ với đơn hàng số: SO25-132923 \n", "ticket_priority": "Low", "requester_id": 246120163, "group_id": 12390, "service_id": 95098188, "assignee_id": null, "ticket_subject": "Phiếu đánh giá chất lượng dịch vụ sau Bán hàng cho đơn hàng: SO25-132923", "custom_fields": [{"id": "5395", "value": "SO25-132923"}, {"id": "10657", "value": "Cao Vũ"}, {"id": "5403", "value": 168259}, {"id": "5419", "value": 79220}, {"id": "5418", "value": 74209}, {"id": "5421", "value": 74232}, {"id": "10605", "value": "2025/12/12"}, {"id": "10264", "value": "17700281"}, {"id": "10657", "value": "Cao Vũ"}]}}
+2025-12-15 08:46:43,328 - ERROR - Ticket failed: SO25-132923 | {'error': ''}
+2025-12-15 08:47:09,409 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b002f9f0>
+2025-12-15 08:47:09,409 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:47:09,593 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:47:09,593 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:47:20,364 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b002fd30>
+2025-12-15 08:47:20,364 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:47:22,233 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b00406c0>
+2025-12-15 08:47:22,233 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:47:26,219 - ERROR - Error in tqdn 'kscl_banhang': cannot access local variable 'e' where it is not associated with a value
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fe2b0427440>
+2025-12-15 08:47:26,219 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type UnboundLocalError is not JSON serializable
+2025-12-15 08:48:59,245 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f2afc2eb2a0>
+2025-12-15 08:48:59,245 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:48:59,352 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:48:59,352 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:48:59,407 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f2afb856330>
+2025-12-15 08:48:59,407 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:48:59,446 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:48:59,446 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:48:59,912 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:48:59,912 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:48:59,925 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f2afb854ad0>
+2025-12-15 08:48:59,925 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:49:00,083 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:49:00,084 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:49:00,113 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f2afc2eae90>
+2025-12-15 08:49:00,113 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:49:30,606 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:49:30,606 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:49:30,624 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f1d45cfa330>
+2025-12-15 08:49:30,625 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:49:30,711 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:49:30,711 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:49:30,737 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f1d45cfac20>
+2025-12-15 08:49:30,737 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:49:31,257 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:49:31,258 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 08:49:31,353 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f1d45cfbed0>
+2025-12-15 08:49:31,353 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 08:49:31,456 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 08:49:31,457 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 08:49:31,505 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f1d45dab2a0>
+2025-12-15 08:49:31,505 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:01:06,175 - ERROR - Request error:  | Payload: 0902298094
+2025-12-15 09:01:06,187 - ERROR - Request error:  | Payload: 0842319999
+2025-12-15 09:01:06,199 - ERROR - Request error:  | Payload: 0366106494
+2025-12-15 09:01:06,212 - ERROR - Request error:  | Payload: 0368928017
+2025-12-15 09:01:11,224 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-15 09:01:11,225 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 09:01:11,225 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-15 09:01:11,225 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-15 09:01:11,225 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-15 09:01:11,225 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 09:01:11,243 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-15 09:01:11,244 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-15 09:01:15,283 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:01:15,283 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:01:15,298 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f6b1eed7e00>
+2025-12-15 09:01:15,299 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:01:15,365 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f6b1e41bb90>
+2025-12-15 09:01:15,366 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:01:15,397 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:01:15,397 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:03:44,107 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:03:44,107 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:03:44,124 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f91bebf9f20>
+2025-12-15 09:03:44,124 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:03:44,173 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:03:44,173 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:03:44,179 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f91bebfac20>
+2025-12-15 09:03:44,179 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:03:44,693 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:03:44,693 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:03:44,753 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:03:44,753 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:03:44,817 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f91bebfb440>
+2025-12-15 09:03:44,817 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:03:44,889 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f91bebfb370>
+2025-12-15 09:03:44,889 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:04:37,341 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f16a619b2a0>
+2025-12-15 09:04:37,342 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:04:37,345 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:04:37,345 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:04:37,398 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:04:37,398 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:04:37,426 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f16a60dac20>
+2025-12-15 09:04:37,426 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:04:37,876 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f16a60d9f20>
+2025-12-15 09:04:37,876 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:04:37,880 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:04:37,881 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:04:37,917 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:04:37,917 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:04:37,986 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7f16a619b2a0>
+2025-12-15 09:04:37,986 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
