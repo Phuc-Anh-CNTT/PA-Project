@@ -58,8 +58,6 @@ async def bao_nhan_bh():
     print(f"bao nhan BH luc: {datetime.now()}")
     await asyncio.gather(
         call_api("baohanh"),
-        call_api("kscl_banhang"),
-        call_api("kscl_baohanh")
     )
 
 
@@ -72,10 +70,14 @@ async def lifespan(app: FastAPI):
         next_run_time=datetime.now()
     )
 
-    # scheduler.add_job(
-    # 	do_something,
-    # 	CronTrigger(hour=7, minute=0, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
-    # )
+    scheduler.add_job(
+    	do_something,
+    	CronTrigger(
+        day_of_week='mon-sat',
+        hour=7,
+        minute=0,
+        timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
+    )
 
     scheduler.start()
     yield

@@ -3967,3 +3967,124 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 Traceback:
 <coroutine object as_completed.<locals>._wait_for_one at 0x7f16a619b2a0>
 2025-12-15 09:04:37,986 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:33:23,867 - ERROR - Request error:  | Payload: 0902298094
+2025-12-15 09:33:23,883 - ERROR - Request error:  | Payload: 0842319999
+2025-12-15 09:33:23,896 - ERROR - Request error:  | Payload: 0383934874
+2025-12-15 09:33:23,908 - ERROR - Request error:  | Payload: 0366106494
+2025-12-15 09:33:23,919 - ERROR - Request error:  | Payload: 0368928017
+2025-12-15 09:33:28,884 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-15 09:33:28,884 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-15 09:33:28,932 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 09:33:28,932 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0383934874", "username": "Bùi Trung Đức"}}
+2025-12-15 09:33:28,932 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-15 09:33:28,932 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-15 09:33:28,932 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 09:33:28,966 - ERROR - Ticket failed: SO25-131804 | {'error': 'User creation failed'}
+2025-12-15 09:33:28,971 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-15 09:33:28,971 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-15 09:33:34,112 - ERROR - Request error:  | Payload: 0842319999
+2025-12-15 09:33:34,128 - ERROR - Request error:  | Payload: 0902298094
+2025-12-15 09:33:34,141 - ERROR - Request error:  | Payload: 0368928017
+2025-12-15 09:33:34,153 - ERROR - Request error:  | Payload: 0366106494
+2025-12-15 09:33:34,164 - ERROR - Request error:  | Payload: 0383934874
+2025-12-15 09:33:39,176 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-15 09:33:39,176 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-15 09:33:39,176 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-15 09:33:39,177 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-15 09:33:39,177 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0383934874", "username": "Bùi Trung Đức"}}
+2025-12-15 09:33:39,177 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-15 09:33:39,177 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-15 09:33:39,184 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-15 09:33:39,184 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-15 09:33:39,184 - ERROR - Ticket failed: SO25-131804 | {'error': 'User creation failed'}
+2025-12-15 09:35:39,242 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:35:39,242 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:35:39,250 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fac3eea32a0>
+2025-12-15 09:35:39,250 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:35:39,308 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:35:39,309 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:35:39,468 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fac3e40eb50>
+2025-12-15 09:35:39,468 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:35:39,957 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7fac3e40e5a0>
+2025-12-15 09:35:39,957 - ERROR - Failed to write log file 2025-12-15_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-15 09:35:40,123 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:35:40,123 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-15 09:35:40,125 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-15 09:35:40,125 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-15 09:35:45,934 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-15 09:35:45,934 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-16 09:55:25,223 - ERROR - Request error:  | Payload: 0902298094
+2025-12-16 09:55:25,235 - ERROR - Request error:  | Payload: 0842319999
+2025-12-16 09:55:25,247 - ERROR - Request error:  | Payload: +033698741219
+2025-12-16 09:55:25,259 - ERROR - Request error:  | Payload: 0366106494
+2025-12-16 09:55:25,271 - ERROR - Request error:  | Payload: 0368928017
+2025-12-16 09:55:25,282 - ERROR - Request error:  | Payload: 0367442353
+2025-12-16 09:55:30,237 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-16 09:55:30,237 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-16 09:55:30,293 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-16 09:55:30,293 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-16 09:55:30,337 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "+033698741219", "username": null}}
+2025-12-16 09:55:30,338 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0366106494", "username": "Chị Hà"}}
+2025-12-16 09:55:30,338 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0368928017", "username": "Nguyễn Ngọc Thanh Cương"}}
+2025-12-16 09:55:30,338 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0367442353", "username": "Anh Đức"}}
+2025-12-16 09:55:30,338 - ERROR - Ticket failed: SO25-133040 | {'error': 'User creation failed'}
+2025-12-16 09:55:30,338 - ERROR - Ticket failed: SO25-129369 | {'error': 'User creation failed'}
+2025-12-16 09:55:30,338 - ERROR - Ticket failed: SO25-130083 | {'error': 'User creation failed'}
+2025-12-16 09:55:30,338 - ERROR - Ticket failed: SO25-133447 | {'error': 'User creation failed'}
+2025-12-16 09:55:35,222 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-16 09:55:35,223 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2025-12-16 09:55:35,264 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7ffa15d37440>
+2025-12-16 09:55:35,264 - ERROR - Failed to write log file 2025-12-16_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-16 09:55:35,291 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2025-12-16 09:55:35,291 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2025-12-16 09:55:35,391 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7ffa167b72a0>
+2025-12-16 09:55:35,391 - ERROR - Failed to write log file 2025-12-16_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-16 09:55:35,395 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7ffa15d37850>
+2025-12-16 09:55:35,395 - ERROR - Failed to write log file 2025-12-16_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-16 09:55:35,475 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+<coroutine object as_completed.<locals>._wait_for_one at 0x7ffa167b72a0>
+2025-12-16 09:55:35,476 - ERROR - Failed to write log file 2025-12-16_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-20 10:09:19,142 - ERROR - Request error:  | Payload: 0902298094
+2025-12-20 10:09:19,156 - ERROR - Request error:  | Payload: 0396889936
+2025-12-20 10:09:19,167 - ERROR - Request error:  | Payload: 0842319999
+2025-12-20 10:09:19,179 - ERROR - Request error:  | Payload: 0946308822
+2025-12-20 10:09:24,191 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-20 10:09:24,191 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0396889936", "username": "Khách hàng lẻ Cơ Sở Trần Duy Hưng"}}
+2025-12-20 10:09:24,191 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-20 10:09:24,191 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0946308822", "username": "CÔNG TY LỮ HÀNH HANOITOURIST"}}
+2025-12-20 10:09:24,191 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-20 10:09:24,192 - ERROR - Ticket failed: WN25-008162 | {'error': 'User creation failed'}
+2025-12-20 10:09:24,192 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-20 10:09:24,192 - ERROR - Ticket failed: WN25-008221 | {'error': 'User creation failed'}
+2025-12-20 10:09:29,279 - ERROR - Request error:  | Payload: 0396889936
+2025-12-20 10:09:29,290 - ERROR - Request error:  | Payload: 0946308822
+2025-12-20 10:09:29,302 - ERROR - Request error:  | Payload: 0842319999
+2025-12-20 10:09:29,313 - ERROR - Request error:  | Payload: 0902298094
+2025-12-20 10:09:34,327 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0396889936", "username": "Khách hàng lẻ Cơ Sở Trần Duy Hưng"}}
+2025-12-20 10:09:34,328 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0946308822", "username": "CÔNG TY LỮ HÀNH HANOITOURIST"}}
+2025-12-20 10:09:34,328 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-20 10:09:34,328 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-20 10:09:34,328 - ERROR - Ticket failed: WN25-008162 | {'error': 'User creation failed'}
+2025-12-20 10:09:34,328 - ERROR - Ticket failed: WN25-008221 | {'error': 'User creation failed'}
+2025-12-20 10:09:34,328 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-20 10:09:34,328 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
