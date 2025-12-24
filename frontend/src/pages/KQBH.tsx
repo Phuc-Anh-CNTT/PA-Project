@@ -578,7 +578,7 @@ export default function KQBH() {
                                             01
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 1)</h2>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 1)</h2>
                                             <p>🗺️ Số 15 Xã Đàn - phường Kim Liên - Hà Nội</p>
                                         </div>
                                     </div>
@@ -587,7 +587,7 @@ export default function KQBH() {
                                             02
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 2)</h2>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 2)</h2>
                                             <p>🗺️ Số 152-154 Trần Duy Hưng - phường Yên Hoà - Hà Nội</p>
                                         </div>
                                     </div>
@@ -602,17 +602,17 @@ export default function KQBH() {
                                             03
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 3)</h2>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 3)</h2>
                                             <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
                                         </div>
                                     </div>
-                                    <div className="m-bottom4 fea-col-box active ">
+                                    <div className="m-bottom4 fea-col-box active odd ">
                                         <div className="icon-boxed wide80 box-round">
-                                            04
+                                            05
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 5)</h2>
-                                            <p>🗺️ 141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 4)</h2>
+                                            <p>🗺️ Số 89 Lê Duẩn - phường Cửa Nam - Hà Nội</p>
                                         </div>
                                     </div>
                                 </div>
@@ -621,15 +621,16 @@ export default function KQBH() {
                         <div className="wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
-                                    <div className="m-bottom4 fea-col-box active odd ">
+                                    <div className="m-bottom4 fea-col-box active ">
                                         <div className="icon-boxed wide80 box-round">
-                                            05
+                                            04
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 4)</h2>
-                                            <p>🗺️ Số 89 Lê Duẩn - phường Cửa Nam - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 5)</h2>
+                                            <p>🗺️ 141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn - Hà Nội</p>
                                         </div>
                                     </div>
+
                                     <div className="m-bottom4 fea-col-box">
                                         <div className="icon-boxed wide80 box-round">
                                             📞
@@ -893,11 +894,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">Tầng 4, 89 Lê Duẩn, Hoàn Kiếm, Hà Nội</a>
+                                    <a href="">Tầng 4, 89 Lê Duẩn, phường Cửa Nam, Hà Nội</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">1900 2164 (ext 1)</a>
+                                    <a href="">1900 2164 (Máy lẻ 1)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
@@ -921,11 +922,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">15 Xã Đàn, Đống Đa, Hà Nội.</a>
+                                    <a href="">15 Xã Đàn, phường Kim Liên, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (ext 1)</a>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 1)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail className="w-4 h-4"/>
@@ -948,16 +949,16 @@ export default function KQBH() {
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
-                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 152 TRẦN DUY HƯNG</b></h4>
+                            <h4 className="font16 font-thin uppercase"><b>Trụ sở chính/SHOWROOM PHÚC ANH 152 TRẦN DUY HƯNG</b></h4>
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">152-154 Trần Duy Hưng, Cầu Giấy, Hà Nội.</a>
+                                    <a href="">152-154 Trần Duy Hưng, phường Yên Hoà, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (ext 2)</a>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 2)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail className="w-4 h-4"/>
@@ -985,7 +986,7 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">Tầng 5, 134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                    <a href="">Tầng 5, 134 Thái Hà, phường Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
@@ -1016,11 +1017,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">Tầng 5,134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                    <a href="">Tầng 5,134 Thái Hà, phường Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">1900 2164 (ext 2)</a>
+                                    <a href="">1900 2164 (Máy lẻ 2)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
@@ -1048,11 +1049,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">89 Lê Duẩn, Cửa Nam, Hoàn Kiếm, Hà Nội.</a>
+                                    <a href="">89 Lê Duẩn, phường Cửa Nam, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (ext 6)</a>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 4)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail className="w-4 h-4"/>
@@ -1080,11 +1081,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">134 Thái Hà, Đống Đa, Hà Nội.</a>
+                                    <a href="">134 Thái Hà, phường Đống Đa, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (ext 3)</a>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 3)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail className="w-4 h-4"/>
@@ -1112,11 +1113,11 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">141-143 Phạm Văn Đồng, Cầu Giấy, Hà Nội.</a>
+                                    <a href="">141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (ext 5)</a>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 5)</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Mail className="w-4 h-4"/>
