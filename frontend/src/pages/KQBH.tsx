@@ -608,7 +608,7 @@ export default function KQBH() {
                                     </div>
                                     <div className="m-bottom4 fea-col-box min-h-[100px] h-fit active odd ">
                                         <div className="icon-boxed wide80 box-round">
-                                            05
+                                            04
                                         </div>
                                         <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 4)</h2>
@@ -623,7 +623,7 @@ export default function KQBH() {
                                 <div className="wpb_wrapper">
                                     <div className="m-bottom4 fea-col-box min-h-[100px] h-fit active ">
                                         <div className="icon-boxed wide80 box-round">
-                                            04
+                                            05
                                         </div>
                                         <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 5)</h2>
