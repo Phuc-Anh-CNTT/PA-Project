@@ -578,8 +578,8 @@ export default function KQBH() {
                                             01
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 1)</h2>
-                                            <p>🗺️ Số 15 Xã Đàn - Phương Liên - Đống Đa - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 1)</h2>
+                                            <p>🗺️ Số 15 Xã Đàn - phường Kim Liên - Hà Nội</p>
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box">
@@ -587,8 +587,8 @@ export default function KQBH() {
                                             02
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 2)</h2>
-                                            <p>🗺️ Số 152 Trần Duy Hưng - Cầu Giấy - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 2)</h2>
+                                            <p>🗺️ Số 152-154 Trần Duy Hưng - phường Yên Hoà - Hà Nội</p>
                                         </div>
                                     </div>
                                 </div>
@@ -602,8 +602,8 @@ export default function KQBH() {
                                             03
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 3)</h2>
-                                            <p>🗺️ Số 134 Thái Hà - Đống Đa - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 3)</h2>
+                                            <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box active ">
@@ -611,8 +611,8 @@ export default function KQBH() {
                                             04
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 5)</h2>
-                                            <p>🗺️ Số 141-143 Phạm Văn Đồng - Cầu Giấy - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 5)</h2>
+                                            <p>🗺️ 141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn - Hà Nội</p>
                                         </div>
                                     </div>
                                 </div>
@@ -626,8 +626,8 @@ export default function KQBH() {
                                             05
                                         </div>
                                         <div className="left-padd10">
-                                            <h2 className="font-thin m-bottom1">☎️ (024) 39.68.99.66 (Máy lẻ 6)</h2>
-                                            <p>🗺️ Số 89 Lê Duẩn - Hoàn Kiếm - Hà Nội</p>
+                                            <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (ext 4)</h2>
+                                            <p>🗺️ Số 89 Lê Duẩn - phường Cửa Nam - Hà Nội</p>
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box">
