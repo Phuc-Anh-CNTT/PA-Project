@@ -577,7 +577,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             01
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 1)</h2>
                                             <p>🗺️ Số 15 Xã Đàn - phường Kim Liên - Hà Nội</p>
                                         </div>
@@ -586,7 +586,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             02
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 2)</h2>
                                             <p>🗺️ Số 152-154 Trần Duy Hưng - phường Yên Hoà - Hà Nội</p>
                                         </div>
@@ -601,7 +601,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             03
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 3)</h2>
                                             <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
                                         </div>
@@ -610,7 +610,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             04
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 4)</h2>
                                             <p>🗺️ Số 89 Lê Duẩn - phường Cửa Nam - Hà Nội</p>
                                         </div>
@@ -625,7 +625,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             05
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 5)</h2>
                                             <p>🗺️ 141-143 Phạm Văn Đồng, phường Phú Diễn - Hà Nội</p>
                                         </div>
@@ -635,7 +635,7 @@ export default function KQBH() {
                                         <div className="icon-boxed wide80 box-round">
                                             📞
                                         </div>
-                                        <div className="left-padd10">
+                                        <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1 red">HOTLINE: 1900 2173</h2>
                                             <p>Hoặc liên hệ trung tâm bảo hành qua số hotline để được hỗ trợ nhanh
                                                 nhất</p>
