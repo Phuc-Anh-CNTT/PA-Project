@@ -606,7 +606,7 @@ export default function KQBH() {
                                             <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
                                         </div>
                                     </div>
-                                    <div className="m-bottom4 fea-col-box min-h-[100px] h-fit active odd ">
+                                    <div className=" m-bottom4 fea-col-box min-h-[100px] h-fit active ">
                                         <div className="icon-boxed wide80 box-round">
                                             04
                                         </div>
@@ -621,7 +621,7 @@ export default function KQBH() {
                         <div className="wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
-                                    <div className="m-bottom4 fea-col-box min-h-[100px] h-fit active ">
+                                    <div className="m-bottom4 fea-col-box min-h-[100px] h-fit active odd">
                                         <div className="icon-boxed wide80 box-round">
                                             05
                                         </div>
