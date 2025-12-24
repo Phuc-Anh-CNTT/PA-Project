@@ -1044,38 +1044,6 @@ export default function KQBH() {
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
-                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 89 LÊ DUẨN</b></h4>
-                            <div className="title-line color"></div>
-                            <ul className="listitems left-padd0">
-                                <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4"/>
-                                    <a href="">89 Lê Duẩn, phường Cửa Nam, Hà Nội.</a>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Phone className="w-4 h-4"/>
-                                    <a href="">(024) 3968 9966 (Máy lẻ 4)</a>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Mail className="w-4 h-4"/>
-                                    <a href="">phucanh.leduan@phucanh.com.vn</a>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Calendar className="w-4 h-4"/>
-                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <MapPin className="w-4 h-4"/>
-                                    <a
-                                        href="https://goo.gl/maps/vssCMwPuSZvUey378"
-                                        target="_blank"
-                                        className="yellow"
-                                    >
-                                        <b>[Bản đồ đường đi]</b>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
                             <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 134 THÁI HÀ</b></h4>
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
@@ -1099,6 +1067,38 @@ export default function KQBH() {
                                     <MapPin className="w-4 h-4"/>
                                     <a
                                         href="https://goo.gl/maps/MXTQaRNwRjJp5Whb9"
+                                        target="_blank"
+                                        className="yellow"
+                                    >
+                                        <b>[Bản đồ đường đi]</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-sm-6 m-top5 font-white footer-address">
+                            <h4 className="font16 font-thin uppercase"><b>SHOWROOM PHÚC ANH 89 LÊ DUẨN</b></h4>
+                            <div className="title-line color"></div>
+                            <ul className="listitems left-padd0">
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4"/>
+                                    <a href="">89 Lê Duẩn, phường Cửa Nam, Hà Nội.</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Phone className="w-4 h-4"/>
+                                    <a href="">(024) 3968 9966 (Máy lẻ 4)</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Mail className="w-4 h-4"/>
+                                    <a href="">phucanh.leduan@phucanh.com.vn</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <Calendar className="w-4 h-4"/>
+                                    <a href="">Giờ mở cửa từ 08h00 đến 21h00</a>
+                                </li>
+                                <li className="flex items-center gap-2">
+                                    <MapPin className="w-4 h-4"/>
+                                    <a
+                                        href="https://goo.gl/maps/vssCMwPuSZvUey378"
                                         target="_blank"
                                         className="yellow"
                                     >
