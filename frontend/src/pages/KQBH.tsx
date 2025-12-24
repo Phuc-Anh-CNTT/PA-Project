@@ -573,20 +573,20 @@ export default function KQBH() {
                         <div className="wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
-                                    <div className="m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit active odd">
+                                    <div className="m-bottom4 fea-col-box  active odd">
                                         <div className="icon-boxed wide80 box-round">
                                             01
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 1)</h2>
                                             <p>🗺️ Số 15 Xã Đàn - phường Kim Liên - Hà Nội</p>
                                         </div>
                                     </div>
-                                    <div className="m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit">
+                                    <div className="m-bottom4 fea-col-box ">
                                         <div className="icon-boxed wide80 box-round">
                                             02
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 2)</h2>
                                             <p>🗺️ Số 152-154 Trần Duy Hưng - phường Yên Hoà - Hà Nội</p>
                                         </div>
@@ -597,20 +597,20 @@ export default function KQBH() {
                         <div className="wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
-                                    <div className="m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit odd ">
+                                    <div className="m-bottom4 fea-col-box  odd ">
                                         <div className="icon-boxed wide80 box-round">
                                             03
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 3)</h2>
                                             <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
                                         </div>
                                     </div>
-                                    <div className=" m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit active ">
+                                    <div className="m-bottom4 fea-col-box  active odd ">
                                         <div className="icon-boxed wide80 box-round">
                                             04
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 4)</h2>
                                             <p>🗺️ Số 89 Lê Duẩn - phường Cửa Nam - Hà Nội</p>
                                         </div>
@@ -621,21 +621,21 @@ export default function KQBH() {
                         <div className="wpb_column vc_column_container vc_col-sm-4">
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
-                                    <div className="m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit active odd">
+                                    <div className="m-bottom4 fea-col-box  active ">
                                         <div className="icon-boxed wide80 box-round">
                                             05
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 5)</h2>
-                                            <p>🗺️ 141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn - Hà Nội</p>
+                                            <p>🗺️ 141-143 Phạm Văn Đồng, phường Phú Diễn - Hà Nội</p>
                                         </div>
                                     </div>
 
-                                    <div className="m-bottom4 fea-col-box flex justify-center items-center !min-h-[150px] !h-fit">
+                                    <div className="m-bottom4 fea-col-box ">
                                         <div className="icon-boxed wide80 box-round">
                                             📞
                                         </div>
-                                        <div className="pf-2">
+                                        <div className="left-padd10">
                                             <h2 className="font-thin m-bottom1 red">HOTLINE: 1900 2173</h2>
                                             <p>Hoặc liên hệ trung tâm bảo hành qua số hotline để được hỗ trợ nhanh
                                                 nhất</p>
