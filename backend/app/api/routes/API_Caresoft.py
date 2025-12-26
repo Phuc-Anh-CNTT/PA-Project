@@ -57,8 +57,6 @@ async def bao_nhan_bh():
     print(f"bao nhan BH luc: {datetime.now()}")
     await asyncio.gather(
         call_api("baohanh"),
-        call_api("kscl_banhang"),
-        call_api("kscl_baohanh")
     )
 
 
