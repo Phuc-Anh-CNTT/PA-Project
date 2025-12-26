@@ -15,6 +15,7 @@ from datetime import datetime
 import os
 import json
 import logging
+import traceback
 from dataclasses import asdict
 from dotenv import load_dotenv
 from ...model.Caresoft import *
@@ -31,8 +32,6 @@ API_KH_CHECK = os.getenv("CARESOFT_KH_CHECK")
 LOG_DIR = os.getenv("LOG_PATH", "./logs")
 
 os.makedirs(LOG_DIR, exist_ok=True)
-
-
 
 logging.basicConfig(
     filename="caresoft_error.log",
@@ -58,6 +57,8 @@ async def bao_nhan_bh():
     print(f"bao nhan BH luc: {datetime.now()}")
     await asyncio.gather(
         call_api("baohanh"),
+        call_api("kscl_banhang"),
+        call_api("kscl_baohanh")
     )
 
 
@@ -71,12 +72,12 @@ async def lifespan(app: FastAPI):
     )
 
     scheduler.add_job(
-    	do_something,
-    	CronTrigger(
-        day_of_week='mon-sat',
-        hour=7,
-        minute=0,
-        timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
+        do_something,
+        CronTrigger(
+            day_of_week='mon-sat',
+            hour=7,
+            minute=0,
+            timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
     )
 
     scheduler.start()
@@ -154,9 +155,13 @@ async def call_api(kind: str, loop: bool = False):
                         print(f"[FAILED] {ticket.custom_fields[0].value}: {resp}")
                         logging.error(f"Ticket failed: {ticket.custom_fields[0].value} | {resp}")
                         fail_count += 1
+
                 except Exception as e:
                     print(f"[DEBUG] fail in tqdm: {e}")
-                    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), f)
+
+                    tb_str = traceback.format_exc()
+
+                    logging.error("Error in tqdn '%s': %s\nTraceback:\n%s", kind, str(e), tb_str)
                     write_daily_log(e, success=False)
                     fail_count += 1
 
@@ -187,7 +192,6 @@ async def call_api(kind: str, loop: bool = False):
                 await call_api(kind, True)
 
     except Exception as e:
-        import traceback
         error_details = traceback.format_exc()
         logging.error("Error processing tickets for kind '%s': %s\nTraceback:\n%s", kind, str(e), error_details)
         print(f"[DEBUG] Exception in call_api {kind}: {e}\n{error_details}\n", flush=True)
@@ -443,10 +447,11 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
             resp_status = None
             resp_text = None
 
-        logging.error("HTTPX RequestError: %s\nRequest: %s\nRequest body: %s\nResponse status: %s\nResponse body: %s\nTraceback:\n%s",
+        logging.error(
+            "HTTPX RequestError: %s\nRequest: %s\nRequest body: %s\nResponse status: %s\nResponse body: %s\nTraceback:\n%s",
             str(e), req_info, repr(req_body), resp_status, resp_text, tb
 
-    )
+            )
     print(f"[DEBUG] RequestError: {e}", flush=True)
     print(f"[DEBUG] Request: {req_info}", flush=True)
     if req_body is not None:
@@ -457,6 +462,5 @@ async def update_user(id: str, name: str, data=None, phone: str = None, delphone
         print(f"[DEBUG] Response body: {resp_text[:2000]}", flush=True)  # rút gọn
 
     print(f"[DEBUG] Traceback:\n{tb}", flush=True)
-
 
     return {"error": str(e)}, False
