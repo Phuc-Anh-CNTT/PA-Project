@@ -73,7 +73,7 @@ async def lifespan(app: FastAPI):
         do_something,
         CronTrigger(
             day_of_week='mon-sat',
-            hour=7,
+            hour=8,
             minute=0,
             timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
     )
