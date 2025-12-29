@@ -370,7 +370,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
 				name = None
 				serviceID = 95098303
 
-			normalized_sdt = "".join(ch for ch in r.Tel if ch.isdigit())
+			normalized_sdt = "".join(ch for ch in r.sdt if ch.isdigit())
 
 			if not normalized_sdt or normalized_sdt.strip("0") == "" or normalized_sdt.strip("1") == "":
 				continue
