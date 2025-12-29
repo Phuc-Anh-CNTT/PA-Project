@@ -75,7 +75,7 @@ async def lifespan(app: FastAPI):
         CronTrigger(
             day_of_week='mon-sat',
             hour=8,
-            minute=0)
+            minute=10)
     )
 
     scheduler.start()
