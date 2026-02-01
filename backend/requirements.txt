@@ -224,7 +224,7 @@ pydantic-ai==0.0.55
 pydantic-ai-slim==0.0.55
 pydantic-evals==0.0.55
 pydantic-graph==0.0.55
-pydantic-settings==2.10.1
+pydantic-settings==2.11.0
 pydantic_core==2.27.2
 pydot==4.0.1
 PyJWT==2.10.1
