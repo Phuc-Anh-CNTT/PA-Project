@@ -59,8 +59,6 @@ async def bao_nhan_bh():
         call_api("baohanh"),
     )
 
-
-
 # scheduler
 @asynccontextmanager
 async def lifespan(app: FastAPI):

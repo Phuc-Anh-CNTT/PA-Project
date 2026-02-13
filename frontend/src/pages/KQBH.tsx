@@ -38,6 +38,8 @@ import logo1 from '../assets/images/dathongbao.png';
 // @ts-ignore
 import footerLogo from "../assets/images/footer.png";
 import '../styles/kqbh.css'
+import {ImageWithFallback} from "../components/figma/ImageWithFallback";
+import ActionButtons from "../components/KQBH/ActionButtons";
 
 // @ts-ignore
 const API_URL = import.meta.env.VITE_API_URL;
@@ -227,36 +229,47 @@ export default function KQBH() {
 
     const renderSearch = () => (
         <div
-            className="h-[500px] w-auto box-border bg-gradient-to-br from-blue-200 to-red-200 flex items-center justify-center p-2">
-            <Card className="h-auto w-auto shadow-xl border-0 flex flex-col items-center ">
-                <CardHeader
-                    className="h-full w-full text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg pl-10 pr-10">
-                    <CardTitle
-                        className="h-full text-3xl font-bold tracking-wide text-white"
-                        style={{fontFamily: "Times New Roman, Times, serif"}}
-                    >
-                        Tra Cứu Bảo Hành Phúc Anh
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="px-16 py-8 w-auto">
-                    <form onSubmit={handleSearch} className="space-y-6 w-full">
-                        <div className="w-full space-y-2">
-                            <label htmlFor="search-code" className="block font-medium text-gray-700">
-                                Tra cứu
-                            </label>
-                            <Input id="search-code" type="text"
-                                   placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại" value={searchCode}
-                                   onChange={(e) => setSearchCode(e.target.value)}
-                                   className="appearance-none box-border w-full min-w-[350px] h-12 border-2 border-gray-200 focus:border-secondary !text-xl leading-normal"
-                            />
-                        </div>
-                        <button type="submit"
-                                className="flex items-center justify-center gap-2 text-2xl appearance-none box-border w-full h-12 bg-red-300 hover:bg-blue-900 text-white rounded-xl leading-normal">
-                            <Search className="w-5 h-5 mr-2"/> Tìm Kiếm
-                        </button>
-                    </form>
-                </CardContent>
-            </Card>
+            className="h-[700px] w-full box-border bg-gradient-to-br from-blue-200 to-red-200 items-center justify-center p-2">
+
+            <div
+                className="max-h-[300px] w-full flex flex-col items-start justify-center overflow-hidden bg-none text-white font-sans">
+                <div className="relative z-10">
+                    <ActionButtons/>
+                </div>
+            </div>
+            <div className="h-[300px] w-full box-border bg-gradient-to-br flex items-center justify-center p-2">
+                <Card className="h-auto w-fit shadow-xl border-0 flex flex-col items-center ">
+                    <CardHeader
+                        className="h-full w-full text-center bg-gradient-to-r from-blue-800 to-red-600 text-white rounded-t-lg pl-10 pr-10">
+                        <CardTitle
+                            className="h-full text-3xl font-bold tracking-wide text-white"
+                            style={{fontFamily: "Times New Roman, Times, serif"}}
+                        >
+                            Tra Cứu Bảo Hành Phúc Anh
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent className="px-16 py-8 w-auto">
+                        <form onSubmit={handleSearch} className="space-y-6 w-full mb-8">
+                            <div className="w-full space-y-2">
+                                <label htmlFor="search-code" className="block font-medium text-gray-700">
+                                    Tra cứu
+                                </label>
+                                <Input id="search-code" type="text"
+                                       placeholder="Nhập số phiếu nhận bảo hành hoặc số điện thoại"
+                                       value={searchCode}
+                                       onChange={(e) => setSearchCode(e.target.value)}
+                                       className="appearance-none box-border w-full min-w-[350px] h-12 border-2 border-gray-200 focus:border-secondary !text-xl leading-normal"
+                                />
+                            </div>
+                            <button type="submit"
+                                    className="flex items-center justify-center gap-2 text-2xl appearance-none box-border w-full h-12 bg-red-300 hover:bg-blue-900 text-white rounded-xl leading-normal">
+                                <Search className="w-5 h-5 mr-2"/> Tìm Kiếm
+                            </button>
+                        </form>
+                    </CardContent>
+                </Card>
+
+            </div>
         </div>
     );
 
@@ -603,7 +616,7 @@ export default function KQBH() {
                                         </div>
                                         <div className="left-padd2">
                                             <h2 className="font-thin m-bottom1">☎️ (024) 3968 9966 (Máy lẻ 3)</h2>
-                                            <p>🗺️ Số 134 Thái Hà - phường  Đống Đa - Hà Nội</p>
+                                            <p>🗺️ Số 134 Thái Hà - phường Đống Đa - Hà Nội</p>
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box flex items-center  active odd ">
@@ -949,7 +962,8 @@ export default function KQBH() {
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 m-top2 font-white footer-address">
-                            <h4 className="font16 font-thin uppercase"><b>Trụ sở chính/SHOWROOM PHÚC ANH 152 TRẦN DUY HƯNG</b></h4>
+                            <h4 className="font16 font-thin uppercase"><b>Trụ sở chính/SHOWROOM PHÚC ANH 152 TRẦN DUY
+                                HƯNG</b></h4>
                             <div className="title-line color"></div>
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
@@ -1113,7 +1127,8 @@ export default function KQBH() {
                             <ul className="listitems left-padd0">
                                 <li className="flex items-center gap-2">
                                     <MapPin className="w-4 h-4"/>
-                                    <a href="">141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường Phú Diễn, Hà Nội.</a>
+                                    <a href="">141-143 Phạm Văn Đồng (ngã ba Hoàng Quốc Việt - Phạm Văn Đồng), phường
+                                        Phú Diễn, Hà Nội.</a>
                                 </li>
                                 <li className="flex items-center gap-2">
                                     <Phone className="w-4 h-4"/>

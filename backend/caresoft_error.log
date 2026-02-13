@@ -8800,3 +8800,27 @@ httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.cares
 For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
 
 2025-12-29 14:10:52,343 - ERROR - Failed to write log file 2025-12-29_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2025-12-29 14:19:43,848 - ERROR - Request error:  | Payload: 0902298094
+2025-12-29 14:19:43,861 - ERROR - Request error:  | Payload: 0396889936
+2025-12-29 14:19:43,872 - ERROR - Request error:  | Payload: 0842319999
+2025-12-29 14:19:43,883 - ERROR - Request error:  | Payload: 0946308822
+2025-12-29 14:19:48,895 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-29 14:19:48,895 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0396889936", "username": "Khách hàng lẻ Cơ Sở Trần Duy Hưng"}}
+2025-12-29 14:19:48,895 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-29 14:19:48,895 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0946308822", "username": "CÔNG TY LỮ HÀNH HANOITOURIST"}}
+2025-12-29 14:19:48,895 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
+2025-12-29 14:19:48,896 - ERROR - Ticket failed: WN25-008162 | {'error': 'User creation failed'}
+2025-12-29 14:19:48,896 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-29 14:19:48,896 - ERROR - Ticket failed: WN25-008221 | {'error': 'User creation failed'}
+2025-12-29 14:19:53,977 - ERROR - Request error:  | Payload: 0396889936
+2025-12-29 14:19:53,989 - ERROR - Request error:  | Payload: 0946308822
+2025-12-29 14:19:54,002 - ERROR - Request error:  | Payload: 0842319999
+2025-12-29 14:19:54,014 - ERROR - Request error:  | Payload: 0902298094
+2025-12-29 14:19:59,027 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0396889936", "username": "Khách hàng lẻ Cơ Sở Trần Duy Hưng"}}
+2025-12-29 14:19:59,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0946308822", "username": "CÔNG TY LỮ HÀNH HANOITOURIST"}}
+2025-12-29 14:19:59,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0842319999", "username": "Khách hàng lẻ cửa hàng Phạm Văn Đồng"}}
+2025-12-29 14:19:59,040 - ERROR - Request error:  | Payload: {"contact": {"phone_no": "0902298094", "username": "Công Ty TNHH Terumo Việt Nam"}}
+2025-12-29 14:19:59,040 - ERROR - Ticket failed: WN25-008162 | {'error': 'User creation failed'}
+2025-12-29 14:19:59,040 - ERROR - Ticket failed: WN25-008221 | {'error': 'User creation failed'}
+2025-12-29 14:19:59,040 - ERROR - Ticket failed: WN25-007963 | {'error': 'User creation failed'}
+2025-12-29 14:19:59,040 - ERROR - Ticket failed: WN25-006722 | {'error': 'User creation failed'}
