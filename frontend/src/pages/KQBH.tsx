@@ -29,6 +29,9 @@ import {StatusStepper} from "../components/KQBH/StatusStepper";
 import Ndyduc from "../ndyduc";
 // @ts-ignore
 import headerLogo from "../assets/images/banner-bao-hanh.jpg"
+
+// @ts-ignore
+import headerLogo2 from "../assets/images/banner-bao-hanh2.jpg"
 // @ts-ignore
 import abcImg from '../assets/images/abc.png';
 // @ts-ignore
@@ -556,7 +559,7 @@ export default function KQBH() {
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
             <header className="w-full max-w-screen-2xl mx-auto">
                 <img
-                    src={headerLogo}
+                    src={headerLogo2}
                     alt="Header Logo"
                     className="w-full h-auto object-cover"
                 />
