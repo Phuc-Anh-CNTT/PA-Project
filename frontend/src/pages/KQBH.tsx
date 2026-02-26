@@ -554,7 +554,7 @@ export default function KQBH() {
     return (
 
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
-            <header className="w-full max-w-screen-2xl mx-auto">
+            <header className="w-full">
                 <img
                     src={headerLogo}
                     alt="Header Logo"
