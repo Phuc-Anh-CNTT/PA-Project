@@ -29,6 +29,9 @@ import {StatusStepper} from "../components/KQBH/StatusStepper";
 import Ndyduc from "../ndyduc";
 // @ts-ignore
 import headerLogo from "../assets/images/banner-bao-hanh.jpg"
+
+// @ts-ignore
+import headerLogo2 from "../assets/images/banner-bao-hanh2.jpg"
 // @ts-ignore
 import abcImg from '../assets/images/abc.png';
 // @ts-ignore
@@ -556,7 +559,7 @@ export default function KQBH() {
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-red-50">
             <header className="w-full">
                 <img
-                    src={headerLogo}
+                    src={headerLogo2}
                     alt="Header Logo"
                     className="w-full h-auto object-cover"
                 />
@@ -587,7 +590,7 @@ export default function KQBH() {
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
                                     <div className="m-bottom4 fea-col-box flex items-center  active odd">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] !text-[2rem] flex justify-center items-center box-round">
                                             01
                                         </div>
                                         <div className="left-padd2">
@@ -596,7 +599,7 @@ export default function KQBH() {
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box flex items-center ">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="!bg-blue-300 !text-[2rem] flex justify-center items-center icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
                                             02
                                         </div>
                                         <div className="left-padd2">
@@ -611,7 +614,7 @@ export default function KQBH() {
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
                                     <div className="m-bottom4 fea-col-box flex items-center  odd ">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="!bg-blue-300 !text-[2rem] flex justify-center items-center icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
                                             03
                                         </div>
                                         <div className="left-padd2">
@@ -620,7 +623,7 @@ export default function KQBH() {
                                         </div>
                                     </div>
                                     <div className="m-bottom4 fea-col-box flex items-center  active odd ">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="!text-[2rem] flex justify-center items-center icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
                                             04
                                         </div>
                                         <div className="left-padd2">
@@ -635,7 +638,7 @@ export default function KQBH() {
                             <div className="vc_column-inner">
                                 <div className="wpb_wrapper">
                                     <div className="m-bottom4 fea-col-box flex items-center  active ">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="!text-[2rem] flex justify-center items-center icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
                                             05
                                         </div>
                                         <div className="left-padd2">
@@ -645,7 +648,7 @@ export default function KQBH() {
                                     </div>
 
                                     <div className="m-bottom4 fea-col-box flex items-center ">
-                                        <div className="icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round">
+                                        <div className="!text-[2rem] flex justify-center items-center icon-boxed wide80 !min-w-[80px] !min-h-[80px] box-round !bg-blue-300">
                                             📞
                                         </div>
                                         <div className="left-padd2">
