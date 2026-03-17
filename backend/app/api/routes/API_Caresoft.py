@@ -48,15 +48,16 @@ async def test_caresoft():
 async def do_something():
     print("Already doing something")
     await asyncio.gather(
-        call_api("kscl_banhang"),
-        call_api("kscl_baohanh")
+        # call_api("kscl_banhang"),
+        # call_api("kscl_baohanh")
     )
 
 
 async def bao_nhan_bh():
     print(f"bao nhan BH luc: {datetime.now()}")
     await asyncio.gather(
-        call_api("baohanh"),
+        # call_api("baohanh"),
+        # call_api("kscl_baohanh")
     )
 
 # scheduler
@@ -121,7 +122,7 @@ async def call_api(kind: str, loop: bool = False):
                         username_diff = (user != exists.get("username"))
                         phone_diff = (ticket.phone != exists.get("phone_no"))
 
-                        if (username_diff or phone_diff) and ticket.phone != "0989313229":
+                        if (username_diff or phone_diff) and ticket.phone not in WHITELIST_SDT:
                             if phone_diff:
                                 deleted = await update_user(id=str(exists.get("id")), name=user, delphone=True)
 
@@ -303,7 +304,7 @@ async def create_user(data: Ticket):
             return False
         else:
             contact_id = result.get("contact", {}).get("id")
-            logging.error("Request error: %s | Payload: %s", e, payload)
+            logging.error("Request error: %s | Payload: %s")
             print("[DEBUG] Successfully Created user id:", contact_id, flush=True)
             return contact_id
 

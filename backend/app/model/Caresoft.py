@@ -100,6 +100,7 @@ class don_hang_ban(Base):
     Tel: Column(String)
     DocDate: Column(Date)
     DocNo: Column(String)
+    DeptName: Column(NVARCHAR)
     JobCode: Column(String)
     TTGH: Column(String)
     Created_at: datetime
@@ -121,7 +122,6 @@ class don_hang_BH(Base):
     ngay_tra: datetime
     serial_nhan: String
     serial_tra: String
-    DeptName: Column(NVARCHAR)
     chenh_lech_ngay_tra_ngay_hen_tra: Integer
     so_don_hang: String
     CreatedAt: datetime
@@ -318,6 +318,9 @@ def count_ticket(db: Session):
         return None
 
 
+WHITELIST_SDT = ["0989313229", "0944880308", "0968505808", "0912093236", '0988421561']
+
+
 def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
     results = []
 
@@ -328,7 +331,6 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
             don_hang_BH.sdt,
             don_hang_BH.so_phieu_nhan,
             don_hang_BH.so_phieu_tra,
-            don_hang_BH.DeptName,
             don_hang_BH.ngay_tra,
             don_hang_BH.serial_nhan,
             don_hang_BH.serial_tra,
@@ -339,10 +341,6 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
             don_hang_BH.CreatedAt >= datetime(2025, 11, 4),
             don_hang_BH.da_tao_phieu == 0,
             don_hang_BH.da_tao_ZNS == 0,
-            don_hang_BH.DeptName != cast(
-                'KDOL.Bán hàng trực tuyến (TMDT)',
-                NVARCHAR
-            )
         ))
 
         if sent is not None:
@@ -436,6 +434,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
             don_hang_ban.Tel,
             don_hang_ban.DocDate,
             don_hang_ban.DocNo,
+            don_hang_ban.DeptName,
             don_hang_ban.JobCode,
             don_hang_ban.TTGH,
             don_hang_ban.Created_at,
@@ -445,6 +444,13 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
                 don_hang_ban.da_tao_phieu == 0,
                 don_hang_ban.da_tao_ZNS == 0,
                 don_hang_ban.JobCode != "KDPP",
+                or_(
+                    don_hang_ban.DeptName == None,  # IS NULL
+                    don_hang_ban.DeptName != cast(
+                        'KDOL.Bán hàng trực tuyến (TMDT)',
+                        NVARCHAR
+                    )
+                ),
                 or_(
                     don_hang_ban.Modified_at != don_hang_ban.Created_at,
                     don_hang_ban.TTGH == "Đã giao hàng"
@@ -476,7 +482,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
                     comment = "số điện thoại không đạt điều kiện gửi ZNS:" + str(r.Tel)
                     serviceID = 95098303
 
-                elif r.Tel in get_list_phone(db) and r.Tel != '0989313229':
+                elif r.Tel in get_list_phone(db) and r.Tel not in WHITELIST_SDT:
                     comment = "Đơn hàng dùng số điện thoại nhân viên!"
                     serviceID = 95098303
                 else:
