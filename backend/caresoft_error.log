@@ -8890,3 +8890,73 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-02-26 07:46:40,379 - ERROR - Failed to write log file 2026-02-26_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
 2026-02-26 07:46:40,395 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
 2026-02-26 07:46:40,395 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2026-03-17 15:22:06,844 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:06,845 - ERROR - Ticket failed: WN26-000890 | {'error': 'User update failed'}
+2026-03-17 15:22:06,893 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:06,893 - ERROR - Ticket failed: WN25-008221 | {'error': 'User update failed'}
+2026-03-17 15:22:06,933 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:06,933 - ERROR - Ticket failed: WN25-008162 | {'error': 'User update failed'}
+2026-03-17 15:22:06,980 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:06,980 - ERROR - Ticket failed: WN26-001020 | {'error': 'User update failed'}
+2026-03-17 15:22:06,980 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:06,980 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2026-03-17 15:22:07,046 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:07,046 - ERROR - Ticket failed: WN26-000792 | {'error': 'User update failed'}
+2026-03-17 15:22:07,123 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 144, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 113, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 291, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-17 15:22:07,123 - ERROR - Failed to write log file 2026-03-17_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-17 15:22:07,123 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:07,123 - ERROR - Ticket failed: WN26-000880 | {'error': 'User update failed'}
+2026-03-17 15:22:07,996 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:07,996 - ERROR - Ticket failed: WN25-006722 | {'error': 'User update failed'}
+2026-03-17 15:22:08,002 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,002 - ERROR - Ticket failed: WN25-008221 | {'error': 'User update failed'}
+2026-03-17 15:22:08,048 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,048 - ERROR - Ticket failed: WN26-000880 | {'error': 'User update failed'}
+2026-03-17 15:22:08,050 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,050 - ERROR - Ticket failed: WN26-000792 | {'error': 'User update failed'}
+2026-03-17 15:22:08,079 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,079 - ERROR - Ticket failed: WN26-001020 | {'error': 'User update failed'}
+2026-03-17 15:22:08,100 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,100 - ERROR - Ticket failed: WN25-008162 | {'error': 'User update failed'}
+2026-03-17 15:22:08,163 - ERROR - Error in tqdn 'baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 144, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 113, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 291, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-17 15:22:08,163 - ERROR - Failed to write log file 2026-03-17_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-17 15:22:08,181 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-17 15:22:08,182 - ERROR - Ticket failed: WN26-000890 | {'error': 'User update failed'}
