@@ -320,7 +320,7 @@ def count_ticket(db: Session):
 
 WHITELIST_SDT = ["0989313229", "0944880308", "0968505808", "0912093236", '0988421561']
 
-
+# ticket cho sau bao hanh
 def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
     results = []
 
@@ -423,7 +423,7 @@ def make_kscl_saubh(db: Session, sent: int = 0, limit: Optional[int] = None):
         print(f"[ERROR][make_BH_ticket] {str(e)}")
         return []
 
-
+# ticket cho bán hàng
 def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) -> list[Ticket]:
     results = []
 
@@ -456,7 +456,7 @@ def make_rate_ticket(db: Session, sent: int = 0, limit: Optional[int] = None) ->
                     don_hang_ban.TTGH == "Đã giao hàng"
                 ),
                 don_hang_ban.Created_at >= datetime(2025, 12, 4),
-                # don_hang_ban.Tel == '0989313229'
+                # don_hang_ban.Tel == '0988421561'
             )
         )
 
@@ -545,7 +545,7 @@ def get_all_ticket(db: Session, sent=0, limit=None):
 
         # query = query.filter(
         # 	# Ticket_PA.trigger_date == text("CAST(DATEADD(DAY, -1, GETDATE()) AS DATE)")
-        # 	Ticket_PA.so_phieu_nhan == "TEST-003"
+        # 	Ticket_PA.phone == '0349583748'
         # )
 
         if sent == 0:

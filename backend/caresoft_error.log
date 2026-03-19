@@ -20586,3 +20586,1704 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-17 17:14:43,270 - ERROR - Failed to write log file 2026-03-17_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
 2026-03-17 17:14:43,897 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
 2026-03-17 17:14:43,897 - ERROR - Ticket failed: WX26-001166 | {'error': 'User update failed'}
+2026-03-18 08:51:43,695 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:43,695 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:43,704 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:43,704 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:43,767 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,767 - ERROR - Ticket failed: SO25-136523 | {'error': 'User update failed'}
+2026-03-18 08:51:43,768 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:43,769 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:43,861 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:43,861 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:43,867 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,867 - ERROR - Ticket failed: SO25-138990 | {'error': 'User update failed'}
+2026-03-18 08:51:43,885 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,885 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2026-03-18 08:51:43,912 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,912 - ERROR - Ticket failed: SO25-138703 | {'error': 'User update failed'}
+2026-03-18 08:51:43,927 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,927 - ERROR - Ticket failed: SO25-135434 | {'error': 'User update failed'}
+2026-03-18 08:51:43,997 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:43,997 - ERROR - Ticket failed: SO25-134265 | {'error': 'User update failed'}
+2026-03-18 08:51:44,734 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:44,734 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:44,812 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:44,813 - ERROR - Ticket failed: SO26-004066 | {'error': 'User update failed'}
+2026-03-18 08:51:44,893 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:44,893 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:44,923 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:44,923 - ERROR - Ticket failed: SO26-000353 | {'error': 'User update failed'}
+2026-03-18 08:51:44,961 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:44,961 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:45,034 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:45,034 - ERROR - Ticket failed: SO26-003142 | {'error': 'User update failed'}
+2026-03-18 08:51:45,042 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:45,042 - ERROR - Ticket failed: SO26-005018 | {'error': 'User update failed'}
+2026-03-18 08:51:45,077 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:45,077 - ERROR - Ticket failed: SO26-005860 | {'error': 'User update failed'}
+2026-03-18 08:51:45,094 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:45,094 - ERROR - Ticket failed: SO26-008438 | {'error': 'User update failed'}
+2026-03-18 08:51:45,228 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:45,228 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:45,948 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:45,948 - ERROR - Ticket failed: SO26-020052 | {'error': 'User update failed'}
+2026-03-18 08:51:46,005 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:46,005 - ERROR - Ticket failed: SO26-019273 | {'error': 'User update failed'}
+2026-03-18 08:51:46,036 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:46,036 - ERROR - Ticket failed: SO26-015685 | {'error': 'User update failed'}
+2026-03-18 08:51:46,063 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:46,064 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:46,097 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:46,098 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:46,099 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:46,099 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:46,132 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:46,132 - ERROR - Ticket failed: SO26-014453 | {'error': 'User update failed'}
+2026-03-18 08:51:46,164 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:46,164 - ERROR - Ticket failed: SO26-020893 | {'error': 'User update failed'}
+2026-03-18 08:51:46,188 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:51:46,188 - ERROR - Ticket failed: SO26-015472 | {'error': 'User update failed'}
+2026-03-18 08:51:46,273 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:46,273 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:47,066 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:51:47,066 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:51:48,494 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:51,424 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:52,870 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:52,882 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:54,108 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:54,140 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:55,458 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:51:59,527 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:04,278 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:05,655 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:07,295 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:07,321 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:07,489 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:08,722 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:12,920 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:12,940 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:12,960 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:13,177 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:14,360 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:14,572 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:14,675 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:15,880 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:17,474 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:18,538 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:21,408 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:23,079 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:24,530 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:24,557 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:25,770 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:25,882 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:25,894 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:25,975 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:27,251 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:27,278 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:27,377 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:28,441 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:28,517 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:28,572 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:28,594 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:28,795 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:29,963 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:30,051 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:30,065 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:30,192 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:52:30,252 - ERROR - Request error: %s | Payload: %s
+2026-03-18 08:53:03,752 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:03,752 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2026-03-18 08:53:03,789 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:03,789 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:03,809 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:03,809 - ERROR - Ticket failed: SO25-134265 | {'error': 'User update failed'}
+2026-03-18 08:53:03,811 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:03,811 - ERROR - Ticket failed: SO25-138990 | {'error': 'User update failed'}
+2026-03-18 08:53:03,876 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:03,876 - ERROR - Ticket failed: SO25-136523 | {'error': 'User update failed'}
+2026-03-18 08:53:03,898 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:03,898 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:03,944 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:03,944 - ERROR - Ticket failed: SO25-138703 | {'error': 'User update failed'}
+2026-03-18 08:53:03,968 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:03,968 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:04,063 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:04,064 - ERROR - Ticket failed: SO25-135434 | {'error': 'User update failed'}
+2026-03-18 08:53:04,098 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:04,098 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:04,843 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:04,852 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:04,853 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:04,853 - ERROR - Ticket failed: SO26-003142 | {'error': 'User update failed'}
+2026-03-18 08:53:04,901 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:04,901 - ERROR - Ticket failed: SO26-005860 | {'error': 'User update failed'}
+2026-03-18 08:53:05,011 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:05,012 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:05,054 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:05,055 - ERROR - Ticket failed: SO26-004066 | {'error': 'User update failed'}
+2026-03-18 08:53:05,069 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:05,069 - ERROR - Ticket failed: SO26-000353 | {'error': 'User update failed'}
+2026-03-18 08:53:05,124 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:05,124 - ERROR - Ticket failed: SO26-005018 | {'error': 'User update failed'}
+2026-03-18 08:53:05,125 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:05,125 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:05,190 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:05,191 - ERROR - Ticket failed: SO26-008438 | {'error': 'User update failed'}
+2026-03-18 08:53:05,191 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:05,191 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:05,943 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:05,943 - ERROR - Ticket failed: SO26-014453 | {'error': 'User update failed'}
+2026-03-18 08:53:05,965 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:05,965 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:06,031 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:06,031 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:06,032 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:06,032 - ERROR - Ticket failed: SO26-015472 | {'error': 'User update failed'}
+2026-03-18 08:53:06,098 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:06,098 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:06,163 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:06,163 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-18 08:53:06,182 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:06,182 - ERROR - Ticket failed: SO26-015685 | {'error': 'User update failed'}
+2026-03-18 08:53:06,188 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:06,188 - ERROR - Ticket failed: SO26-020893 | {'error': 'User update failed'}
+2026-03-18 08:53:06,208 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:06,208 - ERROR - Ticket failed: SO26-019273 | {'error': 'User update failed'}
+2026-03-18 08:53:06,305 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-18 08:53:06,306 - ERROR - Ticket failed: SO26-020052 | {'error': 'User update failed'}
+2026-03-18 08:53:06,854 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 145, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 114, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 292, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-18 08:53:06,854 - ERROR - Failed to write log file 2026-03-18_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,378 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,379 - ERROR - Ticket failed: SO25-138703 | {'error': 'User update failed'}
+2026-03-19 13:52:00,473 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,473 - ERROR - Ticket failed: SO25-134265 | {'error': 'User update failed'}
+2026-03-19 13:52:00,481 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,481 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,524 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,524 - ERROR - Ticket failed: SO25-136523 | {'error': 'User update failed'}
+2026-03-19 13:52:00,565 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,565 - ERROR - Ticket failed: SO25-138990 | {'error': 'User update failed'}
+2026-03-19 13:52:00,565 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,565 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,618 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,618 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,673 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,673 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2026-03-19 13:52:00,707 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,707 - ERROR - Ticket failed: SO25-135434 | {'error': 'User update failed'}
+2026-03-19 13:52:00,741 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,742 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,864 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,864 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,864 - ERROR - Ticket failed: WX25-008630 | {'error': 'User update failed'}
+2026-03-19 13:52:00,864 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,864 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,864 - ERROR - Ticket failed: WX26-001044 | {'error': 'User update failed'}
+2026-03-19 13:52:00,887 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:00,887 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:00,900 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,901 - ERROR - Ticket failed: WX25-008598 | {'error': 'User update failed'}
+2026-03-19 13:52:00,905 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,905 - ERROR - Ticket failed: WX26-000960 | {'error': 'User update failed'}
+2026-03-19 13:52:00,994 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:00,994 - ERROR - Ticket failed: WX26-000922 | {'error': 'User update failed'}
+2026-03-19 13:52:01,016 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:01,016 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:01,126 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:01,126 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:01,126 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:01,126 - ERROR - Ticket failed: WX25-008461 | {'error': 'User update failed'}
+2026-03-19 13:52:01,576 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:01,576 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:01,951 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:01,951 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:02,007 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,007 - ERROR - Ticket failed: SO26-005860 | {'error': 'User update failed'}
+2026-03-19 13:52:02,040 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:02,040 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:02,108 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,108 - ERROR - Ticket failed: SO26-005018 | {'error': 'User update failed'}
+2026-03-19 13:52:02,109 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,109 - ERROR - Ticket failed: SO26-000353 | {'error': 'User update failed'}
+2026-03-19 13:52:02,153 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:02,154 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:02,202 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,202 - ERROR - Ticket failed: SO26-008438 | {'error': 'User update failed'}
+2026-03-19 13:52:02,227 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,227 - ERROR - Ticket failed: SO26-004066 | {'error': 'User update failed'}
+2026-03-19 13:52:02,298 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,298 - ERROR - Ticket failed: SO26-003142 | {'error': 'User update failed'}
+2026-03-19 13:52:02,469 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:02,469 - ERROR - Ticket failed: WX26-001166 | {'error': 'User update failed'}
+2026-03-19 13:52:03,227 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,227 - ERROR - Ticket failed: SO26-020893 | {'error': 'User update failed'}
+2026-03-19 13:52:03,303 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:03,303 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:03,345 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,346 - ERROR - Ticket failed: SO26-020052 | {'error': 'User update failed'}
+2026-03-19 13:52:03,481 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,481 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,481 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,481 - ERROR - Ticket failed: SO26-014453 | {'error': 'User update failed'}
+2026-03-19 13:52:03,481 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:03,481 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:03,482 - ERROR - Ticket failed: SO26-015685 | {'error': 'User update failed'}
+2026-03-19 13:52:03,482 - ERROR - Ticket failed: SO26-019273 | {'error': 'User update failed'}
+2026-03-19 13:52:03,482 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:03,482 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:03,503 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:03,503 - ERROR - Ticket failed: SO26-015472 | {'error': 'User update failed'}
+2026-03-19 13:52:03,570 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:03,570 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:05,212 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:05,212 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:08,495 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:11,250 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:13,201 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:23,164 - ERROR - Request error:  | Payload: 0966705257
+2026-03-19 13:52:23,176 - ERROR - Request error:  | Payload: 0942300366
+2026-03-19 13:52:23,188 - ERROR - Request error:  | Payload: 0963656381
+2026-03-19 13:52:23,199 - ERROR - Request error:  | Payload: 0972561589
+2026-03-19 13:52:23,210 - ERROR - Request error:  | Payload: 02439689966
+2026-03-19 13:52:23,222 - ERROR - Request error:  | Payload: 02439689966
+2026-03-19 13:52:23,233 - ERROR - Request error:  | Payload: 0326845488
+2026-03-19 13:52:23,244 - ERROR - Request error:  | Payload: 0366645091
+2026-03-19 13:52:23,255 - ERROR - Request error:  | Payload: 0378919119
+2026-03-19 13:52:23,267 - ERROR - Request error:  | Payload: 0963507062
+2026-03-19 13:52:23,849 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:23,849 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:23,857 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:23,857 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:23,906 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:23,906 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:23,943 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:23,976 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:23,976 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,110 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,110 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,160 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,161 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,170 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,170 - ERROR - Ticket failed: WX26-001044 | {'error': 'User update failed'}
+2026-03-19 13:52:24,171 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,171 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,187 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,187 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,199 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,199 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,235 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,235 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,247 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,247 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,276 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,276 - ERROR - Ticket failed: WX25-008598 | {'error': 'User update failed'}
+2026-03-19 13:52:24,312 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,312 - ERROR - Ticket failed: WX26-000922 | {'error': 'User update failed'}
+2026-03-19 13:52:24,408 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,408 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:24,419 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,419 - ERROR - Ticket failed: WX25-008630 | {'error': 'User update failed'}
+2026-03-19 13:52:24,451 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,451 - ERROR - Ticket failed: WX26-000960 | {'error': 'User update failed'}
+2026-03-19 13:52:24,479 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:24,479 - ERROR - Ticket failed: WX25-008461 | {'error': 'User update failed'}
+2026-03-19 13:52:24,480 - ERROR - Error in tqdn 'kscl_baohanh': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:52:24,480 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:52:25,426 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:52:25,426 - ERROR - Ticket failed: WX26-001166 | {'error': 'User update failed'}
+2026-03-19 13:52:25,568 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:30,552 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:31,873 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:33,176 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:34,911 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:36,301 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:37,736 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:37,961 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:40,531 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:42,311 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:47,691 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:47,755 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:47,837 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:48,051 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:49,103 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:49,384 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:49,454 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:50,667 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:50,872 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:52,316 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:52:53,692 - ERROR - Request error: %s | Payload: %s
+2026-03-19 13:53:19,687 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,687 - ERROR - Ticket failed: SO25-134265 | {'error': 'User update failed'}
+2026-03-19 13:53:19,752 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,752 - ERROR - Ticket failed: SO25-136523 | {'error': 'User update failed'}
+2026-03-19 13:53:19,778 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:19,778 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:19,856 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,856 - ERROR - Ticket failed: SO25-138703 | {'error': 'User update failed'}
+2026-03-19 13:53:19,903 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:19,903 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:19,906 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,906 - ERROR - Ticket failed: SO25-129369 | {'error': 'User update failed'}
+2026-03-19 13:53:19,922 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,922 - ERROR - Ticket failed: SO25-138990 | {'error': 'User update failed'}
+2026-03-19 13:53:19,960 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:19,960 - ERROR - Ticket failed: SO25-135434 | {'error': 'User update failed'}
+2026-03-19 13:53:19,987 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:19,987 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:20,050 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:20,050 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:20,736 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:20,737 - ERROR - Ticket failed: SO26-008438 | {'error': 'User update failed'}
+2026-03-19 13:53:20,856 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:20,856 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:20,870 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:20,871 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:20,901 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:20,901 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:20,934 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:20,934 - ERROR - Ticket failed: SO26-005860 | {'error': 'User update failed'}
+2026-03-19 13:53:20,992 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:20,992 - ERROR - Ticket failed: SO26-000353 | {'error': 'User update failed'}
+2026-03-19 13:53:21,038 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:21,038 - ERROR - Ticket failed: SO26-003142 | {'error': 'User update failed'}
+2026-03-19 13:53:21,043 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:21,043 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:21,129 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:21,129 - ERROR - Ticket failed: SO26-005018 | {'error': 'User update failed'}
+2026-03-19 13:53:21,144 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:21,144 - ERROR - Ticket failed: SO26-004066 | {'error': 'User update failed'}
+2026-03-19 13:53:21,904 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:21,904 - ERROR - Ticket failed: SO26-020893 | {'error': 'User update failed'}
+2026-03-19 13:53:21,918 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:21,918 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:21,935 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:21,935 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:21,995 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:21,995 - ERROR - Ticket failed: SO26-015472 | {'error': 'User update failed'}
+2026-03-19 13:53:22,015 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:22,015 - ERROR - Ticket failed: SO26-015685 | {'error': 'User update failed'}
+2026-03-19 13:53:22,037 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:22,037 - ERROR - Ticket failed: SO26-014453 | {'error': 'User update failed'}
+2026-03-19 13:53:22,046 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:22,046 - ERROR - Ticket failed: SO26-019273 | {'error': 'User update failed'}
+2026-03-19 13:53:22,118 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:22,118 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:22,217 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:22,217 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
+2026-03-19 13:53:22,250 - ERROR - Unexpected response: {'code': 'errors', 'message': 'not role of a contact', 'extra_data': None}
+2026-03-19 13:53:22,250 - ERROR - Ticket failed: SO26-020052 | {'error': 'User update failed'}
+2026-03-19 13:53:23,230 - ERROR - Error in tqdn 'kscl_banhang': Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+Traceback:
+Traceback (most recent call last):
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 146, in call_api
+    ticket, resp, ok = await f
+                       ^^^^^^^
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 115, in limited_make_ticket
+    created = await create_user(ticket)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ndyduc/PycharmProjects/PA-Project/backend/app/api/routes/API_Caresoft.py", line 293, in create_user
+    response.raise_for_status()
+  File "/home/ndyduc/miniconda3/envs/CSKH/lib/python3.12/site-packages/httpx/_models.py", line 763, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '400 Bad Request' for url 'https://api.caresoft.vn/phucanh/api/v1/contacts/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+
+2026-03-19 13:53:23,230 - ERROR - Failed to write log file 2026-03-19_failed.jsonl: Object of type HTTPStatusError is not JSON serializable
